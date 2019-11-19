@@ -9,16 +9,17 @@ public class Turtle extends Actor{
 	boolean bool = true;
 	@Override
 	public void act(long now) {
+		final int nineHundredMillion = 900000000;
 
-				if (now/900000000  % 3 ==0) {
+				if (now/nineHundredMillion  % 3 ==0) {
 					setImage(turtle2);
 					
 				}
-				else if (now/900000000 % 3 == 1) {
+				else if (now/nineHundredMillion % 3 == 1) {
 					setImage(turtle1);
 					
 				}
-				else if (now/900000000 %3 == 2) {
+				else if (now/nineHundredMillion %3 == 2) {
 					setImage(turtle3);
 					
 				}
@@ -29,6 +30,7 @@ public class Turtle extends Actor{
 		if (getX() < -75 && speed<0)
 			setX(600);
 	}
+
 	public Turtle(int xpos, int ypos, int s, int w, int h) {
 		turtle1 = new Image("file:resources/TurtleAnimation1.png", w, h, true, true);
 		turtle2 = new Image("file:resources/TurtleAnimation2.png", w, h, true, true);
