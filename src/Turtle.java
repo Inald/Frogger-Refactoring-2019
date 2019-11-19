@@ -9,7 +9,6 @@ public class Turtle extends Actor{
 	boolean bool = true;
 	@Override
 	public void act(long now) {
-		final int nineHundredMillion = 900000000;
 
 				if (now/nineHundredMillion  % 3 ==0) {
 					setImage(turtle2);

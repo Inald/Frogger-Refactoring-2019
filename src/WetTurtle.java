@@ -12,19 +12,19 @@ public class WetTurtle extends Actor{
 	@Override
 	public void act(long now) {
 
-				if (now/900000000  % 4 ==0) {
+				if (now/nineHundredMillion  % 4 ==0) {
 					setImage(turtle2);
 					sunk = false;
 					
 				}
-				else if (now/900000000 % 4 == 1) {
+				else if (now/nineHundredMillion % 4 == 1) {
 					setImage(turtle1);
 					sunk = false;
 				}
-				else if (now/900000000 %4 == 2) {
+				else if (now/nineHundredMillion %4 == 2) {
 					setImage(turtle3);
 					sunk = false;
-				} else if (now/900000000 %4 == 3) {
+				} else if (now/nineHundredMillion %4 == 3) {
 					setImage(turtle4);
 					sunk = true;
 				}
