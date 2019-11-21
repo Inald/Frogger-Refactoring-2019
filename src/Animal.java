@@ -34,14 +34,14 @@ public class Animal extends Actor {
 		setImage(new Image(imageLink, imgSize, imgSize, true, true));
 		setX(300);
 		setY(679.8+movement);
-		imgW1 = new Image("file:resources/froggerUp.png", imgSize, imgSize, true, true);
-		imgA1 = new Image("file:resources/froggerLeft.png", imgSize, imgSize, true, true);
-		imgS1 = new Image("file:resources/froggerDown.png", imgSize, imgSize, true, true);
-		imgD1 = new Image("file:resources/froggerRight.png", imgSize, imgSize, true, true);
-		imgW2 = new Image("file:resources/froggerUpJump.png", imgSize, imgSize, true, true);
-		imgA2 = new Image("file:resources/froggerLeftJump.png", imgSize, imgSize, true, true);
-		imgS2 = new Image("file:resources/froggerDownJump.png", imgSize, imgSize, true, true);
-		imgD2 = new Image("file:resources/froggerRightJump.png", imgSize, imgSize, true, true);
+		imgW1 = new Image(filePath + "/froggerUp.png", imgSize, imgSize, true, true);
+		imgA1 = new Image(filePath + "/froggerLeft.png", imgSize, imgSize, true, true);
+		imgS1 = new Image(filePath + "/froggerDown.png", imgSize, imgSize, true, true);
+		imgD1 = new Image(filePath + "/froggerRight.png", imgSize, imgSize, true, true);
+		imgW2 = new Image(filePath + "/froggerUpJump.png", imgSize, imgSize, true, true);
+		imgA2 = new Image(filePath + "/froggerLeftJump.png", imgSize, imgSize, true, true);
+		imgS2 = new Image(filePath + "/froggerDownJump.png", imgSize, imgSize, true, true);
+		imgD2 = new Image(filePath + "/froggerRightJump.png", imgSize, imgSize, true, true);
 		setOnKeyPressed(new EventHandler<KeyEvent>() {
 			public void handle(KeyEvent event){
 				if (noMove) {
@@ -145,20 +145,20 @@ public class Animal extends Actor {
 				carD++;
 			}
 			if (carD==1) {
-				setImage(new Image("file:resources/cardeath1.png", imgSize, imgSize, true, true));
+				setImage(new Image(filePath + "/cardeath1.png", imgSize, imgSize, true, true));
 			}
 			if (carD==2) {
-				setImage(new Image("file:resources/cardeath2.png", imgSize, imgSize, true, true));
+				setImage(new Image(filePath + "/cardeath2.png", imgSize, imgSize, true, true));
 			}
 			if (carD==3) {
-				setImage(new Image("file:resources/cardeath3.png", imgSize, imgSize, true, true));
+				setImage(new Image(filePath + "/cardeath3.png", imgSize, imgSize, true, true));
 			}
 			if (carD == 4) {
 				setX(300);
 				setY(679.8+movement);
 				carDeath = false;
 				carD = 0;
-				setImage(new Image("file:resources/froggerUp.png", imgSize, imgSize, true, true));
+				setImage(new Image(filePath + "/froggerUp.png", imgSize, imgSize, true, true));
 				noMove = false;
 				if (points>50) {
 					points-=50;
@@ -173,23 +173,23 @@ public class Animal extends Actor {
 				carD++;
 			}
 			if (carD==1) {
-				setImage(new Image("file:resources/waterdeath1.png", imgSize,imgSize , true, true));
+				setImage(new Image(filePath + "/waterdeath1.png", imgSize,imgSize , true, true));
 			}
 			if (carD==2) {
-				setImage(new Image("file:resources/waterdeath2.png", imgSize,imgSize , true, true));
+				setImage(new Image(filePath + "/waterdeath2.png", imgSize,imgSize , true, true));
 			}
 			if (carD==3) {
-				setImage(new Image("file:resources/waterdeath3.png", imgSize,imgSize , true, true));
+				setImage(new Image(filePath + "/waterdeath3.png", imgSize,imgSize , true, true));
 			}
 			if (carD == 4) {
-				setImage(new Image("file:resources/waterdeath4.png", imgSize,imgSize , true, true));
+				setImage(new Image(filePath + "/waterdeath4.png", imgSize,imgSize , true, true));
 			}
 			if (carD == 5) {
 				setX(300);
 				setY(679.8+movement);
 				waterDeath = false;
 				carD = 0;
-				setImage(new Image("file:resources/froggerUp.png", imgSize, imgSize, true, true));
+				setImage(new Image(filePath + "/froggerUp.png", imgSize, imgSize, true, true));
 				noMove = false;
 				if (points>50) {
 					points-=50;
