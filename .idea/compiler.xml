@@ -16,9 +16,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Frogger_SWM" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Frogger_SWM" target="10" />
       <module name="froggerMaven" target="1.5" />
     </bytecodeTargetLevel>
   </component>
