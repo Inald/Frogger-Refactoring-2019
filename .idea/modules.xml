@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Frogger_SWM.iml" filepath="$PROJECT_DIR$/Frogger_SWM.iml" />
-      <module fileurl="file://$PROJECT_DIR$/froggerMaven/froggerMaven.iml" filepath="$PROJECT_DIR$/froggerMaven/froggerMaven.iml" />
     </modules>
   </component>
 </project>
