@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public abstract class Actor extends ImageView{
 
     protected final int nineHundredMillion = 900000000;
-    protected String filePath = "file:resources";
+    protected String filePath = "file:C:\\uni\\G52SWM\\new_SWMCW2\\Frogger_SWM\\src\\main\\resources";
 
     public void move(double dx, double dy) {
         setX(getX() + dx);

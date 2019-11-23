@@ -2,74 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frogger_SWM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Frogger_SWM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/End.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/FrogEnd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/Frogger Main Song Theme (loop).mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/TurtleAnimation1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/TurtleAnimation2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/TurtleAnimation2Wet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/TurtleAnimation3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/TurtleAnimation3Wet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/TurtleAnimation4Wet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/arcade.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/car1Left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/car1right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/cardeath1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/cardeath2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/cardeath3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/frog background-20170521-151438.piskel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/frog background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/froggerDown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/froggerDownJump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/froggerLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/froggerLeftJump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/froggerRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/froggerRightJump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/froggerUp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/froggerUpJump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/iKogsKW.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/icon-frogger-pixel-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/initialClassDiagram.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/log2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/log3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/logs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/small-red-car-3858-0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/smiiling-big-eyed-green-frog-clipart-6926.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/truck1Left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/truck1Right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/truck2Left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/truck2Right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/waterdeath1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/waterdeath2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/waterdeath3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Frogger_SWM/waterdeath4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Actor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BackgroundImage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Digit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/End.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Log.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyStage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Obstacle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Turtle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WetTurtle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/World.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/End.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/End.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/FrogEnd.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FrogEnd.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Frogger Main Song Theme (loop).mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Frogger Main Song Theme (loop).mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/TurtleAnimation1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TurtleAnimation1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/TurtleAnimation2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TurtleAnimation2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/TurtleAnimation2Wet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TurtleAnimation2Wet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/TurtleAnimation3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TurtleAnimation3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/TurtleAnimation3Wet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TurtleAnimation3Wet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/TurtleAnimation4Wet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/TurtleAnimation4Wet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/arcade.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/arcade.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/car1Left.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/car1Left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/car1right.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/car1right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/cardeath1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cardeath1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/cardeath2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cardeath2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/cardeath3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cardeath3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frog background-20170521-151438.piskel" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frog background-20170521-151438.piskel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frog background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/frog background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/froggerDown.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/froggerDown.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/froggerDownJump.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/froggerDownJump.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/froggerLeft.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/froggerLeft.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/froggerLeftJump.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/froggerLeftJump.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/froggerRight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/froggerRight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/froggerRightJump.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/froggerRightJump.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/froggerUp.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/froggerUp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/froggerUpJump.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/froggerUpJump.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/iKogsKW.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/iKogsKW.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/icon-frogger-pixel-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icon-frogger-pixel-512x512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/initialClassDiagram.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/initialClassDiagram.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/log2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/log3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/logs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/small-red-car-3858-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/small-red-car-3858-0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/smiiling-big-eyed-green-frog-clipart-6926.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/smiiling-big-eyed-green-frog-clipart-6926.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/truck1Left.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/truck1Left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/truck1Right.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/truck1Right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/truck2Left.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/truck2Left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/truck2Right.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/truck2Right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/waterdeath1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/waterdeath1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/waterdeath2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/waterdeath2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/waterdeath3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/waterdeath3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/waterdeath4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/waterdeath4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Frogger_SWM.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/AnimalTest.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,25 +121,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>/p4_group_8_repo</find>
-      <find>src</find>
-      <find>resource</find>
-      <find>900000000</find>
-      <find>file:resources</find>
-      <find>filePath</find>
-      <find>&quot;file:resources</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>resource</replace>
-      <replace>resources</replace>
-      <replace>nineHundredMillion</replace>
-      <replace>filePath</replace>
-      <replace>filePath + &quot;</replace>
-    </replaceStrings>
-  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -199,7 +173,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ZooApp-CompleteLab4" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -213,6 +187,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\uni\G52SWM\new_SWMCW2\Frogger_SWM\src\main\resources" />
       <recent name="C:\uni\G52SWM\new_SWMCW2\Frogger_SWM\resources" />
     </key>
   </component>
