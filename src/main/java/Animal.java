@@ -214,15 +214,15 @@ public class Animal extends Actor {
 			else
 				move (.75,0);
 		}
-		else if (getIntersectingObjects(Turtle.class).size() >= 1 && !noMove) {
-			move(-1,0);
-		}
 		else if (getIntersectingObjects(WetTurtle.class).size() >= 1) {
 			if (getIntersectingObjects(WetTurtle.class).get(0).isSunk()) {
 				waterDeath = true;
 			} else {
 				move(-1,0);
 			}
+		}
+		else if (getIntersectingObjects(Turtle.class).size() >= 1 && !noMove) {
+			move(-1,0);
 		}
 		else if (getIntersectingObjects(End.class).size() >= 1) {
 			inter = (ArrayList<End>) getIntersectingObjects(End.class);
