@@ -6,7 +6,7 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
-
+//to be editied
 public class Animal extends Actor {
 	Image imgW1;
 	Image imgA1;
