@@ -7,6 +7,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
 
+//Inald Gjoni
 public class Animal extends Actor {
 	Image imgW1;
 	Image imgA1;
