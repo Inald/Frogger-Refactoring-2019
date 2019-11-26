@@ -1,6 +1,6 @@
 import javafx.scene.image.Image;
 
-public class WetTurtle extends Actor{
+public class WetTurtle extends Turtle{
 	Image turtle1;
 	Image turtle2;
 	Image turtle3;
@@ -36,6 +36,7 @@ public class WetTurtle extends Actor{
 			setX(600);
 	}
 	public WetTurtle(int xpos, int ypos, int s, int w, int h) {
+		super(xpos,ypos,s,w,h);
 		turtle1 = new Image(filePath + "/TurtleAnimation1.png", w, h, true, true);
 		turtle2 = new Image(filePath + "/TurtleAnimation2Wet.png", w, h, true, true);
 		turtle3 = new Image(filePath + "/TurtleAnimation3Wet.png", w, h, true, true);
