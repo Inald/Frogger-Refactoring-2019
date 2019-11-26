@@ -17,7 +17,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws Exception {
 	    setBackground(new MyStage());
 	    Scene scene  = new Scene(getBackground(),600,800);
-	    String filePath = "file:C:/uni/G52SWM/new_SWMCW2/Frogger_SWM/src/main/resources";
+	    String filePath = "file:resources";
 		//Obstacle obstacle = new Obstacle(filePath + "/truck1Right.png", 25, 25, 3);
 		//Obstacle obstacle1 = new Obstacle(filePath + "/truck2Right.png", 100, 100,2 );
 		//Obstacle obstacle2 = new Obstacle(filePath + "/truck1Right.png",0,  150, 1);
