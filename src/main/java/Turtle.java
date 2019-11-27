@@ -10,15 +10,16 @@ public class Turtle extends Actor{
 	@Override
 	public void act(long now) {
 
-				if (now/nineHundredMillion  % 3 ==0) {
+				long stateOfTurtle = (now/nineHundredMillion % 3);
+				if (stateOfTurtle == 0) {
 					setImage(turtle2);
 					
 				}
-				else if (now/nineHundredMillion % 3 == 1) {
+				else if (stateOfTurtle == 1) {
 					setImage(turtle1);
 					
 				}
-				else if (now/nineHundredMillion %3 == 2) {
+				else if (stateOfTurtle == 2) {
 					setImage(turtle3);
 					
 				}
