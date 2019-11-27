@@ -1,12 +1,12 @@
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class LevelOne extends Levels {
+public class firstLevel extends Levels {
 
     private Stage primaryStage;
 
 
-    public LevelOne(Stage primaryStage) {
+    public firstLevel(Stage primaryStage) {
         this.primaryStage = primaryStage;
         newlevel();
     }
