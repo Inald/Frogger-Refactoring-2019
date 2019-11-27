@@ -18,14 +18,13 @@ public class Main extends Application {
 	    setBackground(new MyStage());
 	    Scene scene  = new Scene(getBackground(),600,800);
 	    String filePath = "file:resources";
-		//Obstacle obstacle = new Obstacle(filePath + "/truck1Right.png", 25, 25, 3);
-		//Obstacle obstacle1 = new Obstacle(filePath + "/truck2Right.png", 100, 100,2 );
-		//Obstacle obstacle2 = new Obstacle(filePath + "/truck1Right.png",0,  150, 1);
 
 		BackgroundImage froggerback = new BackgroundImage(filePath + "/iKogsKw.png");
 
 		getBackground().add(froggerback);
-		
+		//everything above this comment is for any level
+		//everything below is for level one
+
 		getBackground().add(new Log(filePath + "/log3.png", 150, 0, 166, 0.75));
 		getBackground().add(new Log(filePath + "/log3.png", 150, 220, 166, 0.75));
 		getBackground().add(new Log(filePath + "/log3.png", 150, 440, 166, 0.75));
