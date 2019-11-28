@@ -1,15 +1,15 @@
+package com.mainPack;
+
 import javafx.animation.AnimationTimer;
-import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.stage.Stage;
 
 public abstract class Levels{
     private AnimationTimer timer;
     private MyStage background;
     private Animal animal;
 
-    protected String filePath = "file:resources";
+    protected String filePath = "file:src/main/resources";
     protected Scene scene;
 
     public void instantiateBackground(){

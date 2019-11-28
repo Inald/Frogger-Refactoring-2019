@@ -1,3 +1,5 @@
+package com.mainPack;
+
 import javafx.scene.image.Image;
 
 public class BackgroundImage extends Actor{

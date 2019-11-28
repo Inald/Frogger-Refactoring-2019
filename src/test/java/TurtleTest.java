@@ -6,7 +6,7 @@ class TurtleTest {
 
     @Test
     public void test1(){
-        //Turtle turtInst = new Turtle();
+        //com.mainPack.Turtle turtInst = new com.mainPack.Turtle();
     }
 
 }

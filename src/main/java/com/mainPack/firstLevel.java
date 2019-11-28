@@ -1,4 +1,5 @@
-import javafx.scene.Scene;
+package com.mainPack;
+
 import javafx.stage.Stage;
 
 public class firstLevel extends Levels {

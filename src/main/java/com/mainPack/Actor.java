@@ -1,3 +1,5 @@
+package com.mainPack;
+
 import javafx.scene.image.ImageView;
 import javafx.scene.input.InputEvent;
 
@@ -7,7 +9,7 @@ import java.util.ArrayList;
 public abstract class Actor extends ImageView{
 
     protected final int nineHundredMillion = 900000000;
-    protected String filePath = "file:resources";
+    protected String filePath = "file:src/main/resources";
 
     public void move(double dx, double dy) {
         setX(getX() + dx);

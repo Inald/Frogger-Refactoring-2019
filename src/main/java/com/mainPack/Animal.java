@@ -1,7 +1,9 @@
+package com.mainPack;
+
 import java.util.ArrayList;
 
+import javafx.application.Application;
 import javafx.event.EventHandler;
-
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
