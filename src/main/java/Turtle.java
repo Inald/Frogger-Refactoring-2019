@@ -10,19 +10,20 @@ public class Turtle extends Actor{
 	@Override
 	public void act(long now) {
 
-				long stateOfTurtle = (now/nineHundredMillion % 3);
-				if (stateOfTurtle == 0) {
-					setImage(turtle2);
+		long stateOfTurtle = (now/nineHundredMillion % 3);
+
+		if (stateOfTurtle == 0) {
+			setImage(turtle2);
 					
-				}
-				else if (stateOfTurtle == 1) {
-					setImage(turtle1);
+		}
+		else if (stateOfTurtle == 1) {
+			setImage(turtle1);
 					
-				}
-				else if (stateOfTurtle == 2) {
-					setImage(turtle3);
+		}
+		else if (stateOfTurtle == 2) {
+			setImage(turtle3);
 					
-				}
+		}
 			
 		move(speed , 0);
 		if (getX() > 600 && speed>0)
@@ -30,6 +31,7 @@ public class Turtle extends Actor{
 		if (getX() < -75 && speed<0)
 			setX(600);
 	}
+
 
 	public Turtle(int xpos, int ypos, int s, int w, int h) {
 		turtle1 = new Image(filePath + "/TurtleAnimation1.png", w, h, true, true);

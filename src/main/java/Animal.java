@@ -29,6 +29,7 @@ public class Animal extends Actor {
 	int carD = 0;
 	double w = 800;
 	ArrayList<End> inter = new ArrayList<End>();
+
 	public Animal(String imageLink) {
 		setImage(new Image(imageLink, imgSize, imgSize, true, true));
 		setX(300);
@@ -101,7 +102,7 @@ public class Animal extends Actor {
 					if (getY() < w) {
 						changeScore = true;
 						w = getY();
-						points+=10;
+						addPoints(10);
 					}
 	                move(0, -movement);
 	                setImage(imgW1);
@@ -159,8 +160,8 @@ public class Animal extends Actor {
 				carD = 0;
 				setImage(new Image(filePath + "/froggerUp.png", imgSize, imgSize, true, true));
 				noMove = false;
-				if (points>50) {
-					points-=50;
+				if (getPoints() > 50) {
+					minusPoints(50);
 					changeScore = true;
 				}
 			}
@@ -190,8 +191,8 @@ public class Animal extends Actor {
 				carD = 0;
 				setImage(new Image(filePath + "/froggerUp.png", imgSize, imgSize, true, true));
 				noMove = false;
-				if (points>50) {
-					points-=50;
+				if (getPoints() > 50) {
+					minusPoints(50);
 					changeScore = true;
 				}
 			}
@@ -227,9 +228,9 @@ public class Animal extends Actor {
 			inter = (ArrayList<End>) getIntersectingObjects(End.class);
 			if (getIntersectingObjects(End.class).get(0).isActivated()) {
 				end--;
-				points-=50;
+				minusPoints(50);
 			}
-			points+=50;
+			addPoints(50);
 			changeScore = true;
 			w=800;
 			getIntersectingObjects(End.class).get(0).setEnd();
@@ -250,7 +251,19 @@ public class Animal extends Actor {
 	public int getPoints() {
 		return points;
 	}
-	
+
+	public void setPoints(int points) {
+		this.points = points;
+	}
+
+	public void addPoints(int points){
+		this.points += points;
+	}
+
+	public void minusPoints(int points){
+		this.points -= points;
+	}
+
 	public boolean changeScore() {
 		if (changeScore) {
 			changeScore = false;
