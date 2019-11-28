@@ -24,8 +24,22 @@ class AnimalTest {
     }
 
     @Test
-    public void getPointsTest(){
+    public void PointsIsZero(){
         Assertions.assertThat(aniInst.getPoints()).isEqualTo(0);
+    }
+
+    @Test
+    public void PointsIncrement(){
+        int add = 20;
+        aniInst.addPoints(add);
+        Assertions.assertThat(aniInst.getPoints()).isEqualTo(20);
+    }
+
+    @Test
+    public void PointsDecrement(){
+        int minus = 20;
+        aniInst.minusPoints(minus);
+        Assertions.assertThat(aniInst.getPoints()).isEqualTo(-20);
     }
 
 }
