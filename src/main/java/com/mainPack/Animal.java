@@ -162,10 +162,10 @@ public class Animal extends Actor {
 				carD = 0;
 				setImage(new Image(filePath + "/froggerUp.png", imgSize, imgSize, true, true));
 				noMove = false;
-				if (getPoints() > 50) {
-					minusPoints(50);
-					changeScore = true;
-				}
+
+				minusPoints(50);
+
+
 			}
 			
 		}
@@ -193,10 +193,8 @@ public class Animal extends Actor {
 				carD = 0;
 				setImage(new Image(filePath + "/froggerUp.png", imgSize, imgSize, true, true));
 				noMove = false;
-				if (getPoints() > 50) {
-					minusPoints(50);
-					changeScore = true;
-				}
+				minusPoints(50);
+
 			}
 			
 		}
@@ -263,7 +261,12 @@ public class Animal extends Actor {
 	}
 
 	public void minusPoints(int points){
-		this.points -= points;
+		if(getPoints() >= points) {
+			this.points -= points;
+		}else{
+			this.points = 0;
+		}
+		changeScore = true;
 	}
 
 	public boolean changeScore() {

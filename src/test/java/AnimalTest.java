@@ -25,21 +25,37 @@ class AnimalTest {
 
     @Test
     public void PointsIsZero(){
-        Assertions.assertThat(aniInst.getPoints()).isEqualTo(0);
+        Animal newAni = new Animal(filePath + "/froggerUp.png");
+        Assertions.assertThat(newAni.getPoints()).isEqualTo(0);
     }
 
     @Test
     public void PointsIncrement(){
         int add = 20;
-        aniInst.addPoints(add);
-        Assertions.assertThat(aniInst.getPoints()).isEqualTo(20);
+        Animal newAni = new Animal(filePath + "/froggerUp.png");
+        newAni.addPoints(add);
+        Assertions.assertThat(newAni.getPoints()).isEqualTo(20);
     }
 
     @Test
     public void PointsDecrement(){
         int minus = 20;
-        aniInst.minusPoints(minus);
-        Assertions.assertThat(aniInst.getPoints()).isEqualTo(-20);
+        Animal newAni = new Animal(filePath + "/froggerUp.png");
+        newAni.setPoints(50);
+        newAni.minusPoints(minus);
+        Assertions.assertThat(newAni.getPoints()).isEqualTo(30);
     }
+
+    @Test
+    //Test failure, as score cannot go negative
+    public void negativePoints(){
+        int negative = 20;
+        Animal newAni = new Animal(filePath + "/froggerUp.png");
+        newAni.setPoints(0);
+        newAni.minusPoints(negative);
+        Assertions.assertThat(newAni.getPoints()).isEqualTo(0);
+    }
+
+    
 
 }
