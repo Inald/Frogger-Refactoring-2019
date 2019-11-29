@@ -65,6 +65,7 @@ class AnimalTest {
     }
 
     @Test
+    //test for button A working properly
     public void keyPressedA() throws AWTException {
         double x = aniInst.getX();
         double y = aniInst.getY();
