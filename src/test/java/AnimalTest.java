@@ -92,7 +92,7 @@ class AnimalTest {
         boolean working = (x == afterX - (movementX * 2));
         Assertions.assertThat(working).isEqualTo(true);
     }
-
+    
     @Test
     public void keyPressedW() throws AWTException {
         double x = aniInst.getX();
