@@ -92,19 +92,19 @@ class AnimalTest {
         Assertions.assertThat(working).isEqualTo(true);
     }
 
-//    @Test
-//    public void keyPressedW() throws AWTException {
-//        double x = aniInst.getX();
-//        double y = aniInst.getY();
-//        Robot Rob = new Robot();
-//        Rob.setAutoDelay(100);
-//        Rob.keyPress(87);
-//        Rob.keyRelease(87);
-//        double afterX = aniInst.getX();
-//        double afterY = aniInst.getY();
-//        boolean working = (y == afterY - (movement * 2));
-//        Assertions.assertThat(working).isEqualTo(true);
-//    }
+    @Test
+    public void keyPressedW() throws AWTException {
+        double x = aniInst.getX();
+        double y = aniInst.getY();
+        Robot Rob = new Robot();
+        Rob.setAutoDelay(100);
+        Rob.keyPress(87);
+        Rob.keyRelease(87);
+        double afterX = aniInst.getX();
+        double afterY = aniInst.getY();
+        boolean working = (y == afterY + (movement * 2));
+        Assertions.assertThat(working).isEqualTo(true);
+    }
 
 
 }
