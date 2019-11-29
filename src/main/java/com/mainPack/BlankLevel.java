@@ -11,7 +11,7 @@ public class BlankLevel extends Levels{
     }
 
     public void testingLevel(){
-        instantiateBackground();
+        instantiateBackground(); //needed or tests break
         setFrog();
         getBackground().start();
         primaryStage.setScene(scene);
