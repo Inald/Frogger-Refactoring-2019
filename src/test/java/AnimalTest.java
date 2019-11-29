@@ -31,7 +31,7 @@ class AnimalTest {
         level = new BlankLevel(stage);
         aniInst = level.getAnimal();
     }
-
+    //start menu branch test
     @Test
     public void PointsIsZero(){
         Animal newAni = new Animal(filePath + "/froggerUp.png");
