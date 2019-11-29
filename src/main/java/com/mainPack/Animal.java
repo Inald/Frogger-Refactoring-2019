@@ -263,7 +263,7 @@ public class Animal extends Actor {
 		if(getPoints() >= points) {
 			this.points -= points;
 		}else{
-			this.points = 0;
+			setPoints(0);
 		}
 		changeScore = true;
 	}
@@ -274,8 +274,9 @@ public class Animal extends Actor {
 			return true;
 		}
 		return false;
-		
 	}
+
+
 	
 
 }
