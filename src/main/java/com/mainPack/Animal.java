@@ -102,7 +102,6 @@ public class Animal extends Actor {
 				else {
 				if (event.getCode() == KeyCode.W) {	  
 					if (getY() < w) {
-						changeScore = true;
 						w = getY();
 						addPoints(10);
 					}
@@ -231,7 +230,6 @@ public class Animal extends Actor {
 				minusPoints(50);
 			}
 			addPoints(50);
-			changeScore = true;
 			w=800;
 			getIntersectingObjects(End.class).get(0).setEnd();
 			end++;
@@ -258,6 +256,7 @@ public class Animal extends Actor {
 
 	public void addPoints(int points){
 		this.points += points;
+		changeScore = true;
 	}
 
 	public void minusPoints(int points){

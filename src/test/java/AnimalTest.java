@@ -47,7 +47,6 @@ class AnimalTest {
     }
 
     @Test
-    //Test failure, as score cannot go negative
     public void negativePoints(){
         int negative = 20;
         Animal newAni = new Animal(filePath + "/froggerUp.png");
@@ -56,6 +55,6 @@ class AnimalTest {
         Assertions.assertThat(newAni.getPoints()).isEqualTo(0);
     }
 
-    
+
 
 }
