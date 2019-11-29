@@ -106,5 +106,21 @@ class AnimalTest {
         Assertions.assertThat(working).isEqualTo(true);
     }
 
+    @Test
+    public void keyPressedS() throws AWTException {
+        double x = aniInst.getX();
+        double y = aniInst.getY();
+        Robot Rob = new Robot();
+        Rob.setAutoDelay(100);
+        Rob.keyPress(87);
+        Rob.keyPress(87);
+        Rob.keyPress(83);
+        Rob.keyRelease(83);
+        double afterX = aniInst.getX();
+        double afterY = aniInst.getY();
+        boolean working = (y == afterY);
+        Assertions.assertThat(working).isEqualTo(true);
+    }
+
 
 }
