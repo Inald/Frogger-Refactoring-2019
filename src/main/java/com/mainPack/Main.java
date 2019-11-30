@@ -14,7 +14,8 @@ public class Main extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		//multiple levels can be added
-		firstLevel newLevel = new firstLevel(primaryStage);
+		startMenu menu = new startMenu(primaryStage);
+		//firstLevel newLevel = new firstLevel(primaryStage);
 	}
 
 	}
