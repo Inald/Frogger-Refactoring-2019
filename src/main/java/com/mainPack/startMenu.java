@@ -25,7 +25,9 @@ public class startMenu extends Levels implements EventHandler<ActionEvent> {
 
         StackPane screenLayout = new StackPane();
         screenLayout.getChildren().add(startBtn);
+        screenLayout.getChildren().add(exitBtn);
 
+        buttonTranslation();
 
         Scene scene = new Scene(screenLayout, 600, 800);
         primaryStage.setScene(scene);
@@ -42,5 +44,11 @@ public class startMenu extends Levels implements EventHandler<ActionEvent> {
         else if(event.getSource() == exitBtn){
             primaryStage.close();
         }
+    }
+
+    public void buttonTranslation(){
+        startBtn.setTranslateY(300);
+        exitBtn.setTranslateY(300);
+        exitBtn.setTranslateX(200);
     }
 }
