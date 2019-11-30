@@ -15,7 +15,7 @@ public class startMenu extends Levels implements EventHandler<ActionEvent> {
     private Button startBtn;
     private Button exitBtn;
     private Button gameInfoBtn;
-    private ImageView smilingFrog;
+    private ImageView frogKing;
     private ImageView froggerTitle;
     private ImageView menuBackground;
 
@@ -30,7 +30,7 @@ public class startMenu extends Levels implements EventHandler<ActionEvent> {
         pictureCreation();
         screenLayout.getChildren().add(menuBackground);
         screenLayout.getChildren().add(froggerTitle);
-        screenLayout.getChildren().add(smilingFrog);
+        screenLayout.getChildren().add(frogKing);
 
         screenLayout.getChildren().add(startBtn);
         screenLayout.getChildren().add(exitBtn);
@@ -61,13 +61,13 @@ public class startMenu extends Levels implements EventHandler<ActionEvent> {
 
     public void buttonTranslation(){
         //translation of start Button
-        startBtn.setTranslateY(300);
+        startBtn.setTranslateY(350);
         //translation of exit button
-        exitBtn.setTranslateY(300);
+        exitBtn.setTranslateY(350);
         exitBtn.setTranslateX(200);
         //translation of game info button
         gameInfoBtn.setTranslateX(-200);
-        gameInfoBtn.setTranslateY(300);
+        gameInfoBtn.setTranslateY(350);
     }
 
     public void buttonCreation(){
@@ -85,14 +85,14 @@ public class startMenu extends Levels implements EventHandler<ActionEvent> {
     }
 
     public void pictureCreation(){
-        Image froggerTitlePic = new Image("FroggerStartMenuTitle.png");
+        Image froggerTitlePic = new Image("FroggerTitleStartScreen.png");
         froggerTitle = new ImageView(froggerTitlePic);
         froggerTitle.setTranslateY(-350);
 
         Image menuBackgroundPic = new Image("StartScreenBackground.png");
         menuBackground = new ImageView(menuBackgroundPic);
 
-        Image smilingFrogPic = new Image("greenCartoonFrogReSized.jpg");
-        smilingFrog = new ImageView(smilingFrogPic);
+        Image frogKingPic = new Image("frogKing2.png");
+        frogKing = new ImageView(frogKingPic);
     }
 }
