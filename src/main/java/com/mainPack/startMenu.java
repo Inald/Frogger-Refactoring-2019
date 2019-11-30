@@ -15,20 +15,26 @@ public class startMenu extends Levels implements EventHandler<ActionEvent> {
     private Button startBtn;
     private Button exitBtn;
     private Button gameInfoBtn;
-    private ImageView view;
+    private ImageView smilingFrog;
+    private ImageView froggerTitle;
+    private ImageView menuBackground;
 
     public startMenu(Stage primaryStage) {
         this.primaryStage = primaryStage;
+        primaryStage.setTitle("Frogger start menu");
 
         buttonCreation();
 
         StackPane screenLayout = new StackPane();
+
+        pictureCreation();
+        screenLayout.getChildren().add(menuBackground);
+        screenLayout.getChildren().add(froggerTitle);
+        screenLayout.getChildren().add(smilingFrog);
+
         screenLayout.getChildren().add(startBtn);
         screenLayout.getChildren().add(exitBtn);
         screenLayout.getChildren().add(gameInfoBtn);
-
-        pictureCreation();
-        screenLayout.getChildren().add(view);
 
         buttonTranslation();
 
@@ -79,7 +85,14 @@ public class startMenu extends Levels implements EventHandler<ActionEvent> {
     }
 
     public void pictureCreation(){
-        Image smilingFrog = new Image("greenCartoonFrogReSized.jpg");
-        view = new ImageView(smilingFrog);
+        Image froggerTitlePic = new Image("FroggerStartMenuTitle.png");
+        froggerTitle = new ImageView(froggerTitlePic);
+        froggerTitle.setTranslateY(-350);
+
+        Image menuBackgroundPic = new Image("StartScreenBackground.png");
+        menuBackground = new ImageView(menuBackgroundPic);
+
+        Image smilingFrogPic = new Image("greenCartoonFrogReSized.jpg");
+        smilingFrog = new ImageView(smilingFrogPic);
     }
 }
