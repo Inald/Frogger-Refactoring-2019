@@ -3,6 +3,7 @@ package com.mainPack;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -56,6 +57,18 @@ public class startMenu extends Levels implements EventHandler<ActionEvent> {
         }
         else if(event.getSource() == gameInfoBtn){
             //open the newbox with the information
+            Alert howToPlay = new Alert(Alert.AlertType.INFORMATION);
+            howToPlay.setHeight(600);
+            howToPlay.setTitle("Game Information");
+            howToPlay.setHeaderText("How to play Frogger");
+            howToPlay.setContentText("This is how you play the game:\n" +
+                    "1) Use WASD to move up, left, down and right respectively.\n" +
+                    "2) Aim of the game is to get the frog to each square at the end of the map.\n" +
+                    "3) Points are gained from moving further up the map and getting to each of the squares at the end\n" +
+                    "4) This is done by avoiding the trucks, cars and from falling in the water.\n" +
+                    "5) Turtles disappear every so often so be careful not to fall into the water and lose points.\n" +
+                    "6) At the end of the game a score will be displayed to the player which indicates the highest score reached.");
+            howToPlay.showAndWait();
         }
     }
 
