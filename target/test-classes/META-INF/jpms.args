@@ -1,4 +1,0 @@
---patch-module
-Frogger.SWM=_
---add-reads
-Frogger.SWM=ALL-UNNAMED
