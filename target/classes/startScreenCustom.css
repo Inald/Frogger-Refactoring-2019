@@ -1,0 +1,28 @@
+.button{
+    -fx-background-color: #383838;
+    -fx-text-fill: #A1B56C;
+    -fx-background-radius: 4;
+    -fx-font-family: "Showcard Gothic";
+    -fx-font-size: 12pt;
+}
+
+.dialogWriting > *.label.content{
+    -fx-text-fill: #A1B56C;
+    -fx-font-family: "Showcard Gothic";
+    -fx-font-size: 12pt;
+}
+
+.Dialog{
+    -fx-background-color: #585858;
+}
+
+.dialogHeader: header *.header-panel{
+    -fx-background-color: #585858;
+}
+
+.dialogTopLabel: header *.header-panel *.label{
+    -fx-font-size: 16pt;
+    -fx-font-family: "Showcard Gothic";
+    -fx-text-fill: #D8D8D8;
+}
+
