@@ -7,6 +7,7 @@ import com.mainPack.MyStage;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.text.Text;
 
 import java.io.*;
 import java.net.URL;
@@ -60,14 +61,15 @@ public abstract class Levels{
                         int i = 0;
                         while((highScoreLine = read.readLine()) != null){
                             highScorePrint.add(highScoreLine);
-                            System.out.println(highScorePrint.get(i));
+                            //System.out.println(highScorePrint.get(i));
                             i++;
                         }
                         read.close();
                     }catch (Exception e){
                         e.printStackTrace();
                     }
-                    
+
+                    //bubble sort to print highest scores first
 
 
 
@@ -75,8 +77,16 @@ public abstract class Levels{
                     alert.setTitle("You Have Won The Game!");
                     alert.setHeaderText("Your High Score: "+ getAnimal().getPoints()+"!");
 
+                    StringBuffer stringBuf = new StringBuffer();
+                    for(int j = 0; j < highScorePrint.size() - 1; j++){
+                        stringBuf.append(highScorePrint.get(j) + "\n");
+                    }
 
-                    alert.setContentText("Highest Possible Score: 800");
+                    alert.setContentText("Highest Possible Score: 800\n" +
+                            "High scores achieved by players:\n" +
+                            stringBuf);
+
+
                     alert.show();
                 }
             }

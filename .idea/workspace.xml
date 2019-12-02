@@ -2,74 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/highScores.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/End.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/FrogEnd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Frogger Main Song Theme (loop).mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/FroggerTitleStartScreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/StartScreenBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/TurtleAnimation1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/TurtleAnimation2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/TurtleAnimation2Wet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/TurtleAnimation3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/TurtleAnimation3Wet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/TurtleAnimation4Wet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/arcade.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/car1Left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/car1right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cardeath1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cardeath2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cardeath3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/frog background-20170521-151438.piskel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/frog background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/frogKing2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/froggerDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/froggerDownJump.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/froggerLeft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/froggerLeftJump.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/froggerRight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/froggerRightJump.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/froggerUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/froggerUpJump.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/iKogsKW.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/icon-frogger-pixel-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/initialClassDiagram.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/logs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/small-red-car-3858-0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/smiiling-big-eyed-green-frog-clipart-6926.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/startScreenCustom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/truck1Left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/truck1Right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/truck2Left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/truck2Right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/waterdeath1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/waterdeath2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/waterdeath3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/waterdeath4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ActorTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/AnimalTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ActorTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AnimalTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TurtleTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TurtleTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/jpms.args" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/highScores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/highScores.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gameLevel/Levels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameLevel/Levels.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -142,13 +75,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="922" />
+          <entry key="java" value="1340" />
           <entry key="txt" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="922" />
+          <entry key="JAVA" value="1340" />
           <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
@@ -162,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gameLevel/Levels.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+            <state relative-caret-position="292">
+              <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
               <folding>
                 <element signature="e#985#2666#0" expanded="true" />
                 <element signature="e#2665#2666#0" expanded="true" />
@@ -380,7 +313,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575328232485" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575330682096" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="dynamic.classpath" value="false" />
@@ -622,8 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameLevel/Levels.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+        <state relative-caret-position="292">
+          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
           <folding>
             <element signature="e#985#2666#0" expanded="true" />
             <element signature="e#2665#2666#0" expanded="true" />
