@@ -1,13 +1,6 @@
-package com.mainPack;
+package com.mainPack.froggerGameObstacles;
 
-import javafx.scene.image.Image;
-
-public class WetTurtle extends Turtle{
-//	Image turtle1;
-//	Image turtle2;
-//	Image turtle3;
-	Image turtle4;
-	//private int speed;
+public class WetTurtle extends Turtle {
 	int i = 1;
 	boolean bool = true;
 	boolean sunk = false;
@@ -40,14 +33,11 @@ public class WetTurtle extends Turtle{
 	}
 	public WetTurtle(int xpos, int ypos, int s, int w, int h) {
 		super(xpos,ypos,s,w,h);
-		turtle1 = getTurtle1(w,h);
+		turtle1 = setTurtle1(w,h);
 		turtle2 = wetTurtle2(w,h);
 		turtle3 = wetTurtle3(w,h);
 		turtle4 = wetTurtle4(w,h);
-//		setX(xpos);
-//		setY(ypos);
-//		speed = s;
-//		setImage(turtle2);
+
 	}
 	public boolean isSunk() {
 		return sunk;

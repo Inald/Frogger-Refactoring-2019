@@ -1,8 +1,10 @@
-package com.mainPack;
+package gameLevel;
 
+import com.mainPack.Animal;
+import gameLevel.Levels;
 import javafx.stage.Stage;
 
-public class BlankLevel extends Levels{
+public class BlankLevel extends Levels {
     private Stage primaryStage;
 
     public BlankLevel(Stage primaryStage) {

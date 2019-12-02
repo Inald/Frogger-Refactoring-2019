@@ -1,5 +1,12 @@
-package com.mainPack;
+package gameLevel;
 
+import com.mainPack.Animal;
+import com.mainPack.End;
+import com.mainPack.froggerGameObstacles.Log;
+import com.mainPack.froggerGameObstacles.Obstacle;
+import com.mainPack.froggerGameObstacles.Turtle;
+import com.mainPack.froggerGameObstacles.WetTurtle;
+import gameLevel.Levels;
 import javafx.stage.Stage;
 
 public class firstLevel extends Levels {

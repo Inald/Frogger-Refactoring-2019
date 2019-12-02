@@ -1,5 +1,6 @@
-package com.mainPack;
+package com.mainPack.froggerGameObstacles;
 
+import com.mainPack.Actor;
 import javafx.scene.image.Image;
 
 public class Obstacle extends Actor {

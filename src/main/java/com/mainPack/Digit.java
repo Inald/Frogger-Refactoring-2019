@@ -2,7 +2,7 @@ package com.mainPack;
 
 import javafx.scene.image.Image;
 
-public class Digit extends Actor{
+public class Digit extends Actor {
 	int dim;
 	Image im1;
 	@Override

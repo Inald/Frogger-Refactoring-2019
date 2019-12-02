@@ -1,8 +1,9 @@
-package com.mainPack;
+package com.mainPack.froggerGameObstacles;
 
+import com.mainPack.Actor;
 import javafx.scene.image.Image;
 
-public class Turtle extends Actor{
+public class Turtle extends Actor {
 	Image turtle1;
 	Image turtle2;
 	Image turtle3;
@@ -15,21 +16,21 @@ public class Turtle extends Actor{
 		return speed;
 	}
 
-	public Image getTurtle1(int w, int h) {
+	public Image setTurtle1(int w, int h) {
 //		String turtle1Img;
 		Image turtle1Img;
 		turtle1Img = new Image(filePath + "/TurtleAnimation1.png", w, h, true, true);
 		return turtle1Img;
 	}
 
-	public Image getTurtle2(int w, int h) {
+	public Image setTurtle2(int w, int h) {
 		Image turtle2Img;
 		turtle2Img = new Image(filePath + "/TurtleAnimation2.png", w, h, true, true);
 		return turtle2Img;
 
 	}
 
-	public Image getTurtle3(int w, int h) {
+	public Image setTurtle3(int w, int h) {
 		Image turtle3Img;
 		turtle3Img = new Image(filePath + "/TurtleAnimation3.png", w, h, true, true);
 		return turtle3Img;
@@ -52,8 +53,6 @@ public class Turtle extends Actor{
 		wetTurtle4Img = new Image(filePath + "/TurtleAnimation4Wet.png", w, h, true, true);
 		return wetTurtle4Img;
 	}
-
-
 
 
 	@Override
@@ -83,9 +82,9 @@ public class Turtle extends Actor{
 
 
 	public Turtle(int xpos, int ypos, int s, int w, int h) {
-		turtle1 = getTurtle1(w,h);
-		turtle2 = getTurtle2(w,h);
-		turtle3 = getTurtle3(w,h);
+		turtle1 = setTurtle1(w,h);
+		turtle2 = setTurtle2(w,h);
+		turtle3 = setTurtle3(w,h);
 		setX(xpos);
 		setY(ypos);
 		speed = s;

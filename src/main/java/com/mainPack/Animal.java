@@ -2,7 +2,7 @@ package com.mainPack;
 
 import java.util.ArrayList;
 
-import javafx.application.Application;
+import com.mainPack.froggerGameObstacles.*;
 import javafx.event.EventHandler;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;

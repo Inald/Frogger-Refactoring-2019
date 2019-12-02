@@ -1,19 +1,13 @@
 
 
 import com.mainPack.Animal;
-import com.mainPack.BlankLevel;
-import com.mainPack.firstLevel;
+import gameLevel.BlankLevel;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.assertions.api.Assertions;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
-
-import javafx.event.EventHandler;
-import javafx.scene.image.Image;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 
 import java.awt.*;
 

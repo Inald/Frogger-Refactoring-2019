@@ -1,5 +1,9 @@
-package com.mainPack;
+package gameLevel;
 
+import com.mainPack.Animal;
+import com.mainPack.BackgroundImage;
+import com.mainPack.Digit;
+import com.mainPack.MyStage;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
