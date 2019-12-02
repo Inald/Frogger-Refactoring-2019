@@ -24,14 +24,16 @@ class AnimalTest {
     private BlankLevel level;
     Animal aniInst;
     private double movementX = 10.666666*2;
+    private double finalMovementX = movementX * 2;
     private double movement = 13.3333333*2;
+    private double finalMovment = movement * 2;
 
     @Start
     private void start(Stage stage) {
         level = new BlankLevel(stage);
         aniInst = level.getAnimal();
     }
-
+    //start menu branch test
     @Test
     public void PointsIsZero(){
         Animal newAni = new Animal(filePath + "/froggerUp.png");
@@ -75,7 +77,7 @@ class AnimalTest {
         Rob.keyRelease(65);
         double afterX = aniInst.getX();
         double afterY = aniInst.getY();
-        boolean working = (x == afterX + (movementX * 2));
+        boolean working = (x == afterX + (finalMovementX));
         Assertions.assertThat(working).isEqualTo(true);
     }
 
@@ -89,7 +91,7 @@ class AnimalTest {
         Rob.keyRelease(68);
         double afterX = aniInst.getX();
         double afterY = aniInst.getY();
-        boolean working = (x == afterX - (movementX * 2));
+        boolean working = (x == afterX - (finalMovementX));
         Assertions.assertThat(working).isEqualTo(true);
     }
     
@@ -103,7 +105,7 @@ class AnimalTest {
         Rob.keyRelease(87);
         double afterX = aniInst.getX();
         double afterY = aniInst.getY();
-        boolean working = (y == afterY + (movement * 2));
+        boolean working = (y == afterY + (finalMovment));
         Assertions.assertThat(working).isEqualTo(true);
     }
 

@@ -1,0 +1,120 @@
+package com.mainPack;
+
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.DialogPane;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+public class startMenu extends Levels implements EventHandler<ActionEvent> {
+
+    private Stage primaryStage;
+    private Button startBtn;
+    private Button exitBtn;
+    private Button gameInfoBtn;
+    private ImageView frogKing;
+    private ImageView froggerTitle;
+    private ImageView menuBackground;
+
+    public startMenu(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+        primaryStage.setTitle("Frogger start menu");
+
+        buttonCreation();
+
+        StackPane screenLayout = new StackPane();
+
+        pictureCreation();
+        screenLayout.getChildren().add(menuBackground);
+        screenLayout.getChildren().add(froggerTitle);
+        screenLayout.getChildren().add(frogKing);
+
+        screenLayout.getChildren().add(startBtn);
+        screenLayout.getChildren().add(exitBtn);
+        screenLayout.getChildren().add(gameInfoBtn);
+
+        buttonTranslation();
+
+
+        Scene scene = new Scene(screenLayout, 600, 800);
+        scene.getStylesheets().add("startScreenCustom.css");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+
+    }
+
+
+    @Override
+    public void handle(ActionEvent event) {
+        if(event.getSource() == startBtn){
+            firstLevel newLevel = new firstLevel(this.primaryStage);
+        }
+        else if(event.getSource() == exitBtn){
+            primaryStage.close();
+        }
+        else if(event.getSource() == gameInfoBtn){
+            //open the newbox with the information
+            Alert howToPlay = new Alert(Alert.AlertType.INFORMATION);
+            DialogPane customPane = howToPlay.getDialogPane();
+            customPane.getStylesheets().add("startScreenCustom.css");
+            customPane.getStyleClass().add("dialogWriting");
+            customPane.getStyleClass().add("Dialog");
+            customPane.getStyleClass().add("dialogHeader");
+            customPane.getStyleClass().add("dialogTopLabel");
+            howToPlay.setHeight(600);
+            howToPlay.setTitle("Game Information");
+            howToPlay.setHeaderText("How to play Frogger");
+            howToPlay.setContentText("This is how you play the game:\n" +
+                    "1) Use WASD to move up, left, down and right respectively.\n" +
+                    "2) Aim of the game is to get the frog to each square at the end of the map.\n" +
+                    "3) Points are gained from moving further up the map and getting to each of the squares at the end\n" +
+                    "4) This is done by avoiding the trucks, cars and from falling in the water.\n" +
+                    "5) Turtles disappear every so often so be careful not to fall into the water and lose points.\n" +
+                    "6) At the end of the game a score will be displayed to the player which indicates the highest score reached.");
+            howToPlay.showAndWait();
+        }
+    }
+
+    public void buttonTranslation(){
+        //translation of start Button
+        startBtn.setTranslateY(350);
+        //translation of exit button
+        exitBtn.setTranslateY(350);
+        exitBtn.setTranslateX(200);
+        //translation of game info button
+        gameInfoBtn.setTranslateX(-200);
+        gameInfoBtn.setTranslateY(350);
+    }
+
+    public void buttonCreation(){
+        startBtn = new Button();
+        startBtn.setText("Start Game");
+        startBtn.setOnAction(this);
+
+        exitBtn = new Button();
+        exitBtn.setText("Exit");
+        exitBtn.setOnAction(this);
+
+        gameInfoBtn = new Button();
+        gameInfoBtn.setText("Game information");
+        gameInfoBtn.setOnAction(this);
+
+    }
+
+    public void pictureCreation(){
+        Image froggerTitlePic = new Image("FroggerTitleStartScreen.png");
+        froggerTitle = new ImageView(froggerTitlePic);
+        froggerTitle.setTranslateY(-350);
+
+        Image menuBackgroundPic = new Image("StartScreenBackground.png");
+        menuBackground = new ImageView(menuBackgroundPic);
+
+        Image frogKingPic = new Image("frogKing2.png");
+        frogKing = new ImageView(frogKingPic);
+    }
+}
