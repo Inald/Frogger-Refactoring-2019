@@ -1,7 +1,9 @@
-package com.mainPack;
+package com.mainPack.froggerGameObstacles;
 
 import java.util.ArrayList;
 
+import com.mainPack.Actor;
+import com.mainPack.End;
 import com.mainPack.froggerGameObstacles.*;
 import javafx.event.EventHandler;
 import javafx.scene.image.Image;

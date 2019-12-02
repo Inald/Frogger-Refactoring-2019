@@ -1,6 +1,6 @@
 package gameLevel;
 
-import com.mainPack.Animal;
+import com.mainPack.froggerGameObstacles.Animal;
 import com.mainPack.BackgroundImage;
 import com.mainPack.Digit;
 import com.mainPack.MyStage;
