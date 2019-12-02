@@ -5,6 +5,7 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.DialogPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
@@ -59,6 +60,12 @@ public class startMenu extends Levels implements EventHandler<ActionEvent> {
         else if(event.getSource() == gameInfoBtn){
             //open the newbox with the information
             Alert howToPlay = new Alert(Alert.AlertType.INFORMATION);
+            DialogPane customPane = howToPlay.getDialogPane();
+            customPane.getStylesheets().add("startScreenCustom.css");
+            customPane.getStyleClass().add("dialogWriting");
+            customPane.getStyleClass().add("Dialog");
+            customPane.getStyleClass().add("dialogHeader");
+            customPane.getStyleClass().add("dialogTopLabel");
             howToPlay.setHeight(600);
             howToPlay.setTitle("Game Information");
             howToPlay.setHeaderText("How to play Frogger");
