@@ -8,6 +8,9 @@ import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 
+import java.io.*;
+import java.net.URL;
+
 public abstract class Levels{
     private AnimationTimer timer;
     private MyStage background;
@@ -25,6 +28,8 @@ public abstract class Levels{
     }
 
     public void createTimer() {
+        String highScoreFile = filePath + "/highScores.txt";
+
         setTimer(new AnimationTimer() {
             @Override
             public void handle(long now) {
@@ -36,9 +41,22 @@ public abstract class Levels{
                     getBackground().stopMusic();
                     stop();
                     getBackground().stop();
+
+                    try{
+
+                        BufferedWriter writer = new BufferedWriter(new FileWriter("highScores.txt", true));
+                        writer.newLine();
+                        writer.append("inald2");
+                        writer.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     alert.setTitle("You Have Won The Game!");
                     alert.setHeaderText("Your High Score: "+ getAnimal().getPoints()+"!");
+
+
                     alert.setContentText("Highest Possible Score: 800");
                     alert.show();
                 }
