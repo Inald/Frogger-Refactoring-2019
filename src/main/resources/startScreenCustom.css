@@ -1,0 +1,7 @@
+.button{
+    -fx-background-color: #383838;
+    -fx-text-fill: #A1B56C;
+    -fx-background-radius: 4;
+    -fx-font-family: "Showcard Gothic";
+    -fx-font-size: 12pt;
+}

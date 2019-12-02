@@ -41,6 +41,7 @@ public class startMenu extends Levels implements EventHandler<ActionEvent> {
 
 
         Scene scene = new Scene(screenLayout, 600, 800);
+        scene.getStylesheets().add("startScreenCustom.css");
         primaryStage.setScene(scene);
         primaryStage.show();
 
@@ -95,6 +96,7 @@ public class startMenu extends Levels implements EventHandler<ActionEvent> {
         gameInfoBtn = new Button();
         gameInfoBtn.setText("Game information");
         gameInfoBtn.setOnAction(this);
+
     }
 
     public void pictureCreation(){
