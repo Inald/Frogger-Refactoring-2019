@@ -88,7 +88,7 @@ public abstract class Levels{
                             }
                         }
                     }
-                   
+
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     DialogPane customPane = alert.getDialogPane();
                     customPane.getStylesheets().add("startScreenCustom.css");
@@ -115,6 +115,8 @@ public abstract class Levels{
             }
         });
     }
+
+
     public void start() {
         getBackground().playMusic();
         createTimer();
