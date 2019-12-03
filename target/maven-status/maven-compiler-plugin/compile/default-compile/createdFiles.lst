@@ -1,4 +1,5 @@
 com\mainPack\froggerGameObstacles\Animal$2.class
+gameLevel\gameFactory.class
 gameLevel\firstLevel.class
 com\mainPack\World.class
 gameLevel\Levels$1.class
@@ -7,6 +8,7 @@ com\mainPack\froggerGameObstacles\WetTurtle.class
 com\mainPack\Actor.class
 com\mainPack\World$1.class
 com\mainPack\froggerGameObstacles\Animal$1.class
+gameLevel\levelStructure.class
 com\mainPack\startMenu.class
 com\mainPack\froggerGameObstacles\moving.class
 com\mainPack\Main.class

@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public abstract class Levels{
+public abstract class Levels implements levelStructure{
     private AnimationTimer timer;
     private MyStage background;
     private Animal animal;

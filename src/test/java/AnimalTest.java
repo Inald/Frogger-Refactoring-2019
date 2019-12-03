@@ -132,10 +132,14 @@ class AnimalTest {
         Assertions.assertThat(waterDeath).isEqualTo(true);
     }
 
-    @Test
-    public void truckDeath(){
-
-    }
+//    @Test
+//    public void truckDeath() throws AWTException {
+//        boolean carDeath = aniInst.isCarDeath();
+//        Robot Rob = new Robot();
+//        Rob.setAutoDelay(100);
+//
+//
+//    }
 
 
 }

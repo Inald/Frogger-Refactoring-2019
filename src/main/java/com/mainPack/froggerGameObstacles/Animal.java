@@ -278,7 +278,12 @@ public class Animal extends Actor {
 		return false;
 	}
 
-	public boolean isWaterDeath() {
+	public boolean isWaterDeath()
+	{
 		return waterDeath;
+	}
+
+	public boolean isCarDeath() {
+		return carDeath;
 	}
 }

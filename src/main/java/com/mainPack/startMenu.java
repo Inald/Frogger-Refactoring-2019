@@ -2,6 +2,7 @@ package com.mainPack;
 
 import gameLevel.Levels;
 import gameLevel.firstLevel;
+import gameLevel.gameFactory;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -54,7 +55,9 @@ public class startMenu implements EventHandler<ActionEvent> {
     @Override
     public void handle(ActionEvent event) {
         if(event.getSource() == startBtn){
-            firstLevel newLevel = new firstLevel(this.primaryStage);
+            //firstLevel newLevel = new firstLevel(this.primaryStage);
+            gameFactory gamefac = new gameFactory(this.primaryStage);
+            gamefac.newGame("1");
         }
         else if(event.getSource() == exitBtn){
             primaryStage.close();
