@@ -13,7 +13,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class startMenu extends Levels implements EventHandler<ActionEvent> {
+public class startMenu implements EventHandler<ActionEvent> {
 
     private Stage primaryStage;
     private Button startBtn;

@@ -3,15 +3,16 @@ package com.mainPack.froggerGameObstacles;
 import com.mainPack.Actor;
 import javafx.scene.image.Image;
 
-public class Obstacle extends Actor {
+public class Obstacle extends moving {
 	private int speed;
 	@Override
 	public void act(long now) {
-		move(speed , 0);
-		if (getX() > 600 && speed>0)
-			setX(-200);
-		if (getX() < -50 && speed<0)
-			setX(600);
+//		move(speed , 0);
+//		if (getX() > 600 && speed>0)
+//			setX(-200);
+//		if (getX() < -50 && speed<0)
+//			setX(600);
+		super.movingObj(-200,-50,600, speed);
 	}
 	
 	public Obstacle(String imageLink, int xpos, int ypos, int s, int w, int h) {

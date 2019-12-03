@@ -25,11 +25,12 @@ public class WetTurtle extends Turtle {
 					sunk = true;
 				}
 			
-		move(getSpeed() , 0);
-		if (getX() > 600 && getSpeed() > 0)
-			setX(-200);
-		if (getX() < -75 && getSpeed() < 0)
-			setX(600);
+//		move(getSpeed() , 0);
+//		if (getX() > 600 && getSpeed() > 0)
+//			setX(-200);
+//		if (getX() < -75 && getSpeed() < 0)
+//			setX(600);
+		super.movingObj(-200,-75,600, getSpeed());
 	}
 	public WetTurtle(int xpos, int ypos, int s, int w, int h) {
 		super(xpos,ypos,s,w,h);

@@ -3,7 +3,7 @@ package com.mainPack.froggerGameObstacles;
 import com.mainPack.Actor;
 import javafx.scene.image.Image;
 
-public class Turtle extends Actor {
+public class Turtle extends moving {
 	Image turtle1;
 	Image turtle2;
 	Image turtle3;
@@ -73,11 +73,12 @@ public class Turtle extends Actor {
 					
 		}
 			
-		move(speed , 0);
-		if (getX() > 600 && speed>0)
-			setX(-200);
-		if (getX() < -75 && speed<0)
-			setX(600);
+//		move(speed , 0);
+//		if (getX() > 600 && speed>0)
+//			setX(-200);
+//		if (getX() < -75 && speed<0)
+//			setX(600);
+		super.movingObj(-200,-75,600, speed);
 	}
 
 

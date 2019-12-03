@@ -8,6 +8,7 @@ com\mainPack\Actor.class
 com\mainPack\World$1.class
 com\mainPack\froggerGameObstacles\Animal$1.class
 com\mainPack\startMenu.class
+com\mainPack\froggerGameObstacles\moving.class
 com\mainPack\Main.class
 com\mainPack\froggerGameObstacles\Obstacle.class
 com\mainPack\World$2.class
