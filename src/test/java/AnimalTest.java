@@ -119,5 +119,23 @@ class AnimalTest {
         Assertions.assertThat(working).isEqualTo(true);
     }
 
+    @Test
+    public void waterDeathTest() throws AWTException {
+        boolean waterDeath = aniInst.isWaterDeath();
+        Robot Rob = new Robot();
+        Rob.setAutoDelay(100);
+        for(int i = 0; i < 6; i++) {
+            Rob.keyPress(87);
+            Rob.keyRelease(87);
+        }
+        waterDeath = aniInst.isWaterDeath();
+        Assertions.assertThat(waterDeath).isEqualTo(true);
+    }
+
+    @Test
+    public void truckDeath(){
+
+    }
+
 
 }
