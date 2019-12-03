@@ -57,7 +57,7 @@ public class startMenu implements EventHandler<ActionEvent> {
         if(event.getSource() == startBtn){
             //firstLevel newLevel = new firstLevel(this.primaryStage);
             gameFactory gamefac = new gameFactory(this.primaryStage);
-            gamefac.newGame("1");
+            gamefac.newGame("2");
         }
         else if(event.getSource() == exitBtn){
             primaryStage.close();

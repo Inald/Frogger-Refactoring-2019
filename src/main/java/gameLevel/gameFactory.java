@@ -13,9 +13,11 @@ public class gameFactory extends Main {
 
     public Levels newGame(String gameVal){
         if(gameVal.equals("1")){
-           return new firstLevel(primaryStage);
+            //implementation of level 1
+            return new firstLevel(primaryStage);
         }else if(gameVal.equals("2")){
-            //implement level 2
+            //implementation of level 2
+            return new secondLevel(primaryStage);
         }
 
         return null;

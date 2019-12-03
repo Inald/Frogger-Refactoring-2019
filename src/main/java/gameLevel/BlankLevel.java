@@ -7,6 +7,7 @@ public class BlankLevel extends Levels {
     private Stage primaryStage;
 
     public BlankLevel(Stage primaryStage) {
+        super(primaryStage);
         this.primaryStage = primaryStage;
         testingLevel();
     }

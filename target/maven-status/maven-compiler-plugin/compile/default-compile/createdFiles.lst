@@ -8,6 +8,7 @@ com\mainPack\froggerGameObstacles\WetTurtle.class
 com\mainPack\Actor.class
 com\mainPack\World$1.class
 com\mainPack\froggerGameObstacles\Animal$1.class
+gameLevel\secondLevel.class
 gameLevel\levelStructure.class
 com\mainPack\startMenu.class
 com\mainPack\froggerGameObstacles\moving.class
