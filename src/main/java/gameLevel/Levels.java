@@ -7,6 +7,7 @@ import com.mainPack.MyStage;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.DialogPane;
 import javafx.scene.text.Text;
 
 import java.io.*;
@@ -31,7 +32,7 @@ public abstract class Levels{
 
     public void createTimer() {
         String highScoreFile = filePath + "/highScores.txt";
-        ArrayList<String> highScorePrint = new ArrayList<>();
+        ArrayList<Integer> highScorePrint = new ArrayList<>();
         setTimer(new AnimationTimer() {
             @Override
             public void handle(long now) {
@@ -60,7 +61,7 @@ public abstract class Levels{
                         String highScoreLine;
                         int i = 0;
                         while((highScoreLine = read.readLine()) != null){
-                            highScorePrint.add(highScoreLine);
+                            highScorePrint.add(Integer.valueOf(highScoreLine));
                             //System.out.println(highScorePrint.get(i));
                             i++;
                         }
@@ -70,16 +71,37 @@ public abstract class Levels{
                     }
 
                     //bubble sort to print highest scores first
+                    int temp;
+                    int j1;
+                    int jplus1;
 
+                    for(int k = highScorePrint.size(); k > 0; k--){
+                        for(int j = 0; j < k - 1; j++){
+                            j1 = (highScorePrint.get(j));
+                            jplus1 = (highScorePrint.get(j));
+
+                            if(j1 > jplus1){
+                                temp = (highScorePrint.get(j));
+                                highScorePrint.set(j, highScorePrint.get(j +1));
+                                highScorePrint.set(j+1, temp);
+                            }
+                        }
+                    }
 
 
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    DialogPane customPane = alert.getDialogPane();
+                    customPane.getStylesheets().add("startScreenCustom.css");
+                    customPane.getStyleClass().add("dialogWriting");
+                    customPane.getStyleClass().add("Dialog");
+                    customPane.getStyleClass().add("dialogHeader");
+                    customPane.getStyleClass().add("dialogTopLabel");
                     alert.setTitle("You Have Won The Game!");
                     alert.setHeaderText("Your High Score: "+ getAnimal().getPoints()+"!");
 
                     StringBuffer stringBuf = new StringBuffer();
                     for(int j = 0; j < highScorePrint.size() - 1; j++){
-                        stringBuf.append(highScorePrint.get(j) + "\n");
+                        stringBuf.append(String.valueOf(highScorePrint.get(j)) + "\n");
                     }
 
                     alert.setContentText("Highest Possible Score: 800\n" +
