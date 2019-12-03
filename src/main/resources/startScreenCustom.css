@@ -9,7 +9,7 @@
 .dialogWriting > *.label.content{
     -fx-text-fill: #A1B56C;
     -fx-font-family: "Showcard Gothic";
-    -fx-font-size: 12pt;
+    -fx-font-size: 11pt;
 }
 
 .Dialog{

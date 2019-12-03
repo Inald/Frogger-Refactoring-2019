@@ -13,6 +13,7 @@ import javafx.scene.text.Text;
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public abstract class Levels{
     private AnimationTimer timer;
@@ -71,22 +72,23 @@ public abstract class Levels{
                     }
 
                     //bubble sort to print highest scores first
-                    int temp;
-                    int j1;
-                    int jplus1;
-
-                    for(int k = highScorePrint.size(); k > 0; k--){
-                        for(int j = 0; j < k - 1; j++){
-                            j1 = (highScorePrint.get(j));
-                            jplus1 = (highScorePrint.get(j));
-
-                            if(j1 > jplus1){
-                                temp = (highScorePrint.get(j));
-                                highScorePrint.set(j, highScorePrint.get(j +1));
-                                highScorePrint.set(j+1, temp);
-                            }
-                        }
-                    }
+//                    int temp;
+//                    int j1;
+//                    int jplus1;
+//
+//                    for(int k = highScorePrint.size(); k > 0; k--){
+//                        for(int j = 0; j < k - 1; j++){
+//                            j1 = (highScorePrint.get(j));
+//                            jplus1 = (highScorePrint.get(j));
+//
+//                            if(j1 > jplus1){
+//                                temp = (highScorePrint.get(j));
+//                                highScorePrint.set(j, highScorePrint.get(j +1));
+//                                highScorePrint.set(j+1, temp);
+//                            }
+//                        }
+//                    }
+                    Collections.sort(highScorePrint);
 
 
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -96,11 +98,12 @@ public abstract class Levels{
                     customPane.getStyleClass().add("Dialog");
                     customPane.getStyleClass().add("dialogHeader");
                     customPane.getStyleClass().add("dialogTopLabel");
+                    alert.setHeight(600);
                     alert.setTitle("You Have Won The Game!");
                     alert.setHeaderText("Your High Score: "+ getAnimal().getPoints()+"!");
 
                     StringBuffer stringBuf = new StringBuffer();
-                    for(int j = 0; j < highScorePrint.size() - 1; j++){
+                    for(int j = highScorePrint.size() - 1; j > 0; j--){
                         stringBuf.append(String.valueOf(highScorePrint.get(j)) + "\n");
                     }
 
