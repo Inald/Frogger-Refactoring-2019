@@ -72,25 +72,23 @@ public abstract class Levels{
                     }
 
                     //bubble sort to print highest scores first
-//                    int temp;
-//                    int j1;
-//                    int jplus1;
-//
-//                    for(int k = highScorePrint.size(); k > 0; k--){
-//                        for(int j = 0; j < k - 1; j++){
-//                            j1 = (highScorePrint.get(j));
-//                            jplus1 = (highScorePrint.get(j));
-//
-//                            if(j1 > jplus1){
-//                                temp = (highScorePrint.get(j));
-//                                highScorePrint.set(j, highScorePrint.get(j +1));
-//                                highScorePrint.set(j+1, temp);
-//                            }
-//                        }
-//                    }
-                    Collections.sort(highScorePrint);
+                    int temp;
+                    int j1;
+                    int jplus1;
 
+                    for(int k = highScorePrint.size(); k > 0; k--){
+                        for(int j = 0; j < k - 1; j++){
+                            j1 = (highScorePrint.get(j));
+                            jplus1 = (highScorePrint.get(j));
 
+                            if(highScorePrint.get(j).compareTo(highScorePrint.get(j + 1)) > 0){
+                                temp = (highScorePrint.get(j));
+                                highScorePrint.set(j, highScorePrint.get(j +1));
+                                highScorePrint.set(j+1, temp);
+                            }
+                        }
+                    }
+                   
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     DialogPane customPane = alert.getDialogPane();
                     customPane.getStylesheets().add("startScreenCustom.css");
