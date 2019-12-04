@@ -8,4 +8,10 @@ public interface levelStructure {
     void stop();
     void setNumber(int n);
     void setScore();
+    void setEnds();
+    void setFrog();
+    void setLogs();
+    void setTurtle();
+    void setWetTurtle();
+    void setObstacle();
 }
