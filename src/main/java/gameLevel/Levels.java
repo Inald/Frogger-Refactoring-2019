@@ -31,7 +31,7 @@ public abstract class Levels implements levelStructure{
     public void instantiateBackground(){
         setBackground(new MyStage());
         scene = new Scene(getBackground(), 600, 800);
-        BackgroundImage froggerback = new BackgroundImage(filePath + "/iKogsKw.png");
+        BackgroundImage froggerback = BackgroundImage.getInstance(filePath + "/iKogsKw.png");
 
         getBackground().add(froggerback);
     }
