@@ -24,5 +24,6 @@ module-info.class
 com\mainPack\froggerGameObstacles\Animal.class
 com\mainPack\froggerGameObstacles\Turtle.class
 com\mainPack\MyStage.class
+gameLevel\secondLevel$1.class
 com\mainPack\World$1$1.class
 com\mainPack\End.class
