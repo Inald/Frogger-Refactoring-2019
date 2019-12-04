@@ -5,7 +5,6 @@ com\mainPack\World.class
 gameLevel\Levels$1.class
 gameLevel\BlankLevel.class
 com\mainPack\froggerGameObstacles\WetTurtle.class
-com\mainPack\froggerGameObstacles\bird.class
 com\mainPack\Actor.class
 com\mainPack\World$1.class
 com\mainPack\froggerGameObstacles\Animal$1.class

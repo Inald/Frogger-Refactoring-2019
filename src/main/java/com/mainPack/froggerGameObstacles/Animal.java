@@ -221,11 +221,6 @@ public class Animal extends Actor {
 			carDeath = true;
 			//minusFroggerLife();
 		}
-		if(getIntersectingObjects(bird.class).size() >= 1){
-			carDeath = true;
-			minusPoints(20);
-			//point system for bird a bit dodgy
-		}
 		if (getX() == 240 && getY() == 82) {
 			stop = true;
 		}

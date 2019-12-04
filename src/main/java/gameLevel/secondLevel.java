@@ -24,23 +24,6 @@ public class secondLevel extends Levels implements levelStructure {
 
 
     @Override
-    public void newlevel(){
-        instantiateBackground();
-        setLogs();
-        setTurtle();
-        setWetTurtle();
-        setEnds();
-        setFrog();
-        setBird();
-        setObstacle();
-        setScore();
-        getBackground().start();
-        primaryStage.setScene(scene);
-        primaryStage.show();
-        start();
-    }
-
-    @Override
     public void setLogs(){
         getBackground().add(new Log(filePath + "/log3.png", 150, 0, 166, 0.75));
         getBackground().add(new Log(filePath + "/log3.png", 150, 220, 166, 0.75));
@@ -66,6 +49,7 @@ public class secondLevel extends Levels implements levelStructure {
         getBackground().add(new Obstacle(filePath + "/truck2Right.png", 0, 540, 1, 200, 200));
         getBackground().add(new Obstacle(filePath + "/truck2Right.png", 500, 540, 1, 200, 200));
         getBackground().add(new Obstacle(filePath + "/car1Left.png", 500, 490, -10, 50, 50));
+        getBackground().add(new Obstacle(filePath + "/bird1.com.png", 250, 440, -5, 50, 50));
 
     }
 
