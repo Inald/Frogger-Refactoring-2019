@@ -14,7 +14,7 @@ public class Main extends Application{
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		startMenu menu = new startMenu(primaryStage);
+		startMenu menu = startMenu.getInstance(primaryStage);
 
 	}
 

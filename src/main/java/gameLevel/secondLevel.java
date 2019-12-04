@@ -150,7 +150,8 @@ public class secondLevel extends Levels implements levelStructure {
 
 
                     alert.show();
-                    startMenu backToStart = new startMenu(primaryStage);
+                    startMenu backToStart = startMenu.getInstance(primaryStage);
+                    backToStart.displayStart();
                 }
             }
         });

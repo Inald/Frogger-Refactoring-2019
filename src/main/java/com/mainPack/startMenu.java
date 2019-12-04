@@ -24,10 +24,24 @@ public class startMenu implements EventHandler<ActionEvent> {
     private ImageView frogKing;
     private ImageView froggerTitle;
     private ImageView menuBackground;
-    
+
+    private static startMenu instance;
+
+    public static startMenu getInstance(Stage primaryStage){
+        if(instance == null){
+            instance = new startMenu(primaryStage);
+        }
+        return instance;
+    }
 
     private startMenu(Stage primaryStage) {
         this.primaryStage = primaryStage;
+        this.displayStart();
+
+
+    }
+
+    public void displayStart(){
         primaryStage.setTitle("Frogger start menu");
 
         buttonCreation();
@@ -51,7 +65,6 @@ public class startMenu implements EventHandler<ActionEvent> {
         scene.getStylesheets().add("startScreenCustom.css");
         primaryStage.setScene(scene);
         primaryStage.show();
-
     }
 
 
