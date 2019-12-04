@@ -15,6 +15,7 @@ public class Log extends moving {
 //			setX(700);
 		super.movingObj(-180,-300,700, speed);
 	}
+
 	
 	public Log(String imageLink, int size, int xpos, int ypos, double s) {
 		setImage(new Image(imageLink, size,size, true, true));

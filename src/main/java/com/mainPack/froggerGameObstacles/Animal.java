@@ -143,8 +143,12 @@ public class Animal extends Actor {
 	
 	@Override
 	public void act(long now) {
-
 		int bounds = 0;
+
+		if(getFrogLives() == 0){
+			getStop();
+		}
+
 		if (getY()<0 || getY()>734) {
 			setX(300);
 			setY(679.8+movement);
@@ -217,6 +221,11 @@ public class Animal extends Actor {
 			carDeath = true;
 			//minusFroggerLife();
 		}
+		if(getIntersectingObjects(bird.class).size() >= 1){
+			carDeath = true;
+			minusPoints(20);
+			//point system for bird a bit dodgy
+		}
 		if (getX() == 240 && getY() == 82) {
 			stop = true;
 		}
@@ -240,6 +249,7 @@ public class Animal extends Actor {
 		else if (getIntersectingObjects(End.class).size() >= 1) {
 			inter = (ArrayList<End>) getIntersectingObjects(End.class);
 			if (getIntersectingObjects(End.class).get(0).isActivated()) {
+				//waterDeath = true; not sure about this as can go to same end mulitple times
 				end--;
 				minusPoints(50);
 			}

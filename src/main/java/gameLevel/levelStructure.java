@@ -14,4 +14,6 @@ public interface levelStructure {
     void setTurtle();
     void setWetTurtle();
     void setObstacle();
+
+    void newLevel();
 }

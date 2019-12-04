@@ -19,6 +19,12 @@ public class firstLevel extends Levels implements levelStructure {
         newlevel();
     }
 
+    @Override
+    public void newLevel() {
+
+    }
+
+
 //    public void newlevel(){
 //        instantiateBackground();
 //        setLogs();

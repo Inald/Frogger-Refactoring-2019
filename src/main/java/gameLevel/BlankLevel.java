@@ -3,7 +3,7 @@ package gameLevel;
 import com.mainPack.froggerGameObstacles.Animal;
 import javafx.stage.Stage;
 
-public class BlankLevel extends Levels {
+public class BlankLevel extends Levels implements levelStructure {
     private Stage primaryStage;
 
     public BlankLevel(Stage primaryStage) {
@@ -24,5 +24,10 @@ public class BlankLevel extends Levels {
     public void setFrog(){
         setAnimal(new Animal(filePath + "/froggerUp.png"));
         getBackground().add(getAnimal());
+    }
+
+    @Override
+    public void newLevel() {
+
     }
 }

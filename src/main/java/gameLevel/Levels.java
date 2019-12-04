@@ -186,6 +186,9 @@ public abstract class Levels implements levelStructure{
         getBackground().add(getAnimal());
     }
 
+    public void setBird(){
+        getBackground().add(new bird(filePath + "/bird1.com.png", 250, 440, -5, 50, 50));
+    }
 
     public void setLogs(){
         getBackground().add(new Log(filePath + "/log3.png", 150, 0, 166, 0.75));
