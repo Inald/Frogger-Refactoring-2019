@@ -17,7 +17,8 @@ import javafx.stage.Stage;
 public class startMenu implements EventHandler<ActionEvent> {
 
     private Stage primaryStage;
-    private Button startBtn;
+    private Button level1Btn;
+    private Button level2Btn;
     private Button exitBtn;
     private Button gameInfoBtn;
     private ImageView frogKing;
@@ -37,7 +38,8 @@ public class startMenu implements EventHandler<ActionEvent> {
         screenLayout.getChildren().add(froggerTitle);
         screenLayout.getChildren().add(frogKing);
 
-        screenLayout.getChildren().add(startBtn);
+        screenLayout.getChildren().add(level1Btn);
+        screenLayout.getChildren().add(level2Btn);
         screenLayout.getChildren().add(exitBtn);
         screenLayout.getChildren().add(gameInfoBtn);
 
@@ -54,8 +56,11 @@ public class startMenu implements EventHandler<ActionEvent> {
 
     @Override
     public void handle(ActionEvent event) {
-        if(event.getSource() == startBtn){
+        if(event.getSource() == level1Btn){
             //firstLevel newLevel = new firstLevel(this.primaryStage);
+            gameFactory gamefac = new gameFactory(this.primaryStage);
+            gamefac.newGame("1");
+        }else if(event.getSource() == level2Btn){
             gameFactory gamefac = new gameFactory(this.primaryStage);
             gamefac.newGame("2");
         }
@@ -86,20 +91,27 @@ public class startMenu implements EventHandler<ActionEvent> {
     }
 
     public void buttonTranslation(){
-        //translation of start Button
-        startBtn.setTranslateY(350);
+        //translation of level 1 Button
+        level1Btn.setTranslateY(350);
+        //translation of level 2 Button
+        level2Btn.setTranslateX(100);
+        level2Btn.setTranslateY(350);
         //translation of exit button
         exitBtn.setTranslateY(350);
         exitBtn.setTranslateX(200);
         //translation of game info button
-        gameInfoBtn.setTranslateX(-200);
+        gameInfoBtn.setTranslateX(-150);
         gameInfoBtn.setTranslateY(350);
     }
 
     public void buttonCreation(){
-        startBtn = new Button();
-        startBtn.setText("Start Game");
-        startBtn.setOnAction(this);
+        level1Btn = new Button();
+        level1Btn.setText("level 1");
+        level1Btn.setOnAction(this);
+
+        level2Btn = new Button();
+        level2Btn.setText("level 2");
+        level2Btn.setOnAction(this);
 
         exitBtn = new Button();
         exitBtn.setText("Exit");

@@ -116,6 +116,7 @@ public abstract class Levels implements levelStructure{
 
 
                     alert.show();
+                    startMenu backToStart = new startMenu(primaryStage);
                 }
             }
         });

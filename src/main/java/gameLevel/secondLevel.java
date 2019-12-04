@@ -2,6 +2,7 @@ package gameLevel;
 
 import com.mainPack.froggerGameObstacles.Log;
 import com.mainPack.froggerGameObstacles.Obstacle;
+import com.mainPack.startMenu;
 import javafx.animation.AnimationTimer;
 import javafx.scene.control.Alert;
 import javafx.scene.control.DialogPane;
@@ -146,6 +147,7 @@ public class secondLevel extends Levels implements levelStructure {
 
 
                     alert.show();
+                    startMenu backToStart = new startMenu(primaryStage);
                 }
             }
         });
