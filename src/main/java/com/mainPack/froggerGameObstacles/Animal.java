@@ -1,11 +1,13 @@
 package com.mainPack.froggerGameObstacles;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import com.mainPack.Actor;
 import com.mainPack.End;
-import com.mainPack.froggerGameObstacles.*;
 import javafx.event.EventHandler;
+import javafx.scene.control.Alert;
+import javafx.scene.control.DialogPane;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -20,6 +22,7 @@ public class Animal extends Actor {
 	Image imgS2;
 	Image imgD2;
 	int points = 0;
+	int finalRoundPoints = 0;
 	int end = 0;
 	private boolean second = false;
 	boolean noMove = false;
@@ -32,7 +35,13 @@ public class Animal extends Actor {
 	boolean changeScore = false;
 	int carD = 0;
 	double w = 800;
+	int frogLives = 3;
+	int roundScore;
+	Alert alert;
 	ArrayList<End> inter = new ArrayList<End>();
+	ArrayList<Integer> roundPoints = new ArrayList<>();
+
+
 
 	public Animal(String imageLink) {
 		setImage(new Image(imageLink, imgSize, imgSize, true, true));
@@ -134,6 +143,7 @@ public class Animal extends Actor {
 	
 	@Override
 	public void act(long now) {
+
 		int bounds = 0;
 		if (getY()<0 || getY()>734) {
 			setX(300);
@@ -168,7 +178,7 @@ public class Animal extends Actor {
 
 
 			}
-			
+
 		}
 		if (waterDeath) {
 			noMove = true;
@@ -197,33 +207,35 @@ public class Animal extends Actor {
 				minusPoints(50);
 
 			}
-			
+
 		}
-		
+
 		if (getX()>600) {
 			move(-movement*2, 0);
 		}
 		if (getIntersectingObjects(Obstacle.class).size() >= 1) {
 			carDeath = true;
+			//minusFroggerLife();
 		}
 		if (getX() == 240 && getY() == 82) {
 			stop = true;
 		}
 		if (getIntersectingObjects(Log.class).size() >= 1 && !noMove) {
 			if(getIntersectingObjects(Log.class).get(0).getLeft())
-				move(-2,0);
+				move(-2,0 ); //changes speed of frogs movement on log - need to store a value from when its set to put in here.
 			else
 				move (.75,0);
 		}
 		else if (getIntersectingObjects(WetTurtle.class).size() >= 1) {
 			if (getIntersectingObjects(WetTurtle.class).get(0).isSunk()) {
 				waterDeath = true;
+				//minusFroggerLife();
 			} else {
-				move(-1,0);
+				move(-1,0); //changes speed of frog on wet turtle
 			}
 		}
 		else if (getIntersectingObjects(Turtle.class).size() >= 1 && !noMove) {
-			move(-1,0);
+			move(-1,0); //changes speed of frog on turtle
 		}
 		else if (getIntersectingObjects(End.class).size() >= 1) {
 			inter = (ArrayList<End>) getIntersectingObjects(End.class);
@@ -237,13 +249,60 @@ public class Animal extends Actor {
 			end++;
 			setX(300);
 			setY(679.8+movement);
+			roundScore = scoreForRound();
+			finalRoundPoints = getPoints();
+			roundPoints.add(roundScore);
+			roundPoints(getPoints(), roundPoints);
 		}
 		else if (getY()<413){
 			waterDeath = true;
+
 			//setX(300);
 			//setY(679.8+movement);
 		}
 	}
+	public int scoreForRound(){
+		int difference = 0;
+		if(finalRoundPoints == 0){
+			finalRoundPoints = getPoints();
+			difference = finalRoundPoints;
+		}else if(finalRoundPoints > getPoints()){
+			difference = getPoints() - finalRoundPoints;
+		}else if(finalRoundPoints < getPoints()){
+			difference = getPoints() - finalRoundPoints;
+		}
+		return difference;
+	}
+
+
+	public void customDesign(){
+		DialogPane customPane = alert.getDialogPane();
+		customPane.getStylesheets().add("startScreenCustom.css");
+		customPane.getStyleClass().add("dialogWriting");
+		customPane.getStyleClass().add("Dialog");
+		customPane.getStyleClass().add("dialogHeader");
+		customPane.getStyleClass().add("dialogTopLabel");
+	}
+
+
+	public void roundPoints(int endPoints, ArrayList roundPoints){
+		alert = new Alert(Alert.AlertType.INFORMATION);
+		alert.setTitle("Highscore for round");
+		customDesign();
+		alert.setHeaderText("You've scored " + getPoints());
+		Collections.sort(roundPoints);
+		StringBuffer sb = new StringBuffer();
+
+
+		for(int i = roundPoints.size() - 1; i >= 0; i--){
+			sb.append(String.valueOf(roundPoints.get(i)) + "\n");
+		}
+		alert.setContentText("Highscore for each round: \n" +
+				sb);
+		alert.setHeight(400);
+		alert.show();
+	}
+
 	public boolean getStop() {
 		return end==5;
 	}
@@ -283,7 +342,19 @@ public class Animal extends Actor {
 		return waterDeath;
 	}
 
-	public boolean isCarDeath() {
+	public boolean isCarDeath()
+	{
 		return carDeath;
+	}
+
+	public int minusFroggerLife(){
+		if(frogLives == 0){
+			getStop();
+		}
+		return frogLives -= 1;
+	}
+
+	public int getFrogLives() {
+		return frogLives;
 	}
 }

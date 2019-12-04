@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 public class firstLevel extends Levels implements levelStructure {
 
     private Stage primaryStage;
+    private String highScoreFile;
 
 
     public firstLevel(Stage primaryStage) {

@@ -15,11 +15,14 @@ public class secondLevel extends Levels implements levelStructure {
 
     private Stage primaryStage;
 
+
     public secondLevel(Stage primaryStage) {
         super(primaryStage);
         this.primaryStage = primaryStage;
         newlevel();
     }
+
+
 
     public void newlevel(){
         instantiateBackground();
@@ -62,7 +65,7 @@ public class secondLevel extends Levels implements levelStructure {
         getBackground().add(new Obstacle(filePath + "/truck2Right.png", 0, 540, 1, 200, 200));
         getBackground().add(new Obstacle(filePath + "/truck2Right.png", 500, 540, 1, 200, 200));
         getBackground().add(new Obstacle(filePath + "/car1Left.png", 500, 490, -10, 50, 50));
-        //getBackground().add(new Obstacle(filePath + "/bird1.com.png", 250, 270, -5, 50, 50));
+        getBackground().add(new Obstacle(filePath + "/bird1.com.png", 250, 440, -5, 50, 50));
     }
 
     @Override

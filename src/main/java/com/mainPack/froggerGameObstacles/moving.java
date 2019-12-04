@@ -5,6 +5,7 @@ import com.mainPack.Actor;
 public abstract class moving extends Actor {
 
     private double speed;
+    private double logSpeed;
 
 
     public void setSpeed(double speed) {

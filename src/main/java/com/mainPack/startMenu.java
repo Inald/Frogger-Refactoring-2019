@@ -24,8 +24,9 @@ public class startMenu implements EventHandler<ActionEvent> {
     private ImageView frogKing;
     private ImageView froggerTitle;
     private ImageView menuBackground;
+    
 
-    public startMenu(Stage primaryStage) {
+    private startMenu(Stage primaryStage) {
         this.primaryStage = primaryStage;
         primaryStage.setTitle("Frogger start menu");
 
