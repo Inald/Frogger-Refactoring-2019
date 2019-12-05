@@ -1,20 +1,14 @@
 package gameLevel;
 
-import com.mainPack.froggerGameObstacles.Animal;
-import com.mainPack.End;
-import com.mainPack.froggerGameObstacles.Log;
-import com.mainPack.froggerGameObstacles.Obstacle;
-import com.mainPack.froggerGameObstacles.Turtle;
-import com.mainPack.froggerGameObstacles.WetTurtle;
 import javafx.stage.Stage;
 
-public class firstLevel extends Levels implements levelStructure {
+public class FirstLevel extends Levels implements LevelStructure {
 
     private Stage primaryStage;
     private String highScoreFile;
 
 
-    public firstLevel(Stage primaryStage) {
+    public FirstLevel(Stage primaryStage) {
         super(primaryStage);
         newlevel();
     }

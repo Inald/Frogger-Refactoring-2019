@@ -1,9 +1,8 @@
 package com.mainPack.froggerGameObstacles;
 
-import com.mainPack.Actor;
 import javafx.scene.image.Image;
 
-public class Turtle extends moving {
+public class Turtle extends Moving {
 	Image turtle1;
 	Image turtle2;
 	Image turtle3;

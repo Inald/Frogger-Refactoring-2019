@@ -1,9 +1,8 @@
 package com.mainPack.froggerGameObstacles;
 
-import com.mainPack.Actor;
 import javafx.scene.image.Image;
 
-public class Obstacle extends moving {
+public class Obstacle extends Moving {
 	private int speed;
 	@Override
 	public void act(long now) {

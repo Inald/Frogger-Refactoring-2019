@@ -1,8 +1,6 @@
 package com.mainPack;
 
-import gameLevel.Levels;
-import gameLevel.firstLevel;
-import gameLevel.gameFactory;
+import gameLevel.GameFactory;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -14,7 +12,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class startMenu implements EventHandler<ActionEvent> {
+public class StartMenu implements EventHandler<ActionEvent> {
 
     private Stage primaryStage;
     private Button level1Btn;
@@ -25,16 +23,16 @@ public class startMenu implements EventHandler<ActionEvent> {
     private ImageView froggerTitle;
     private ImageView menuBackground;
 
-    private static startMenu instance;
+    private static StartMenu instance;
 
-    public static startMenu getInstance(Stage primaryStage){
+    public static StartMenu getInstance(Stage primaryStage){
         if(instance == null){
-            instance = new startMenu(primaryStage);
+            instance = new StartMenu(primaryStage);
         }
         return instance;
     }
 
-    private startMenu(Stage primaryStage) {
+    private StartMenu(Stage primaryStage) {
         this.primaryStage = primaryStage;
         this.displayStart();
 
@@ -71,11 +69,11 @@ public class startMenu implements EventHandler<ActionEvent> {
     @Override
     public void handle(ActionEvent event) {
         if(event.getSource() == level1Btn){
-            //firstLevel newLevel = new firstLevel(this.primaryStage);
-            gameFactory gamefac = new gameFactory(this.primaryStage);
+            //FirstLevel newLevel = new FirstLevel(this.primaryStage);
+            GameFactory gamefac = new GameFactory(this.primaryStage);
             gamefac.newGame("1");
         }else if(event.getSource() == level2Btn){
-            gameFactory gamefac = new gameFactory(this.primaryStage);
+            GameFactory gamefac = new GameFactory(this.primaryStage);
             gamefac.newGame("2");
         }
         else if(event.getSource() == exitBtn){
@@ -96,7 +94,7 @@ public class startMenu implements EventHandler<ActionEvent> {
             howToPlay.setContentText("This is how you play the game:\n" +
                     "1) Use WASD to move up, left, down and right respectively.\n" +
                     "2) Aim of the game is to get the frog to each square at the end of the map.\n" +
-                    "3) Points are gained from moving further up the map and getting to each of the squares at the end\n" +
+                    "3) Points are gained from Moving further up the map and getting to each of the squares at the end\n" +
                     "4) This is done by avoiding the trucks, cars and from falling in the water.\n" +
                     "5) Turtles disappear every so often so be careful not to fall into the water and lose points.\n" +
                     "6) At the end of the game a score will be displayed to the player which indicates the highest score reached.");

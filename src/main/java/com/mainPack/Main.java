@@ -1,6 +1,5 @@
 package com.mainPack;
 
-import gameLevel.firstLevel;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -14,7 +13,7 @@ public class Main extends Application{
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		startMenu menu = startMenu.getInstance(primaryStage);
+		StartMenu menu = StartMenu.getInstance(primaryStage);
 
 	}
 

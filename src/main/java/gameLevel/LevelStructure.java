@@ -1,6 +1,6 @@
 package gameLevel;
 
-public interface levelStructure {
+public interface LevelStructure {
 
     void instantiateBackground();
     void createTimer();

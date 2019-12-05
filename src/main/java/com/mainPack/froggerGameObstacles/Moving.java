@@ -2,7 +2,7 @@ package com.mainPack.froggerGameObstacles;
 
 import com.mainPack.Actor;
 
-public abstract class moving extends Actor {
+public abstract class Moving extends Actor {
 
     private double speed;
     private double logSpeed;
@@ -12,7 +12,7 @@ public abstract class moving extends Actor {
         this.speed = speed;
     }
 
-    public moving(){
+    public Moving(){
 
     }
 

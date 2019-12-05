@@ -1,9 +1,8 @@
 package com.mainPack.froggerGameObstacles;
 
-import com.mainPack.Actor;
 import javafx.scene.image.Image;
 
-public class Log extends moving {
+public class Log extends Moving {
 
 	private double speed;
 	@Override
