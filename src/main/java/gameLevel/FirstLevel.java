@@ -5,11 +5,12 @@ import javafx.stage.Stage;
 public class FirstLevel extends Levels implements LevelStructure {
 
     private Stage primaryStage;
-    private String highScoreFile;
+    //private String highScoreFile;
 
 
     public FirstLevel(Stage primaryStage) {
         super(primaryStage);
+        highScoreFile = "highScores.txt";
         newlevel();
     }
 

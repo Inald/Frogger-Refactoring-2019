@@ -16,16 +16,16 @@ public abstract class Levels implements LevelStructure {
     private MyStage background;
     private Animal animal;
     private Stage primaryStage;
-
-    public Levels(Stage primaryStage){
-        this.primaryStage = primaryStage;
-
-    }
+    protected String highScoreFile;
 
     protected String filePath = "file:src/main/resources";
     protected Scene scene;
     ArrayList<Integer> highScorePrint = new ArrayList<>();
 
+    public Levels(Stage primaryStage){
+        this.primaryStage = primaryStage;
+
+    }
     public void instantiateBackground(){
         setBackground(new MyStage());
         scene = new Scene(getBackground(), 600, 800);
@@ -35,7 +35,7 @@ public abstract class Levels implements LevelStructure {
     }
 
     public void createTimer() {
-        String highScoreFile = filePath + "/highScores.txt";
+        //highScoreFile = filePath + "";
         //ArrayList<Integer> highScorePrint = new ArrayList<>();
         setTimer(new AnimationTimer() {
             @Override
@@ -49,50 +49,7 @@ public abstract class Levels implements LevelStructure {
                     stop();
                     getBackground().stop();
 
-//                    //Writing to file
-//                    try{
-//                        BufferedWriter writer = new BufferedWriter(new FileWriter("highScores.txt", true));
-//                        writer.newLine();
-//                        writer.append(String.valueOf(getAnimal().getPoints()));
-//                        writer.close();
-//                    } catch (IOException e) {
-//                        e.printStackTrace();
-//                    }
-//
-//                    //Reading from file
-//                    try{
-//                        BufferedReader read = new BufferedReader(new FileReader("highScores.txt"));
-//                        String highScoreLine;
-//                        int i = 0;
-//                        while((highScoreLine = read.readLine()) != null){
-//                            highScorePrint.add(Integer.valueOf(highScoreLine));
-//                            //System.out.println(highScorePrint.get(i));
-//                            i++;
-//                        }
-//                        read.close();
-//                    }catch (Exception e){
-//                        e.printStackTrace();
-//                    }
-//
-//                    //bubble sort to print highest scores first
-//                    int temp;
-//                    int j1;
-//                    int jplus1;
-//
-//                    for(int k = highScorePrint.size(); k > 0; k--){
-//                        for(int j = 0; j < k - 1; j++){
-//                            j1 = (highScorePrint.get(j));
-//                            jplus1 = (highScorePrint.get(j));
-//
-//                            if(highScorePrint.get(j).compareTo(highScorePrint.get(j + 1)) > 0){
-//                                temp = (highScorePrint.get(j));
-//                                highScorePrint.set(j, highScorePrint.get(j +1));
-//                                highScorePrint.set(j+1, temp);
-//                            }
-//                        }
-//                    }
-                    //write to the correct file.
-                    HighScoreRW RW = HighScoreRW.getInstance(primaryStage, getAnimal().getPoints(), "highScores.txt");
+                    HighScoreRW RW = HighScoreRW.getInstance(primaryStage, getAnimal().getPoints(), highScoreFile);
                     highScorePrint = RW.highScores();
 
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -118,8 +75,6 @@ public abstract class Levels implements LevelStructure {
 
 
                     alert.show();
-                    //HighScoreRW RW = HighScoreRW.getInstance(primaryStage, getAnimal().getPoints());
-                    //highScorePrint = RW.highScores();
                     StartMenu backToStart = StartMenu.getInstance(primaryStage);
                     backToStart.displayStart();
                 }

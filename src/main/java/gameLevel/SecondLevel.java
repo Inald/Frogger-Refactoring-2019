@@ -19,6 +19,7 @@ public class SecondLevel extends Levels implements LevelStructure {
 
     public SecondLevel(Stage primaryStage) {
         super(primaryStage);
+        highScoreFile = "highScores2.txt";
         this.primaryStage = primaryStage;
         newlevel();
     }
@@ -59,92 +60,5 @@ public class SecondLevel extends Levels implements LevelStructure {
 
     }
 
-    @Override
-    public void createTimer() {
-        String highScoreFile = filePath + "/highScores2.txt";
-        setTimer(new AnimationTimer() {
-            @Override
-            public void handle(long now) {
-                if (getAnimal().changeScore()) {
-                    setNumber(getAnimal().getPoints());
-                }
-                if (getAnimal().getStop()) {
-                    System.out.print("STOPP:");
-                    getBackground().stopMusic();
-                    stop();
-                    getBackground().stop();
 
-//                    //Writing to file
-//                    try{
-//                        BufferedWriter writer = new BufferedWriter(new FileWriter("highScores2.txt", true));
-//                        writer.newLine();
-//                        writer.append(String.valueOf(getAnimal().getPoints()));
-//                        writer.close();
-//                    } catch (IOException e) {
-//                        e.printStackTrace();
-//                    }
-//
-//                    //Reading from file
-//                    try{
-//                        BufferedReader read = new BufferedReader(new FileReader("highScores2.txt"));
-//                        String highScoreLine;
-//                        int i = 0;
-//                        while((highScoreLine = read.readLine()) != null){
-//                            highScorePrint.add(Integer.valueOf(highScoreLine));
-//                            //System.out.println(highScorePrint.get(i));
-//                            i++;
-//                        }
-//                        read.close();
-//                    }catch (Exception e){
-//                        e.printStackTrace();
-//                    }
-//
-//                    //bubble sort to print highest scores first
-//                    int temp;
-//                    int j1;
-//                    int jplus1;
-//
-//                    for(int k = highScorePrint.size(); k > 0; k--){
-//                        for(int j = 0; j < k - 1; j++){
-//                            j1 = (highScorePrint.get(j));
-//                            jplus1 = (highScorePrint.get(j));
-//
-//                            if(highScorePrint.get(j).compareTo(highScorePrint.get(j + 1)) > 0){
-//                                temp = (highScorePrint.get(j));
-//                                highScorePrint.set(j, highScorePrint.get(j +1));
-//                                highScorePrint.set(j+1, temp);
-//                            }
-//                        }
-//                    }
-                    HighScoreRW RW = HighScoreRW.getInstance(primaryStage, getAnimal().getPoints(), "highScores2.txt");
-                    highScorePrint = RW.highScores();
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    DialogPane customPane = alert.getDialogPane();
-                    customPane.getStylesheets().add("startScreenCustom.css");
-                    customPane.getStyleClass().add("dialogWriting");
-                    customPane.getStyleClass().add("Dialog");
-                    customPane.getStyleClass().add("dialogHeader");
-                    customPane.getStyleClass().add("dialogTopLabel");
-                    alert.setHeight(600);
-                    alert.setTitle("You Have Won The Game!");
-                    alert.setHeaderText("Your High Score: "+ getAnimal().getPoints()+"!");
-
-                    StringBuffer stringBuf = new StringBuffer();
-
-                    for(int j = highScorePrint.size() - 1; j > 0; j--){
-                        stringBuf.append(String.valueOf(highScorePrint.get(j)) + "\n");
-                    }
-
-                    alert.setContentText("Highest Possible Score Achieved: " + highScorePrint.get(highScorePrint.size() - 1)+ "\n" +
-                            "High scores achieved by players:\n" +
-                            stringBuf);
-
-
-                    alert.show();
-                    StartMenu backToStart = StartMenu.getInstance(primaryStage);
-                    backToStart.displayStart();
-                }
-            }
-        });
-    }
 }
