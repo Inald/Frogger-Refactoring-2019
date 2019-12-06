@@ -226,7 +226,7 @@ public class Animal extends Actor {
 		}
 		if (getIntersectingObjects(Log.class).size() >= 1 && !noMove) {
 			if(getIntersectingObjects(Log.class).get(0).getLeft())
-				move(-2,0 ); //changes speed of frogs movement on log - need to store a value from when its set to put in here.
+				move(getIntersectingObjects(Log.class).get(0).getSpeed(),0 ); //changes speed of frogs movement on log - need to store a value from when its set to put in here.
 			else
 				move (.75,0);
 		}

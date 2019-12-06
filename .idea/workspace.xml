@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/highScores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/highScores.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/highScores2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/highScores2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mainPack/StartMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mainPack/StartMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/highScores.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/highScores2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLevel/FirstLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameLevel/FirstLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLevel/Levels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameLevel/Levels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Log.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gameLevel/SecondLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gameLevel/SecondLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ActorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ActorTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AnimalTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AnimalTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ActorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ActorTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AnimalTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AnimalTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mainPack.ActorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mainPack.ActorTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mainPack.HighScoreRWTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mainPack.HighScoreRWTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mainPack.froggerGameObstacles.LogTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mainPack.froggerGameObstacles.LogTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.mainPack.ActorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mainPack.ActorTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.mainPack.HighScoreRWTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mainPack.HighScoreRWTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.mainPack.froggerGameObstacles.LogTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mainPack.froggerGameObstacles.LogTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -99,14 +86,14 @@
         <counts>
           <entry key="css" value="1" />
           <entry key="dummy" value="5" />
-          <entry key="java" value="12323" />
+          <entry key="java" value="12351" />
           <entry key="txt" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="JAVA" value="12323" />
+          <entry key="JAVA" value="12351" />
           <entry key="PLAIN_TEXT" value="94" />
         </counts>
       </usages-collector>
@@ -117,15 +104,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AnimalTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gameLevel/Levels.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -149,8 +127,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="304" column="61" lean-forward="true" selection-start-line="304" selection-start-column="61" selection-end-line="304" selection-end-column="61" />
+            <state relative-caret-position="340">
+              <caret line="228" column="72" lean-forward="true" selection-start-line="228" selection-start-column="72" selection-end-line="228" selection-end-column="72" />
               <folding>
                 <element signature="method#scoreForRound#0;class#Animal#0" />
                 <element signature="method#addPoints#0;class#Animal#0" />
@@ -165,23 +143,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+            <state relative-caret-position="408">
+              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding>
                 <element signature="e#174#175#0" expanded="true" />
                 <element signature="e#218#219#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/mainPack/froggerGameObstacles/LogTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#496#497#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -197,44 +166,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TurtleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/mainPack/HighScoreRWTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#602#603#0" expanded="true" />
-                <element signature="e#672#673#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gameLevel/FirstLevel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="53" lean-forward="true" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gameLevel/SecondLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state relative-caret-position="320">
+              <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#setLogs#0;class#SecondLevel#0" />
                 <element signature="method#setObstacle#0;class#SecondLevel#0" />
               </folding>
             </state>
@@ -305,14 +242,14 @@
         <option value="$PROJECT_DIR$/src/test/java/TurtleTest.java" />
         <option value="$PROJECT_DIR$/testFile.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/mainPack/HighScoreRW.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Log.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mainPack/HighScoreRWTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mainPack/froggerGameObstacles/LogTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mainPack/StartMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Animal.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameLevel/Levels.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameLevel/FirstLevel.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameLevel/SecondLevel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Log.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Animal.java" />
       </list>
     </option>
   </component>
@@ -458,7 +395,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575650652027" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575652650754" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="dynamic.classpath" value="false" />
@@ -520,7 +457,7 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.mainPack.Main" />
       <module name="Frogger_SWM" />
       <extension name="coverage">
         <pattern>
@@ -988,17 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-          <folding>
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/startScreenCustom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1030,18 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameLevel/SecondLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setLogs#0;class#SecondLevel#0" />
-            <element signature="method#setObstacle#0;class#SecondLevel#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameLevel/FirstLevel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1067,10 +981,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameLevel/SecondLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setObstacle#0;class#SecondLevel#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObstacles/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="304" column="61" lean-forward="true" selection-start-line="304" selection-start-column="61" selection-end-line="304" selection-end-column="61" />
+        <state relative-caret-position="340">
+          <caret line="228" column="72" lean-forward="true" selection-start-line="228" selection-start-column="72" selection-end-line="228" selection-end-column="72" />
           <folding>
             <element signature="method#scoreForRound#0;class#Animal#0" />
             <element signature="method#addPoints#0;class#Animal#0" />

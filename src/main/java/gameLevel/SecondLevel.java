@@ -31,7 +31,7 @@ public class SecondLevel extends Levels implements LevelStructure {
         getBackground().add(new Log(filePath + "/log3.png", 150, 220, 166, 0.75));
         getBackground().add(new Log(filePath + "/log3.png", 150, 440, 166, 0.75));
 
-        getBackground().add(new Log(filePath + "/logs.png", 300, 0, 276, -2));
+        getBackground().add(new Log(filePath + "/logs.png", 300, 0, 276, -5));
 
 
         getBackground().add(new Log(filePath + "/log3.png", 150, 270, 329, 0.75));

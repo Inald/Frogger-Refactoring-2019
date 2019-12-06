@@ -21,4 +21,8 @@ public class Log extends Moving {
 	public boolean getLeft() {
 		return speed < 0;
 	}
+
+	public double getSpeed() {
+		return speed;
+	}
 }
