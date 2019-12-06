@@ -4,6 +4,8 @@ import com.mainPack.HighScoreRW;
 import com.mainPack.froggerGameObstacles.Log;
 import com.mainPack.froggerGameObstacles.Obstacle;
 import com.mainPack.StartMenu;
+import com.mainPack.froggerGameObstacles.Turtle;
+import com.mainPack.froggerGameObstacles.WetTurtle;
 import javafx.animation.AnimationTimer;
 import javafx.scene.control.Alert;
 import javafx.scene.control.DialogPane;
@@ -56,8 +58,28 @@ public class SecondLevel extends Levels implements LevelStructure {
     }
 
     @Override
-    public void newLevel() {
+    public void setWetTurtle(){
+        getBackground().add(new WetTurtle(500, 376, -1, 130, 130));
+        getBackground().add(new WetTurtle(300, 376, -1, 130, 130));
+        getBackground().add(new WetTurtle(700, 376, -1, 130, 130));
+        getBackground().add(new WetTurtle(600, 217, -1, 130, 130));
+        getBackground().add(new WetTurtle(400, 217, -1, 130, 130));
+        getBackground().add(new WetTurtle(200, 217, -1, 130, 130));
+    }
 
+    @Override
+    public void newLevel() {
+        instantiateBackground();
+        setLogs();
+        setWetTurtle();
+        setEnds();
+        setFrog();
+        setObstacle();
+        setScore();
+        getBackground().start();
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        start();
     }
 
 
