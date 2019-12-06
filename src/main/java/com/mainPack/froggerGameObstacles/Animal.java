@@ -228,18 +228,18 @@ public class Animal extends Actor {
 			if(getIntersectingObjects(Log.class).get(0).getLeft())
 				move(getIntersectingObjects(Log.class).get(0).getSpeed(),0 ); //changes speed of frogs movement on log - need to store a value from when its set to put in here.
 			else
-				move (.75,0);
+				move (getIntersectingObjects(Log.class).get(0).getSpeed(),0);
 		}
 		else if (getIntersectingObjects(WetTurtle.class).size() >= 1) {
 			if (getIntersectingObjects(WetTurtle.class).get(0).isSunk()) {
 				waterDeath = true;
 				//minusFroggerLife();
 			} else {
-				move(-1,0); //changes speed of frog on wet turtle
+				move(getIntersectingObjects(WetTurtle.class).get(0).getSpeed(),0); //changes speed of frog on wet turtle
 			}
 		}
 		else if (getIntersectingObjects(Turtle.class).size() >= 1 && !noMove) {
-			move(-1,0); //changes speed of frog on turtle
+			move(getIntersectingObjects(Turtle.class).get(0).getSpeed(),0); //changes speed of frog on turtle
 		}
 		else if (getIntersectingObjects(End.class).size() >= 1) {
 			inter = (ArrayList<End>) getIntersectingObjects(End.class);
