@@ -19,6 +19,7 @@ public abstract class Levels implements LevelStructure {
     protected String highScoreFile;
 
     protected String filePath = "file:src/main/resources";
+    protected String filePath2 = "src/main/resources/";
     protected Scene scene;
     ArrayList<Integer> highScorePrint = new ArrayList<>();
 
@@ -54,7 +55,7 @@ public abstract class Levels implements LevelStructure {
 
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     DialogPane customPane = alert.getDialogPane();
-                    customPane.getStylesheets().add("startScreenCustom.css");
+                    customPane.getStylesheets().add(filePath + "/startScreenCustom.css");
                     customPane.getStyleClass().add("dialogWriting");
                     customPane.getStyleClass().add("Dialog");
                     customPane.getStyleClass().add("dialogHeader");

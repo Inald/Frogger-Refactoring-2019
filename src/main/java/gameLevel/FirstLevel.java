@@ -10,7 +10,7 @@ public class FirstLevel extends Levels implements LevelStructure {
 
     public FirstLevel(Stage primaryStage) {
         super(primaryStage);
-        highScoreFile = "highScores.txt";
+        highScoreFile = filePath2 + "highScores.txt";
         newlevel();
     }
 

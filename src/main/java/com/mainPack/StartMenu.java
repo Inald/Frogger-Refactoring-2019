@@ -83,7 +83,7 @@ public class StartMenu implements EventHandler<ActionEvent> {
             //open the newbox with the information
             Alert howToPlay = new Alert(Alert.AlertType.INFORMATION);
             DialogPane customPane = howToPlay.getDialogPane();
-            customPane.getStylesheets().add("startScreenCustom.css");
+            customPane.getStylesheets().add(filePath + "startScreenCustom.css");
             customPane.getStyleClass().add("dialogWriting");
             customPane.getStyleClass().add("Dialog");
             customPane.getStyleClass().add("dialogHeader");

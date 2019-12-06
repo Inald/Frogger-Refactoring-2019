@@ -19,7 +19,7 @@ public class SecondLevel extends Levels implements LevelStructure {
 
     public SecondLevel(Stage primaryStage) {
         super(primaryStage);
-        highScoreFile = "highScores2.txt";
+        highScoreFile = filePath2 + "highScores2.txt";
         this.primaryStage = primaryStage;
         newlevel();
     }

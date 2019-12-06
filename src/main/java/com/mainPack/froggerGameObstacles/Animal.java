@@ -282,7 +282,7 @@ public class Animal extends Actor {
 
 	public void customDesign(){
 		DialogPane customPane = alert.getDialogPane();
-		customPane.getStylesheets().add("startScreenCustom.css");
+		customPane.getStylesheets().add(filePath + "/startScreenCustom.css");
 		customPane.getStyleClass().add("dialogWriting");
 		customPane.getStyleClass().add("Dialog");
 		customPane.getStyleClass().add("dialogHeader");
@@ -304,7 +304,7 @@ public class Animal extends Actor {
 		}
 		alert.setContentText("Highscore for each round: \n" +
 				sb);
-		alert.setHeight(400);
+		alert.setHeight(600);
 		alert.show();
 	}
 
