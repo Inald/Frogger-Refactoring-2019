@@ -24,6 +24,7 @@ public class StartMenu implements EventHandler<ActionEvent> {
     private ImageView menuBackground;
 
     private static StartMenu instance;
+    private static String filePath = "file:src/main/resources/";
 
     public static StartMenu getInstance(Stage primaryStage){
         if(instance == null){
@@ -59,7 +60,7 @@ public class StartMenu implements EventHandler<ActionEvent> {
 
 
         Scene scene = new Scene(screenLayout, 600, 800);
-        scene.getStylesheets().add("startScreenCustom.css");
+        scene.getStylesheets().add(filePath + "startScreenCustom.css");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -135,14 +136,14 @@ public class StartMenu implements EventHandler<ActionEvent> {
     }
 
     public void pictureCreation(){
-        Image froggerTitlePic = new Image("FroggerTitleStartScreen.png");
+        Image froggerTitlePic = new Image(filePath + "FroggerTitleStartScreen.png");
         froggerTitle = new ImageView(froggerTitlePic);
         froggerTitle.setTranslateY(-350);
 
-        Image menuBackgroundPic = new Image("StartScreenBackground.png");
+        Image menuBackgroundPic = new Image(filePath + "StartScreenBackground.png");
         menuBackground = new ImageView(menuBackgroundPic);
 
-        Image frogKingPic = new Image("frogKing2.png");
+        Image frogKingPic = new Image(filePath + "frogKing2.png");
         frogKing = new ImageView(frogKingPic);
     }
 }
