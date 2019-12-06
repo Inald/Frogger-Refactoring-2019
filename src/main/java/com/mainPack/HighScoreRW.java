@@ -76,7 +76,7 @@ public class HighScoreRW {
             int i = 0;
             while((highScoreLine = read.readLine()) != null){
                 highScorePrintRW.add(Integer.valueOf(highScoreLine));
-                //System.out.println(highScorePrint.get(i));
+                //Last used for testing purposes
                 last = (Integer.parseInt(highScoreLine));
                 i++;
             }

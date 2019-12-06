@@ -41,7 +41,6 @@ public class StartMenu implements EventHandler<ActionEvent> {
 
     public void displayStart(){
         primaryStage.setTitle("Frogger start menu");
-
         buttonCreation();
 
         StackPane screenLayout = new StackPane();
