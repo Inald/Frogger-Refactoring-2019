@@ -11,6 +11,7 @@ public class HighScoreRW {
     public static HighScoreRW instance;
     Stage primaryStage;
     private int points;
+    public int last;
     String filePathRW;
     ArrayList<Integer> highScorePrintRW = new ArrayList<>();
 
@@ -76,6 +77,7 @@ public class HighScoreRW {
             while((highScoreLine = read.readLine()) != null){
                 highScorePrintRW.add(Integer.valueOf(highScoreLine));
                 //System.out.println(highScorePrint.get(i));
+                last = (Integer.parseInt(highScoreLine));
                 i++;
             }
             read.close();
@@ -84,4 +86,6 @@ public class HighScoreRW {
         }
         //highScorePrintRW = bubbleSort();
     }
+
+
 }
