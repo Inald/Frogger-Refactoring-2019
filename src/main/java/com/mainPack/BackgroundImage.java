@@ -18,11 +18,11 @@ public class BackgroundImage extends Actor {
 		return instance;
 	}
 	
-	public BackgroundImage(String imageLink) {
+	private BackgroundImage(String imageLink) {
 		this.displayImage(imageLink);
 	}
 
-	public void displayImage(String imageLink){
+	private void displayImage(String imageLink){
 		setImage(new Image(imageLink, 600, 800, false, true));
 	}
 

@@ -30,9 +30,11 @@ public abstract class Levels implements LevelStructure {
     public void instantiateBackground(){
         setBackground(new MyStage());
         scene = new Scene(getBackground(), 600, 800);
-        BackgroundImage froggerback = BackgroundImage.getInstance(filePath + "/iKogsKw.png");
+        BackgroundImage froggerback = BackgroundImage.getInstance(filePath + "/iKogsKw2.png");
 
         getBackground().add(froggerback);
+        getBackground().add(new Digit(3, 50, 370, 750));
+
     }
 
     public void createTimer() {
@@ -43,6 +45,7 @@ public abstract class Levels implements LevelStructure {
             public void handle(long now) {
                 if (getAnimal().changeScore()) {
                     setNumber(getAnimal().getPoints());
+                    setFroggerLives(getAnimal().getFrogLives());
                 }
                 if (getAnimal().getStop()) {
                     System.out.print("STOPP:");
@@ -94,19 +97,25 @@ public abstract class Levels implements LevelStructure {
         getTimer().stop();
     }
 
+    public void setFroggerLives(int n){
+        //while(n > 0){
+            getBackground().add(new Digit(n,50, 370, 750));
+        //}
+    }
+
     public void setNumber(int n) {
         int shift = 0;
         while (n > 0) {
             int d = n / 10;
             int k = n - d * 10;
             n = d;
-            getBackground().add(new Digit(k, 30, 360 - shift, 25));
+            getBackground().add(new Digit(k, 30, 565 - shift, 25));
             shift+=30;
         }
     }
 
     public void setScore(){
-        getBackground().add(new Digit(0, 30, 360, 25));
+        getBackground().add(new Digit(0, 30, 565, 25));
     }
 
     public AnimationTimer getTimer() {
@@ -198,6 +207,7 @@ public abstract class Levels implements LevelStructure {
         setFrog();
         setObstacle();
         setScore();
+
         getBackground().start();
         primaryStage.setScene(scene);
         primaryStage.show();

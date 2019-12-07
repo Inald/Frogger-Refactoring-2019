@@ -1,6 +1,8 @@
 com\mainPack\HighScoreRWTest.class
 TurtleTest.class
+com\mainPack\froggerGameObstacles\ObstacleTest.class
 com\mainPack\froggerGameObstacles\LogTest.class
+com\mainPack\froggerGameObstacles\WetTurtleTest.class
 AnimalTest.class
 com\mainPack\ActorTest.class
 ActorTest.class

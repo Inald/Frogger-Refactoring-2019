@@ -145,9 +145,6 @@ public class Animal extends Actor {
 	public void act(long now) {
 		int bounds = 0;
 
-		if(getFrogLives() == 0){
-			getStop();
-		}
 
 		if (getY()<0 || getY()>734) {
 			setX(300);
@@ -171,6 +168,7 @@ public class Animal extends Actor {
 				setImage(new Image(filePath + "/cardeath3.png", imgSize, imgSize, true, true));
 			}
 			if (carD == 4) {
+				minusFroggerLife();
 				setX(300);
 				setY(679.8+movement);
 				carDeath = false;
@@ -202,6 +200,7 @@ public class Animal extends Actor {
 				setImage(new Image(filePath + "/waterdeath4.png", imgSize,imgSize , true, true));
 			}
 			if (carD == 5) {
+				minusFroggerLife();
 				setX(300);
 				setY(679.8+movement);
 				waterDeath = false;
@@ -309,7 +308,7 @@ public class Animal extends Actor {
 	}
 
 	public boolean getStop() {
-		return end==5;
+		return end==5 || frogLives == 0;
 	}
 	
 	public int getPoints() {

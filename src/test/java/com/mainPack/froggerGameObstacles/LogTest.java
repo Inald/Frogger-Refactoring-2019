@@ -1,6 +1,7 @@
 package com.mainPack.froggerGameObstacles;
 
 import com.mainPack.HighScoreRW;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.testfx.assertions.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -33,5 +34,14 @@ class LogTest {
         state = logObj2.getLeft();
         Assertions.assertThat(state).isEqualTo(true);
     }
+
+    @Test
+    public void TestImageSet(){
+        Image state;
+        Log test = new Log(filePath + "/log3.png"+"Right.png", 0, 649, 1, -2);
+        state = test.getImage();
+        Assertions.assertThat(state).isNotEqualTo(null);
+    }
+
 
 }

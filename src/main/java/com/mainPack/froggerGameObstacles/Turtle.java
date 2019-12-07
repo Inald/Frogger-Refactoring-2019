@@ -71,12 +71,7 @@ public class Turtle extends Moving {
 			setImage(turtle3);
 					
 		}
-			
-//		move(speed , 0);
-//		if (getX() > 600 && speed>0)
-//			setX(-200);
-//		if (getX() < -75 && speed<0)
-//			setX(600);
+
 		super.movingObj(-200,-75,600, speed);
 	}
 
