@@ -244,19 +244,19 @@ public class Animal extends Actor {
 			inter = (ArrayList<End>) getIntersectingObjects(End.class);
 			if (getIntersectingObjects(End.class).get(0).isActivated()) {
 				//waterDeath = true; not sure about this as can go to same end mulitple times
-				end--;
-				minusPoints(50);
+				setY(getY() + (movement*2));
+			}else {
+				addPoints(50);
+				w = 800;
+				getIntersectingObjects(End.class).get(0).setEnd();
+				end++;
+				setX(300);
+				setY(679.8 + movement);
+				roundScore = scoreForRound();
+				finalRoundPoints = getPoints();
+				roundPoints.add(roundScore);
+				roundPoints(getPoints(), roundPoints);
 			}
-			addPoints(50);
-			w=800;
-			getIntersectingObjects(End.class).get(0).setEnd();
-			end++;
-			setX(300);
-			setY(679.8+movement);
-			roundScore = scoreForRound();
-			finalRoundPoints = getPoints();
-			roundPoints.add(roundScore);
-			roundPoints(getPoints(), roundPoints);
 		}
 		else if (getY()<413){
 			waterDeath = true;

@@ -98,9 +98,7 @@ public abstract class Levels implements LevelStructure {
     }
 
     public void setFroggerLives(int n){
-        //while(n > 0){
-            getBackground().add(new Digit(n,50, 370, 750));
-        //}
+       getBackground().add(new Digit(n,50, 370, 750));
     }
 
     public void setNumber(int n) {
