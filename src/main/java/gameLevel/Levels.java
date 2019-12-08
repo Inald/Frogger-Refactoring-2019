@@ -22,6 +22,8 @@ public abstract class Levels implements LevelStructure {
     protected String filePath2 = "src/main/resources/";
     protected Scene scene;
     ArrayList<Integer> highScorePrint = new ArrayList<>();
+    FactoryMoving objFac = new FactoryMoving();
+    private static final String LOG = "LOG";
 
     public Levels(Stage primaryStage){
         this.primaryStage = primaryStage;
@@ -158,7 +160,7 @@ public abstract class Levels implements LevelStructure {
 //    }
 ////
     public void setLogs(){
-        getBackground().add(new Log(filePath + "/log3.png", 150, 0, 166, 0.75));
+        getBackground().add(objFac.getObject(LOG,filePath + "/log3.png", 150, 0, 166, 0.75));
         getBackground().add(new Log(filePath + "/log3.png", 150, 220, 166, 0.75));
         getBackground().add(new Log(filePath + "/log3.png", 150, 440, 166, 0.75));
 

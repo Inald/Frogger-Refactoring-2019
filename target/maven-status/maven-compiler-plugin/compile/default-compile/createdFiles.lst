@@ -22,6 +22,7 @@ com\mainPack\froggerGameObstacles\Log.class
 com\mainPack\BackgroundImage.class
 module-info.class
 gameLevel\LevelStructure.class
+com\mainPack\froggerGameObstacles\FactoryMoving.class
 com\mainPack\froggerGameObstacles\Animal.class
 com\mainPack\froggerGameObstacles\Turtle.class
 com\mainPack\MyStage.class
