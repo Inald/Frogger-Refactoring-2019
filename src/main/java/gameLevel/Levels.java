@@ -1,5 +1,6 @@
 package gameLevel;
 
+
 import com.mainPack.*;
 import com.mainPack.froggerGameObstacles.*;
 import javafx.animation.AnimationTimer;
@@ -22,6 +23,13 @@ public abstract class Levels implements LevelStructure {
     protected String filePath2 = "src/main/resources/";
     protected Scene scene;
     ArrayList<Integer> highScorePrint = new ArrayList<>();
+    FactoryMoving objFac = new FactoryMoving();
+    private static final String LOG = "LOG";
+    private static final String OBSTACLE = "OBSTACLE";
+    private static final String TURTLE = "TURTLE";
+    private static final String WETTURTLE = "WETTURTLE";
+    //private static final String LOG = "LOGS";
+
 
     public Levels(Stage primaryStage){
         this.primaryStage = primaryStage;
@@ -158,16 +166,16 @@ public abstract class Levels implements LevelStructure {
 //    }
 ////
     public void setLogs(){
-        getBackground().add(new Log(filePath + "/log3.png", 150, 0, 166, 0.75));
-        getBackground().add(new Log(filePath + "/log3.png", 150, 220, 166, 0.75));
-        getBackground().add(new Log(filePath + "/log3.png", 150, 440, 166, 0.75));
+        getBackground().add(objFac.getObject(LOG,filePath + "/log3.png", 150, 0, 166, 0.75));
+        getBackground().add(objFac.getObject(LOG,filePath + "/log3.png", 150, 220, 166, 0.75));
+        getBackground().add(objFac.getObject(LOG,filePath + "/log3.png", 150, 440, 166, 0.75));
 
-        getBackground().add(new Log(filePath + "/logs.png", 300, 0, 276, -2));
-        getBackground().add(new Log(filePath + "/logs.png", 300, 400, 276, -2));
+        getBackground().add(objFac.getObject(LOG,filePath + "/logs.png", 300, 0, 276, -2));
+        getBackground().add(objFac.getObject(LOG,filePath + "/logs.png", 300, 400, 276, -2));
 
-        getBackground().add(new Log(filePath + "/log3.png", 150, 50, 329, 0.75));
-        getBackground().add(new Log(filePath + "/log3.png", 150, 270, 329, 0.75));
-        getBackground().add(new Log(filePath + "/log3.png", 150, 490, 329, 0.75));
+        getBackground().add(objFac.getObject(LOG,filePath + "/log3.png", 150, 50, 329, 0.75));
+        getBackground().add(objFac.getObject(LOG,filePath + "/log3.png", 150, 270, 329, 0.75));
+        getBackground().add(objFac.getObject(LOG,filePath + "/log3.png", 150, 490, 329, 0.75));
     }
 
     public void setTurtle(){
