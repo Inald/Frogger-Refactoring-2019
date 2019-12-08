@@ -15,6 +15,14 @@ public class HighScoreRW {
     String filePathRW;
     ArrayList<Integer> highScorePrintRW = new ArrayList<>();
 
+    /**
+     * Returns the instance if the object has already been created, otherwise
+     * creates a new HighScoreRW object
+     * @param primaryStage
+     * @param gamePoints
+     * @param filePathRW
+     * @return
+     */
     public static HighScoreRW getInstance(Stage primaryStage, int gamePoints, String filePathRW){
         if(instance == null){
             return new HighScoreRW(primaryStage, gamePoints, filePathRW);
@@ -22,6 +30,13 @@ public class HighScoreRW {
         return instance;
     }
 
+    /**
+     * constructor for the HighScoreRW class schedules the reading of the file
+     * once writing to the file has taken place
+     * @param primaryStage
+     * @param gamePoints
+     * @param filePathRW
+     */
     private HighScoreRW(Stage primaryStage, int gamePoints, String filePathRW) {
         this.points = gamePoints;
         this.primaryStage = primaryStage;
@@ -31,6 +46,10 @@ public class HighScoreRW {
 
     }
 
+    /**
+     * Writes the score to the selected file saved in resources
+     * @param filePathRW
+     */
     public void fileWriting(String filePathRW){
         try{
             BufferedWriter writer = new BufferedWriter(new FileWriter(filePathRW, true));
@@ -42,6 +61,11 @@ public class HighScoreRW {
         }
     }
 
+    /**
+     * Sorts the array list in a bubbleSort fashion and stores the values
+     * back in the arrayList
+     * @return
+     */
     public ArrayList<Integer> bubbleSort(){
         int temp;
         int j1;
@@ -62,12 +86,20 @@ public class HighScoreRW {
         return highScorePrintRW;
     }
 
+    /**
+     * Returns the sorted array list
+     * @return
+     */
     public ArrayList<Integer> highScores(){
         highScorePrintRW = bubbleSort();
         return highScorePrintRW;
     }
 
-
+    /**
+     * Reads the file path of the parameter and writes to the arrayList
+     * so the highscores can be printed at the end of the game
+     * @param filePathRW
+     */
     public void fileReading(String filePathRW){
         this.filePathRW = filePathRW;
         try{

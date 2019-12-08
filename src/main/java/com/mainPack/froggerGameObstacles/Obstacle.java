@@ -13,7 +13,18 @@ public class Obstacle extends Moving {
 //			setX(600);
 		super.movingObj(-200,-50,600, speed);
 	}
-	
+
+
+	/**
+	 * Constructor of Obstacle class, uses parameters to set a new image
+	 * and the position of the image
+	 * @param imageLink
+	 * @param xpos
+	 * @param ypos
+	 * @param s
+	 * @param w
+	 * @param h
+	 */
 	public Obstacle(String imageLink, int xpos, int ypos, int s, int w, int h) {
 		setImage(new Image(imageLink, w,h, true, true));
 		setX(xpos);
