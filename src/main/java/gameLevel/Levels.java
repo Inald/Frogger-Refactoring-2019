@@ -161,10 +161,7 @@ public abstract class Levels implements LevelStructure {
         getBackground().add(getAnimal());
     }
 
-//    public void setBird(){
-//        getBackground().add(new bird(filePath + "/bird1.com.png", 250, 440, -5, 50, 50));
-//    }
-////
+
     public void setLogs(){
         getBackground().add(objFac.getObject(LOG,filePath + "/log3.png", 150, 0, 166, 0.75));
         getBackground().add(objFac.getObject(LOG,filePath + "/log3.png", 150, 220, 166, 0.75));
@@ -179,29 +176,29 @@ public abstract class Levels implements LevelStructure {
     }
 
     public void setTurtle(){
-        getBackground().add(new Turtle(500, 376, -1, 130, 130));
-        getBackground().add(new Turtle(300, 376, -1, 130, 130));
+        getBackground().add(objFac.getObject(TURTLE,"",500, 376, -1, 130, 130));
+        getBackground().add(objFac.getObject(TURTLE, "",300, 376, -1, 130, 130));
     }
 
     public void setWetTurtle(){
-        getBackground().add(new WetTurtle(700, 376, -1, 130, 130));
-        getBackground().add(new WetTurtle(600, 217, -1, 130, 130));
-        getBackground().add(new WetTurtle(400, 217, -1, 130, 130));
-        getBackground().add(new WetTurtle(200, 217, -1, 130, 130));
+        getBackground().add(objFac.getObject(WETTURTLE, "", 700, 376, -1, 130, 130));
+        getBackground().add(objFac.getObject(WETTURTLE,"",600, 217, -1, 130, 130));
+        getBackground().add(objFac.getObject(WETTURTLE,"",400, 217, -1, 130, 130));
+        getBackground().add(objFac.getObject(WETTURTLE,"",200, 217, -1, 130, 130));
     }
 
     public void setObstacle(){
-        getBackground().add(new Obstacle(filePath + "/truck1"+"Right.png", 0, 649, 1, 120, 120));
-        getBackground().add(new Obstacle(filePath + "/truck1"+"Right.png", 300, 649, 1, 120, 120));
-        getBackground().add(new Obstacle(filePath + "/truck1"+"Right.png", 600, 649, 1, 120, 120));
+        getBackground().add(objFac.getObject(OBSTACLE,filePath + "/truck1"+"Right.png", 0, 649, 1, 120, 120));
+        getBackground().add(objFac.getObject(OBSTACLE, filePath + "/truck1" + "Right.png", 300, 649, 1, 120, 120));
+        getBackground().add(objFac.getObject(OBSTACLE,filePath + "/truck1"+"Right.png", 600, 649, 1, 120, 120));
 
-        getBackground().add(new Obstacle(filePath + "/car1Left.png", 100, 597, -1, 50, 50));
-        getBackground().add(new Obstacle(filePath + "/car1Left.png", 250, 597, -1, 50, 50));
-        getBackground().add(new Obstacle(filePath + "/car1Left.png", 400, 597, -1, 50, 50));
-        getBackground().add(new Obstacle(filePath + "/car1Left.png", 550, 597, -1, 50, 50));
-        getBackground().add(new Obstacle(filePath + "/truck2Right.png", 0, 540, 1, 200, 200));
-        getBackground().add(new Obstacle(filePath + "/truck2Right.png", 500, 540, 1, 200, 200));
-        getBackground().add(new Obstacle(filePath + "/car1Left.png", 500, 490, -5, 50, 50));
+        getBackground().add(objFac.getObject(OBSTACLE,filePath + "/car1Left.png", 100, 597, -1, 50, 50));
+        getBackground().add(objFac.getObject(OBSTACLE,filePath + "/car1Left.png", 250, 597, -1, 50, 50));
+        getBackground().add(objFac.getObject(OBSTACLE,filePath + "/car1Left.png", 400, 597, -1, 50, 50));
+        getBackground().add(objFac.getObject(OBSTACLE,filePath + "/car1Left.png", 550, 597, -1, 50, 50));
+        getBackground().add(objFac.getObject(OBSTACLE,filePath + "/truck2Right.png", 0, 540, 1, 200, 200));
+        getBackground().add(objFac.getObject(OBSTACLE,filePath + "/truck2Right.png", 500, 540, 1, 200, 200));
+        getBackground().add(objFac.getObject(OBSTACLE,filePath + "/car1Left.png", 500, 490, -5, 50, 50));
     }
 
     public void newlevel(){
