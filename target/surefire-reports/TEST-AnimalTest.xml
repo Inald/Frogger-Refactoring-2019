@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="AnimalTest" time="6.088" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="AnimalTest" time="7.281" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2018.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,13 +62,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="PointsIncrement" classname="AnimalTest" time="1.831"/>
-  <testcase name="waterDeathTest" classname="AnimalTest" time="1.56"/>
-  <testcase name="PointsDecrement" classname="AnimalTest" time="0.249"/>
-  <testcase name="PointsIsZero" classname="AnimalTest" time="0.238"/>
-  <testcase name="keyPressedA" classname="AnimalTest" time="0.433"/>
-  <testcase name="keyPressedD" classname="AnimalTest" time="0.435"/>
-  <testcase name="keyPressedS" classname="AnimalTest" time="0.632"/>
-  <testcase name="keyPressedW" classname="AnimalTest" time="0.44"/>
-  <testcase name="negativePoints" classname="AnimalTest" time="0.243"/>
+  <testcase name="PointsIncrement" classname="AnimalTest" time="2.179"/>
+  <testcase name="waterDeathTest" classname="AnimalTest" time="1.777"/>
+  <testcase name="PointsDecrement" classname="AnimalTest" time="0.34"/>
+  <testcase name="PointsIsZero" classname="AnimalTest" time="0.324"/>
+  <testcase name="keyPressedA" classname="AnimalTest" time="0.539"/>
+  <testcase name="keyPressedD" classname="AnimalTest" time="0.507"/>
+  <testcase name="keyPressedS" classname="AnimalTest" time="0.736"/>
+  <testcase name="keyPressedW" classname="AnimalTest" time="0.514"/>
+  <testcase name="negativePoints" classname="AnimalTest" time="0.319"/>
 </testsuite>
