@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: AnimalTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.102 sec - in AnimalTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.131 sec - in AnimalTest

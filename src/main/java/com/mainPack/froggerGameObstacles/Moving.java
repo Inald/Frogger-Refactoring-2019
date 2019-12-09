@@ -17,7 +17,7 @@ public abstract class Moving extends Actor {
     }
 
     /**
-     * movingObj used set the speed of the classes which extend it
+     * movingObj used to set the direction of the classes which extend it
      * - Log, WetTurtle, Turtle, Obstacle NOT RIGHT
      * @param set1
      * @param get1

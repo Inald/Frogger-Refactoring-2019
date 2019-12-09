@@ -22,7 +22,12 @@ public class SecondLevel extends Levels implements LevelStructure {
     private static final String OBSTACLE = "OBSTACLE";
     private static final String WETTURTLE = "WETTURTLE";
 
-
+    /**
+     * Constructor gets primaryStage from Levels abstract class
+     * sets the file to write too, to the level the user plays and calls
+     * the newLevel() function to play the game
+     * @param primaryStage
+     */
     public SecondLevel(Stage primaryStage) {
         super(primaryStage);
         highScoreFile = filePath2 + "highScores2.txt";
@@ -71,6 +76,10 @@ public class SecondLevel extends Levels implements LevelStructure {
         getBackground().add(objFac.getObject(WETTURTLE, "",200, 217, -1, 130, 130));
     }
 
+    /**
+     * newLevel overridden to cater for changes made in the
+     * second level of the game
+     */
     @Override
     public void newLevel() {
         instantiateBackground();
