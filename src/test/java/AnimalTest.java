@@ -129,13 +129,48 @@ class AnimalTest {
         rob.keyRelease(83);
         double afterY = aniInst.getY();
         boolean inBounds = (y == afterY);
-        System.out.println(y);
-        System.out.println(afterY);
         Assertions.assertThat(inBounds).isEqualTo(true);
     }
 
-    //@Test
-    //public void testBoundaryLeft
+    @Test
+    public void testBoundaryLeft(){
+        Robot rob = null;
+        try {
+            rob = new Robot();
+        } catch (AWTException e) {
+            e.printStackTrace();
+        }
+        for (int i = 0; i < 8; i++){
+            rob.keyPress(65);//65 for A to go left
+            rob.keyRelease(65);
+        }
+        double x = aniInst.getX();
+        rob.keyPress(65);
+        rob.keyRelease(65);
+        double xAfter = aniInst.getX();
+        boolean inBounds = (x == xAfter);
+        Assertions.assertThat(inBounds).isEqualTo(true);
+    }
+
+//    @Test
+//    public void testBoundaryRight(){
+//        Robot rob = null;
+//        try {
+//            rob = new Robot();
+//        } catch (AWTException e) {
+//            e.printStackTrace();
+//        }
+//        for (int i = 0; i < 7; i++){
+//            rob.keyPress(68);//65 for A to go left
+//            rob.keyRelease(68);
+//        }
+//        double x = aniInst.getX();
+//        rob.keyPress(68);
+//        rob.keyRelease(68);
+//        double xAfter = aniInst.getX();
+//        boolean inBounds = (x == xAfter);
+//        Assertions.assertThat(inBounds).isEqualTo(true);
+//    }
 
     @Test
     public void waterDeathTest() throws AWTException {

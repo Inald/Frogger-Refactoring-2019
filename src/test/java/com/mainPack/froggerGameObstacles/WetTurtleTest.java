@@ -19,15 +19,6 @@ class WetTurtleTest {
         Assertions.assertThat(state).isNotEqualTo(null);
     }
 
-//    @Test
-//    public void isSunk(){
-//        WetTurtle test = new WetTurtle(0, 649, 1, 120, 120);
-//        long int now = 1382946286033300;
-//        if (now/nineHundredMillion  % 4 ==0) {
-//            setImage(turtle2);
-//            sunk = false;
-//
-//        }
-//    }
+
 
 }

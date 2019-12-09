@@ -11,10 +11,20 @@ public class Turtle extends Moving {
 	int i = 1;
 	boolean bool = true;
 
+	/**
+	 * Returns speed
+	 * @return
+	 */
 	public int getSpeed() {
 		return speed;
 	}
 
+	/**
+	 * Image of turtle set and returned
+	 * @param w
+	 * @param h
+	 * @return
+	 */
 	public Image setTurtle1(int w, int h) {
 //		String turtle1Img;
 		Image turtle1Img;
@@ -22,6 +32,12 @@ public class Turtle extends Moving {
 		return turtle1Img;
 	}
 
+	/**
+	 * Image of turtle set and returned
+	 * @param w
+	 * @param h
+	 * @return
+	 */
 	public Image setTurtle2(int w, int h) {
 		Image turtle2Img;
 		turtle2Img = new Image(filePath + "/TurtleAnimation2.png", w, h, true, true);
@@ -29,24 +45,48 @@ public class Turtle extends Moving {
 
 	}
 
+	/**
+	 * Image of turtle set and returned
+	 * @param w
+	 * @param h
+	 * @return
+	 */
 	public Image setTurtle3(int w, int h) {
 		Image turtle3Img;
 		turtle3Img = new Image(filePath + "/TurtleAnimation3.png", w, h, true, true);
 		return turtle3Img;
 	}
 
+	/**
+	 * Image of turtle set and returned
+	 * @param w
+	 * @param h
+	 * @return
+	 */
 	public Image wetTurtle2(int w, int h){
 		Image wetTurtle2Img;
 		wetTurtle2Img = new Image(filePath + "/TurtleAnimation2Wet.png", w, h, true, true);
 		return wetTurtle2Img;
 	}
 
+	/**
+	 * Image of turtle set and returned
+	 * @param w
+	 * @param h
+	 * @return
+	 */
 	public Image wetTurtle3(int w, int h){
 		Image wetTurtle3Img;
 		wetTurtle3Img = new Image(filePath + "/TurtleAnimation3Wet.png", w, h, true, true);
 		return wetTurtle3Img;
 	}
 
+	/**
+	 * Image of turtle set and returned
+	 * @param w
+	 * @param h
+	 * @return
+	 */
 	public Image wetTurtle4(int w, int h){
 		Image wetTurtle4Img;
 		wetTurtle4Img = new Image(filePath + "/TurtleAnimation4Wet.png", w, h, true, true);
@@ -54,6 +94,10 @@ public class Turtle extends Moving {
 	}
 
 
+	/**
+	 * Turtle image set and movement of Turtle set
+	 * @param now
+	 */
 	@Override
 	public void act(long now) {
 
@@ -76,6 +120,16 @@ public class Turtle extends Moving {
 	}
 
 
+	/**
+	 * Constructor for Turtle sets the positions of the turtles
+	 * based off the parameters as well as speed and width and height
+	 * of image set
+	 * @param xpos
+	 * @param ypos
+	 * @param s
+	 * @param w
+	 * @param h
+	 */
 	public Turtle(int xpos, int ypos, int s, int w, int h) {
 		turtle1 = setTurtle1(w,h);
 		turtle2 = setTurtle2(w,h);

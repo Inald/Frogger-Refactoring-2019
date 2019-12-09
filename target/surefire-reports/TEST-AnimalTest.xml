@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="AnimalTest" time="6.163" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="AnimalTest" time="8.026" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2018.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,14 +62,15 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="PointsIncrement" classname="AnimalTest" time="1.432"/>
-  <testcase name="waterDeathTest" classname="AnimalTest" time="1.546"/>
-  <testcase name="PointsDecrement" classname="AnimalTest" time="0.241"/>
-  <testcase name="PointsIsZero" classname="AnimalTest" time="0.245"/>
-  <testcase name="TestBoundaryDown" classname="AnimalTest" time="0.452"/>
-  <testcase name="keyPressedA" classname="AnimalTest" time="0.444"/>
-  <testcase name="keyPressedD" classname="AnimalTest" time="0.442"/>
-  <testcase name="keyPressedS" classname="AnimalTest" time="0.646"/>
-  <testcase name="keyPressedW" classname="AnimalTest" time="0.438"/>
-  <testcase name="negativePoints" classname="AnimalTest" time="0.248"/>
+  <testcase name="PointsIncrement" classname="AnimalTest" time="2.035"/>
+  <testcase name="testBoundaryDown" classname="AnimalTest" time="0.663"/>
+  <testcase name="testBoundaryLeft" classname="AnimalTest" time="0.378"/>
+  <testcase name="waterDeathTest" classname="AnimalTest" time="1.608"/>
+  <testcase name="PointsDecrement" classname="AnimalTest" time="0.334"/>
+  <testcase name="PointsIsZero" classname="AnimalTest" time="0.305"/>
+  <testcase name="keyPressedA" classname="AnimalTest" time="0.521"/>
+  <testcase name="keyPressedD" classname="AnimalTest" time="0.51"/>
+  <testcase name="keyPressedS" classname="AnimalTest" time="0.747"/>
+  <testcase name="keyPressedW" classname="AnimalTest" time="0.52"/>
+  <testcase name="negativePoints" classname="AnimalTest" time="0.352"/>
 </testsuite>

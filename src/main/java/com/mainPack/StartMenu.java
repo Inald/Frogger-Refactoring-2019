@@ -17,7 +17,7 @@ public class StartMenu implements EventHandler<ActionEvent> {
     private Stage primaryStage;
     private Button level1Btn;
     private Button level2Btn;
-    private Button exitBtn;
+    public Button exitBtn;
     private Button gameInfoBtn;
     private ImageView frogKing;
     private ImageView froggerTitle;
