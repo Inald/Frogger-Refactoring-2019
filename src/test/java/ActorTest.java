@@ -11,6 +11,7 @@ import org.testfx.assertions.api.Assertions;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
 
+import java.awt.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 @ExtendWith(ApplicationExtension.class)
@@ -40,7 +41,7 @@ class ActorTest {
         Platform.runLater(() -> {
             Actor testOb = new FactoryMoving().getObject("OBSTACLE",filePath + "/car1Left.png", 100, 597, -5, 50, 50);
             level.getBackground().add(testOb);
-            ((Moving) testOb).move(-5, 0);
+            testOb.move(-5, 0);
             double xAfter = testOb.getX();
             xDifference = x - xAfter;
             System.out.println(xDifference);
@@ -60,7 +61,7 @@ class ActorTest {
         Platform.runLater(() -> {
             Actor testOb = new FactoryMoving().getObject("TURTLE","",500, 376, -1, 130, 130);
             level.getBackground().add(testOb);
-            ((Moving) testOb).move(-5, 0);
+            testOb.move(-5, 0);
             double xAfter = testOb.getX();
             xDifference = x - xAfter;
             System.out.println(xDifference);
@@ -80,7 +81,7 @@ class ActorTest {
         Platform.runLater(() -> {
             Actor testOb = new FactoryMoving().getObject("WETTURTLE","",200, 217, -1, 130, 130);
             level.getBackground().add(testOb);
-            ((Moving) testOb).move(-5, 0);
+            testOb.move(-5, 0);
             double xAfter = testOb.getX();
             xDifference = x - xAfter;
             System.out.println(xDifference);
@@ -92,5 +93,34 @@ class ActorTest {
             Assertions.assertThat(state).isEqualTo(true);
         });
     }
+
+    @Test
+    public void logMovementTest(){
+        state = false;
+        x = 100;
+        Platform.runLater(() -> {
+            Actor testOb = new FactoryMoving().getObject("LOG",filePath + "/log3.png", 150, 0, 166, 0.75);
+            level.getBackground().add(testOb);
+            testOb.move(-5, 0);
+            double xAfter = testOb.getX();
+            xDifference = x - xAfter;
+            System.out.println(xDifference);
+            System.out.println(x);
+            System.out.println(xAfter);
+            if(x == xDifference + xAfter){
+                state = true;
+            }
+            Assertions.assertThat(state).isEqualTo(true);
+        });
+    }
+
+//    @Test
+//    public void checkEndsWorks() throws AWTException {
+//        Robot rob = new Robot();
+//        rob.setAutoDelay(100);
+//
+//    }
+
+
 
 }
