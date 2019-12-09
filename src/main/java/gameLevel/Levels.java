@@ -49,7 +49,7 @@ public abstract class Levels implements LevelStructure {
         BackgroundImage froggerback = BackgroundImage.getInstance(filePath + "/iKogsKw3.png");
 
         getBackground().add(froggerback);
-        getBackground().add(new Digit(3, 50, 370, 750));
+        getBackground().add(new Digit(3, 50, 328, 748));
 
     }
 
@@ -122,7 +122,7 @@ public abstract class Levels implements LevelStructure {
      * @param n
      */
     public void setFroggerLives(int n){
-       getBackground().add(new Digit(n,50, 370, 750));
+       getBackground().add(new Digit(n,50, 328, 748));
     }
 
     /**

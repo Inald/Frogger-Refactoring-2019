@@ -62,7 +62,7 @@ public class SecondLevel extends Levels implements LevelStructure {
         getBackground().add(objFac.getObject(OBSTACLE,filePath + "/truck2Right.png", 0, 540, 1, 200, 200));
         getBackground().add(objFac.getObject(OBSTACLE,filePath + "/truck2Right.png", 500, 540, 1, 200, 200));
         getBackground().add(objFac.getObject(OBSTACLE,filePath + "/car1Left.png", 500, 490, -10, 50, 50));
-        getBackground().add(objFac.getObject(OBSTACLE,filePath + "/bird1.com.png", 250, 440, -5, 50, 50));
+        getBackground().add(objFac.getObject(OBSTACLE,filePath + "/bird1.com.png", 250, 420, -5, 50, 50));
 
     }
 

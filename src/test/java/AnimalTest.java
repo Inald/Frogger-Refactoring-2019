@@ -1,7 +1,9 @@
 
 
 import com.mainPack.froggerGameObstacles.Animal;
+import com.mainPack.froggerGameObstacles.Obstacle;
 import gameLevel.BlankLevel;
+import javafx.application.Platform;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -184,6 +186,15 @@ class AnimalTest {
         waterDeath = aniInst.isWaterDeath();
         Assertions.assertThat(waterDeath).isEqualTo(true);
     }
+
+//    @Test
+//    public void obstacleTest(){
+//
+//        Platform.runLater(() -> {
+//            Obstacle testOb = new Obstacle(filePath + "/car1Left.png", 100, 597, -5, 50, 50);
+//            level.getBackground().add(testOb);
+//        });
+//    }
 
 
 
