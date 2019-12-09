@@ -11,6 +11,12 @@ public class Main extends Application{
 		launch(args);
 	}
 
+	/**
+	 * Calls the instance of start menu, if one does not exist
+	 * then it is created
+	 * @param primaryStage
+	 * @throws Exception
+	 */
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		StartMenu menu = StartMenu.getInstance(primaryStage);

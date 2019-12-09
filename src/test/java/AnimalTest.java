@@ -120,6 +120,24 @@ class AnimalTest {
     }
 
     @Test
+    public void testBoundaryDown() throws AWTException {
+        double y = aniInst.getY();
+        Robot rob = null;
+        rob = new Robot();
+        rob.setAutoDelay(100);
+        rob.keyPress(83);//83 for S key
+        rob.keyRelease(83);
+        double afterY = aniInst.getY();
+        boolean inBounds = (y == afterY);
+        System.out.println(y);
+        System.out.println(afterY);
+        Assertions.assertThat(inBounds).isEqualTo(true);
+    }
+
+    //@Test
+    //public void testBoundaryLeft
+
+    @Test
     public void waterDeathTest() throws AWTException {
         boolean waterDeath = aniInst.isWaterDeath();
         Robot Rob = new Robot();
@@ -132,14 +150,7 @@ class AnimalTest {
         Assertions.assertThat(waterDeath).isEqualTo(true);
     }
 
-//    @Test
-//    public void truckDeath() throws AWTException {
-//        boolean carDeath = aniInst.isCarDeath();
-//        Robot Rob = new Robot();
-//        Rob.setAutoDelay(100);
-//
-//
-//    }
+
 
 
 }

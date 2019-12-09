@@ -83,7 +83,7 @@ public class StartMenu implements EventHandler<ActionEvent> {
 
 
     /**
-     * Based on the action Performed e.g. button clickec, either a new level
+     * Based on the action Performed for example, b"utton clicked", either a new level
      * is created, the game is exited or the information on how to play
      * the game is displayed to the user
      * @param event
@@ -109,6 +109,10 @@ public class StartMenu implements EventHandler<ActionEvent> {
         }
     }
 
+    /**
+     * displays the information of how to play frogger
+     * the game to the user
+     */
     public void gameInfomation(){
         howToPlay.setHeight(600);
         howToPlay.setTitle("Game Information");
@@ -123,6 +127,10 @@ public class StartMenu implements EventHandler<ActionEvent> {
         howToPlay.showAndWait();
     }
 
+    /**
+     * adds all the CSS needed from the CSS file in the
+     * resources
+     */
     public void customScreen(){
         DialogPane customPane = howToPlay.getDialogPane();
         customPane.getStylesheets().add(filePath + "startScreenCustom.css");
@@ -132,6 +140,9 @@ public class StartMenu implements EventHandler<ActionEvent> {
         customPane.getStyleClass().add("dialogTopLabel");
     }
 
+    /**
+     * Sets the position of the buttons on the screen
+     */
     public void buttonTranslation(){
         //translation of level 1 Button
         level1Btn.setTranslateY(350);
@@ -146,6 +157,10 @@ public class StartMenu implements EventHandler<ActionEvent> {
         gameInfoBtn.setTranslateY(350);
     }
 
+    /**
+     * Creates the button objects and sets the text of each
+     * button
+     */
     public void buttonCreation(){
         level1Btn = new Button();
         level1Btn.setText("level 1");
@@ -165,6 +180,10 @@ public class StartMenu implements EventHandler<ActionEvent> {
 
     }
 
+    /**
+     * Creates the Images and sets the postion of the images for the
+     * start screen background before it is added to the background in displayStart()
+     */
     public void pictureCreation(){
         Image froggerTitlePic = new Image(filePath + "FroggerTitleStartScreen.png");
         froggerTitle = new ImageView(froggerTitlePic);
