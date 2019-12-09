@@ -53,4 +53,44 @@ class ActorTest {
         });
     }
 
+    @Test
+    public void turtleMovementTest(){
+        state = false;
+        x = 100;
+        Platform.runLater(() -> {
+            Actor testOb = new FactoryMoving().getObject("TURTLE","",500, 376, -1, 130, 130);
+            level.getBackground().add(testOb);
+            ((Moving) testOb).move(-5, 0);
+            double xAfter = testOb.getX();
+            xDifference = x - xAfter;
+            System.out.println(xDifference);
+            System.out.println(x);
+            System.out.println(xAfter);
+            if(x == xDifference + xAfter){
+                state = true;
+            }
+            Assertions.assertThat(state).isEqualTo(true);
+        });
+    }
+
+    @Test
+    public void wetTurtleMovementTest(){
+        state = false;
+        x = 100;
+        Platform.runLater(() -> {
+            Actor testOb = new FactoryMoving().getObject("WETTURTLE","",200, 217, -1, 130, 130);
+            level.getBackground().add(testOb);
+            ((Moving) testOb).move(-5, 0);
+            double xAfter = testOb.getX();
+            xDifference = x - xAfter;
+            System.out.println(xDifference);
+            System.out.println(x);
+            System.out.println(xAfter);
+            if(x == xDifference + xAfter){
+                state = true;
+            }
+            Assertions.assertThat(state).isEqualTo(true);
+        });
+    }
+
 }
