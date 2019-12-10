@@ -3,7 +3,10 @@ package com.mainPack.background;
 import com.mainPack.froggerGameObjects.Actor;
 import javafx.scene.image.Image;
 
-
+/**
+ * Purpose of class is to set the background image
+ * of the game
+ */
 public class BackgroundImage extends Actor {
 
 	private static BackgroundImage instance;

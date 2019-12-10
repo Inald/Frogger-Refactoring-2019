@@ -12,36 +12,130 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
 public class Animal extends Actor {
+	/**
+	 * Image initialised globally here so it can be accesed
+	 * and set by methods
+	 */
 	Image imgW1;
+	/**
+	 * Image initialised globally here so it can be accessed
+	 * and set by methods
+	 */
 	Image imgA1;
+	/**
+	 * Image initialised globally here so it can be accessed
+	 * and set by methods
+	 */
 	Image imgS1;
+	/**
+	 * Image initialised globally here so it can be accessed
+	 * and set by methods
+	 */
 	Image imgD1;
+	/**
+	 * Image initialised globally here so it can be accessed
+	 * and set by methods
+	 */
 	Image imgW2;
+	/**
+	 * Image initialised globally here so it can be accessed
+	 * and set by methods
+	 */
 	Image imgA2;
+	/**
+	 * Image initialised globally here so it can be accessed
+	 * and set by methods
+	 */
 	Image imgS2;
+	/**
+	 * Image initialised globally here so it can be accessed
+	 * and set by methods
+	 */
 	Image imgD2;
+	/**
+	 * User's points for the game
+	 */
 	int points = 0;
+
+	/**
+	 * User's points for the round
+	 */
 	int finalRoundPoints = 0;
+
+	/**
+	 * Number of ends full is 0 to begin with,
+	 * incremented by 1 each time the frog enters
+	 * one of the ends
+	 */
 	int end = 0;
 	private boolean second = false;
 	boolean noMove = false;
+	/**
+	 * Movement of the frog in the Y direction
+	 */
 	double movement = 13.3333333*2;
+
+	/**
+	 * Movement of the frog in the X direction
+	 */
 	double movementX = 10.666666*2;
+
+	/**
+	 * Size of the images set
+	 */
 	int imgSize = 40;
+
+	/**
+	 * Boolean to store true or false
+	 * if frog is killed by obstacles
+	 */
 	boolean carDeath = false;
+
+	/**
+	 * Boolean to store true or false
+	 * if frog is killed by the water
+	 */
 	boolean waterDeath = false;
 	boolean stop = false;
+
+	/**
+	 * Variable changes depending on when the
+	 * score updates
+	 */
 	boolean changeScore = false;
+
 	int carD = 0;
-	double w = 800;
+
+	/**
+	 * Used to track the furthest Y reached so that it does not
+	 * add points if user retreats and goes up again
+	 */
+	double furthestY = 800;
+	/**
+	 * Number of frog lives
+	 */
 	int frogLives = 3;
+	/**
+	 * Score for the round
+	 */
 	int roundScore;
 	Alert alert;
+
+
 	ArrayList<End> inter = new ArrayList<End>();
+
+	/**
+	 * ArrayList of points scored for each round player
+	 */
 	ArrayList<Integer> roundPoints = new ArrayList<>();
 
 
-
+	/**
+	 * Sets the position of the frog as well as the images of
+	 * the frog once it is in different positions depending
+	 * on the keys pressed and released
+	 * @param imageLink
+	 */
 	public Animal(String imageLink) {
 		setImage(new Image(imageLink, imgSize, imgSize, true, true));
 		setX(300);
@@ -111,8 +205,8 @@ public class Animal extends Actor {
 				if (noMove) {}
 				else {
 				if (event.getCode() == KeyCode.W) {	  
-					if (getY() < w) {
-						w = getY();
+					if (getY() < furthestY) {
+						furthestY = getY();
 						addPoints(10);
 					}
 	                move(0, -movement);
@@ -139,7 +233,14 @@ public class Animal extends Actor {
 			
 		});
 	}
-	
+
+	/**
+	 * Sets the position of the frog and checks the frogs position throughout
+	 * the game and changes its image depending on whether it is hit by an obstacle
+	 * or dies in the water and also checks whether the end is full and if so does not
+	 * allow the frog to go into the end that has already been activated
+	 * @param now
+	 */
 	@Override
 	public void act(long now) {
 		int bounds = 0;
@@ -246,7 +347,7 @@ public class Animal extends Actor {
 				setY(getY() + (movement*2));
 			}else {
 				addPoints(50);
-				w = 800;
+				furthestY = 800;
 				getIntersectingObjects(End.class).get(0).setEnd();
 				end++;
 				setX(300);
@@ -264,6 +365,14 @@ public class Animal extends Actor {
 			//setY(679.8+movement);
 		}
 	}
+
+	/**
+	 * Finds out the score earned for the round
+	 * that the user is playing, sees how it has changed
+	 * compared to the overall score of the last round
+	 * and returns it for the user to see
+	 * @return
+	 */
 	public int scoreForRound(){
 		int difference = 0;
 		if(finalRoundPoints == 0){
@@ -277,7 +386,11 @@ public class Animal extends Actor {
 		return difference;
 	}
 
-
+	/**
+	 * Function to call the CSS file and make
+	 * the design of alerts appear as specified
+	 * in the CSS file
+	 */
 	public void customDesign(){
 		DialogPane customPane = alert.getDialogPane();
 		customPane.getStylesheets().add(filePath + "/startScreenCustom.css");
@@ -288,6 +401,13 @@ public class Animal extends Actor {
 	}
 
 
+	/**
+	 * Prints the score the user achieved for the round
+	 * and displays the score of each round in the game
+	 * in descending order (Highest to lowest)
+	 * @param endPoints
+	 * @param roundPoints
+	 */
 	public void roundPoints(int endPoints, ArrayList roundPoints){
 		alert = new Alert(Alert.AlertType.INFORMATION);
 		alert.setTitle("Highscore for round");
@@ -306,23 +426,49 @@ public class Animal extends Actor {
 		alert.show();
 	}
 
+	/**
+	 * Returns true or false to end the game based on whether
+	 * the game is finished or the number of lives of the frog
+	 * reached equals zero.
+	 * @return
+	 */
 	public boolean getStop() {
-		return end==5 || frogLives == 0;
+		return end==5 || getFrogLives() == 0;
 	}
-	
+
+	/**
+	 * Returns the points
+	 * @return
+	 */
 	public int getPoints() {
 		return points;
 	}
 
+	/**
+	 * Sets the number of points the user has
+	 * @param points
+	 */
 	public void setPoints(int points) {
 		this.points = points;
 	}
 
+	/**
+	 * Adds the number of points passed into the function
+	 * to the overall number of points and sets the changeScore
+	 * variable to true to indicate a new score
+	 * @param points
+	 */
 	public void addPoints(int points){
 		this.points += points;
 		changeScore = true;
 	}
 
+	/**
+	 * Removes the number of points passed into the function
+	 * from the overall number of points the and sets the
+	 * changeScore variable to indicate a score change.
+	 * @param points
+	 */
 	public void minusPoints(int points){
 		if(getPoints() >= points) {
 			this.points -= points;
@@ -332,6 +478,7 @@ public class Animal extends Actor {
 		changeScore = true;
 	}
 
+
 	public boolean changeScore() {
 		if (changeScore) {
 			changeScore = false;
@@ -340,16 +487,30 @@ public class Animal extends Actor {
 		return false;
 	}
 
+	/**
+	 * Returns whether waterDeath is true or false
+	 * @return
+	 */
 	public boolean isWaterDeath()
 	{
 		return waterDeath;
 	}
 
+	/**
+	 * Returns whether carDeath is true or false
+	 * @return
+	 */
 	public boolean isCarDeath()
 	{
 		return carDeath;
 	}
 
+	/**
+	 * If frogger lives is 0 then calls getStop() to end
+	 * the game otherwise returns frogLives after it has been
+	 * decremented by 1
+	 * @return
+	 */
 	public int minusFroggerLife(){
 		if(frogLives == 0){
 			getStop();
@@ -357,6 +518,10 @@ public class Animal extends Actor {
 		return frogLives -= 1;
 	}
 
+	/**
+	 * Returns the number of frogLives
+	 * @return
+	 */
 	public int getFrogLives() {
 		return frogLives;
 	}

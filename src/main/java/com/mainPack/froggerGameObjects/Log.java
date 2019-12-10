@@ -6,6 +6,11 @@ public class Log extends Moving {
 
 	private double speed;
 
+	/**
+	 * Calls the super class movingObj to set the direction of which
+	 * the log moves in
+	 * @param now
+	 */
 	@Override
 	public void act(long now) {
 		super.movingObj(-180,-300,700, speed);
