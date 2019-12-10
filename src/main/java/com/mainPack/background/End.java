@@ -1,7 +1,12 @@
-package com.mainPack;
+package com.mainPack.background;
 
+import com.mainPack.froggerGameObjects.Actor;
 import javafx.scene.image.Image;
 
+/**
+ * Sets the Ends of the game and contains methods stating
+ * whether the end is full or not
+ */
 public class End extends Actor {
 	boolean activated = false;
 	@Override

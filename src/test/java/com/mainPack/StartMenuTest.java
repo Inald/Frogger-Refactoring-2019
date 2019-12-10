@@ -1,20 +1,11 @@
 package com.mainPack;
 
 
-import javafx.scene.input.MouseButton;
+import com.mainPack.gameStart.StartMenu;
 import javafx.stage.Stage;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.testfx.assertions.api.Assertions;
 import org.testfx.framework.junit5.ApplicationExtension;
-import org.testfx.framework.junit5.Start;
-import org.testfx.robot.ClickRobot;
-import org.testfx.robot.Motion;
-import org.testfx.service.query.PointQuery;
 
-import java.awt.*;
-
-import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith(ApplicationExtension.class)
 class StartMenuTest {
 

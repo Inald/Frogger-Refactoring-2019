@@ -1,6 +1,5 @@
 package gameLevel;
 
-import com.mainPack.froggerGameObstacles.Animal;
 import javafx.stage.Stage;
 
 public class BlankLevel extends Levels implements LevelStructure {

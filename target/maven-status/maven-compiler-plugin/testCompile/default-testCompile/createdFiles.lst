@@ -1,10 +1,10 @@
+com\mainPack\froggerGameObjects\WetTurtleTest.class
+com\mainPack\froggerGameObjects\LogTest.class
 com\mainPack\HighScoreRWTest.class
 TurtleTest.class
 com\mainPack\BackgroundImageTest.class
-com\mainPack\froggerGameObstacles\ObstacleTest.class
 com\mainPack\EndTest.class
-com\mainPack\froggerGameObstacles\LogTest.class
-com\mainPack\froggerGameObstacles\WetTurtleTest.class
+com\mainPack\froggerGameObjects\ObstacleTest.class
 com\mainPack\StartMenuTest.class
 AnimalTest.class
 com\mainPack\ActorTest.class

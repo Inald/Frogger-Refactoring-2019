@@ -1,7 +1,6 @@
-import com.mainPack.Actor;
-import com.mainPack.froggerGameObstacles.Animal;
-import com.mainPack.froggerGameObstacles.FactoryMoving;
-import com.mainPack.froggerGameObstacles.Moving;
+import com.mainPack.froggerGameObjects.Actor;
+import com.mainPack.froggerGameObjects.Animal;
+import com.mainPack.froggerGameObjects.FactoryMoving;
 import gameLevel.BlankLevel;
 import javafx.application.Platform;
 import javafx.stage.Stage;
@@ -10,9 +9,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.assertions.api.Assertions;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
-
-import java.awt.*;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 @ExtendWith(ApplicationExtension.class)
 class ActorTest {

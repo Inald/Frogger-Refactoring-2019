@@ -1,17 +1,7 @@
 package gameLevel;
 
-import com.mainPack.HighScoreRW;
-import com.mainPack.froggerGameObstacles.Log;
-import com.mainPack.froggerGameObstacles.Obstacle;
-import com.mainPack.StartMenu;
-import com.mainPack.froggerGameObstacles.Turtle;
-import com.mainPack.froggerGameObstacles.WetTurtle;
-import javafx.animation.AnimationTimer;
-import javafx.scene.control.Alert;
-import javafx.scene.control.DialogPane;
 import javafx.stage.Stage;
 
-import java.io.*;
 import java.util.ArrayList;
 
 public class SecondLevel extends Levels implements LevelStructure {

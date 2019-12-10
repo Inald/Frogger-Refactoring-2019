@@ -1,10 +1,12 @@
-package com.mainPack;
+package com.mainPack.World;
 
 import java.io.File;
+
+import com.mainPack.World.World;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
-public class MyStage extends World{
+public class MyStage extends World {
 	MediaPlayer mediaPlayer;
 	@Override
 	public void act(long now) {

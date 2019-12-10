@@ -1,9 +1,7 @@
 
 
-import com.mainPack.froggerGameObstacles.Animal;
-import com.mainPack.froggerGameObstacles.Obstacle;
+import com.mainPack.froggerGameObjects.Animal;
 import gameLevel.BlankLevel;
-import javafx.application.Platform;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

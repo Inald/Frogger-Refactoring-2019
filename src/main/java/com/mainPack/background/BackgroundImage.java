@@ -1,6 +1,8 @@
-package com.mainPack;
+package com.mainPack.background;
 
+import com.mainPack.froggerGameObjects.Actor;
 import javafx.scene.image.Image;
+
 
 public class BackgroundImage extends Actor {
 
@@ -13,7 +15,8 @@ public class BackgroundImage extends Actor {
 
 	/**
 	 * Instance of background image is created if one has not already
-	 * been	instantiated and is returned
+	 * been	instantiated and is returned. This allows for the singleton
+     * design pattern
 	 * @param imageLink
 	 * @return
 	 */

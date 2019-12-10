@@ -1,5 +1,6 @@
-package com.mainPack;
+package com.mainPack.froggerGameObjects;
 
+import com.mainPack.World.World;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.InputEvent;
 

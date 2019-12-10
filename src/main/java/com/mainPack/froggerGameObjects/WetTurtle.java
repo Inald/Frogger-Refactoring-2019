@@ -1,4 +1,4 @@
-package com.mainPack.froggerGameObstacles;
+package com.mainPack.froggerGameObjects;
 
 public class WetTurtle extends Turtle {
 	int i = 1;

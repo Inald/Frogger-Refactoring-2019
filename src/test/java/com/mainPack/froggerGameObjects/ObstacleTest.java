@@ -1,4 +1,4 @@
-package com.mainPack.froggerGameObstacles;
+package com.mainPack.froggerGameObjects;
 
 import org.testfx.assertions.api.Assertions;
 import javafx.scene.image.Image;

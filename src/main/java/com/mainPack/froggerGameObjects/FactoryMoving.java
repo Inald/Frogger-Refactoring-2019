@@ -1,4 +1,4 @@
-package com.mainPack.froggerGameObstacles;
+package com.mainPack.froggerGameObjects;
 
 /**
  * Purpose of class is due to Factory design pattern

@@ -1,6 +1,4 @@
-package com.mainPack.froggerGameObstacles;
-
-import com.mainPack.Actor;
+package com.mainPack.froggerGameObjects;
 
 public abstract class Moving extends Actor {
 

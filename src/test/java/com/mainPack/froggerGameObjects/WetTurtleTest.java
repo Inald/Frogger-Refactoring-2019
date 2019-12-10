@@ -1,10 +1,8 @@
-package com.mainPack.froggerGameObstacles;
+package com.mainPack.froggerGameObjects;
 
 import javafx.scene.image.Image;
 import org.junit.jupiter.api.Test;
 import org.testfx.assertions.api.Assertions;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class WetTurtleTest {
     private String filePath = "file:src/main/resources/";

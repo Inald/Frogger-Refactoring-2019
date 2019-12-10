@@ -1,11 +1,9 @@
 package com.mainPack;
 
-import com.mainPack.froggerGameObstacles.Log;
+import com.mainPack.background.End;
 import javafx.scene.image.Image;
 import org.junit.jupiter.api.Test;
 import org.testfx.assertions.api.Assertions;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class EndTest {
 

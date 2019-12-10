@@ -2,14 +2,18 @@ package gameLevel;
 
 
 import com.mainPack.*;
-import com.mainPack.froggerGameObstacles.*;
+import com.mainPack.World.MyStage;
+import com.mainPack.background.BackgroundImage;
+import com.mainPack.background.Digit;
+import com.mainPack.background.End;
+import com.mainPack.froggerGameObjects.*;
+import com.mainPack.gameStart.StartMenu;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.DialogPane;
 import javafx.stage.Stage;
 
-import java.io.*;
 import java.util.ArrayList;
 
 /**

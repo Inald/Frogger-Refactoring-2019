@@ -1,7 +1,11 @@
-package com.mainPack;
+package com.mainPack.background;
 
+import com.mainPack.froggerGameObjects.Actor;
 import javafx.scene.image.Image;
 
+/**
+ * Class used to display digits on the screen
+ */
 public class Digit extends Actor {
 	int dim;
 	Image im1;

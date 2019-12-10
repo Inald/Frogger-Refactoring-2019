@@ -1,4 +1,4 @@
-package com.mainPack;
+package com.mainPack.gameStart;
 
 import gameLevel.GameFactory;
 import javafx.event.ActionEvent;

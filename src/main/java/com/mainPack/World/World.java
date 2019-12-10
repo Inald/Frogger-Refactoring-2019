@@ -1,8 +1,9 @@
-package com.mainPack;
+package com.mainPack.World;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.mainPack.froggerGameObjects.Actor;
 import javafx.animation.AnimationTimer;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;

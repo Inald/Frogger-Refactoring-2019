@@ -1,13 +1,10 @@
-package com.mainPack.froggerGameObstacles;
+package com.mainPack.froggerGameObjects;
 
-import com.mainPack.HighScoreRW;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.testfx.assertions.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.testfx.framework.junit5.Start;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class LogTest {
 

@@ -1,10 +1,7 @@
-import com.mainPack.froggerGameObstacles.Obstacle;
-import com.mainPack.froggerGameObstacles.Turtle;
+import com.mainPack.froggerGameObjects.Turtle;
 import javafx.scene.image.Image;
 import org.junit.jupiter.api.Test;
 import org.testfx.assertions.api.Assertions;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class TurtleTest {
 

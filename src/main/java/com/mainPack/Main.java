@@ -1,5 +1,6 @@
 package com.mainPack;
 
+import com.mainPack.gameStart.StartMenu;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
