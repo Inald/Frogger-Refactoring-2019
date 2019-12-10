@@ -4,10 +4,13 @@ import javafx.stage.Stage;
 
 import java.util.ArrayList;
 
+/**
+ * Second level in the game out of the two, overrides certain methods
+ * in the abstact super class in order to work differently
+ */
 public class SecondLevel extends Levels implements LevelStructure {
 
     private Stage primaryStage;
-    ArrayList<Integer> highScorePrint = new ArrayList<>();
     private static final String LOG = "LOG";
     private static final String OBSTACLE = "OBSTACLE";
     private static final String WETTURTLE = "WETTURTLE";
@@ -25,7 +28,10 @@ public class SecondLevel extends Levels implements LevelStructure {
         newlevel();
     }
 
-
+    /**
+     * Class overridden as implementation is different from its parent class
+     * as less logs are implemented along with their speeds varying
+     */
     @Override
     public void setLogs(){
         getBackground().add(objFac.getObject(LOG,filePath + "/log3.png", 150, 0, 166, 0.75));
@@ -39,6 +45,11 @@ public class SecondLevel extends Levels implements LevelStructure {
         getBackground().add(objFac.getObject(LOG,filePath + "/log3.png", 150, 490, 329, 0.75));
     }
 
+    /**
+     * Class overridden as implementation is different from its parent
+     * class as more, less or different kinds of objects are implemented
+     * for example Bird
+     */
     @Override
     public void setObstacle(){
         getBackground().add(objFac.getObject(OBSTACLE,filePath + "/truck1"+"Right.png", 0, 649, 2, 120, 120));
@@ -56,6 +67,10 @@ public class SecondLevel extends Levels implements LevelStructure {
 
     }
 
+    /**
+     * Class overridden as implementation is different from its parent
+     * class as more wetTurtles are implemented
+     */
     @Override
     public void setWetTurtle(){
         getBackground().add(objFac.getObject(WETTURTLE, "", 500, 376, -1, 130, 130));

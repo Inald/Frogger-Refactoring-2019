@@ -5,14 +5,24 @@ import javafx.stage.Stage;
 import java.io.*;
 import java.util.ArrayList;
 
+/**
+ * Purpose of class is to read and write the highscores at the
+ * end of either level that the user chooses to play
+ */
 public class HighScoreRW {
 
 
     public static HighScoreRW instance;
     Stage primaryStage;
     private int points;
+    /**
+     * used to check the last value entered in testing
+     */
     public int last;
     String filePathRW;
+    /**
+     * Stores the highscores in this array
+     */
     ArrayList<Integer> highScorePrintRW = new ArrayList<>();
 
     /**

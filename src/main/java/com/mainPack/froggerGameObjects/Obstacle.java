@@ -2,8 +2,17 @@ package com.mainPack.froggerGameObjects;
 
 import javafx.scene.image.Image;
 
+/**
+ * Class creates the obstacles in the game
+ */
 public class Obstacle extends Moving{
 	private int speed;
+
+	/**
+	 * Calls the super class movingObj to set the direction of which
+	 * the log moves in
+	 * @param now
+	 */
 	@Override
 	public void act(long now) {
 //		move(speed , 0);

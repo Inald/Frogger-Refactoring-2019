@@ -6,6 +6,9 @@ import com.mainPack.World.World;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
+/**
+ * Plays music in the background of the game
+ */
 public class MyStage extends World {
 	MediaPlayer mediaPlayer;
 	@Override

@@ -12,6 +12,10 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
+/**
+ * Displays the start menu at the beginning of when the program is
+ * run - Game information, level 1, level2 , exit
+ */
 public class StartMenu implements EventHandler<ActionEvent> {
 
     private Stage primaryStage;

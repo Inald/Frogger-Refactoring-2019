@@ -3,6 +3,11 @@ package gameLevel;
 import com.mainPack.Main;
 import javafx.stage.Stage;
 
+/**
+ * Purpose of class is due to Factory design pattern
+ * used to return which game is made depending on the
+ * integer value passed into newGame()
+ */
 public class GameFactory extends Main {
 
     private Stage primaryStage;

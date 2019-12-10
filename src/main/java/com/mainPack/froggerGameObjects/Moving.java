@@ -1,11 +1,19 @@
 package com.mainPack.froggerGameObjects;
 
+/**
+ * Purpose of class is to allow classes which subclass it
+ * to call the movingObj function to get their direction of movement
+ */
 public abstract class Moving extends Actor {
 
     private double speed;
     private double logSpeed;
 
 
+    /**
+     * Sets the speed of the Actor
+     * @param speed
+     */
     public void setSpeed(double speed) {
         this.speed = speed;
     }

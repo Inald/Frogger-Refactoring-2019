@@ -2,6 +2,9 @@ package gameLevel;
 
 import javafx.stage.Stage;
 
+/**
+ * Class is mainly used for testing purposes with the JUnit tests
+ */
 public class BlankLevel extends Levels implements LevelStructure {
     private Stage primaryStage;
 

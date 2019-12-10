@@ -2,6 +2,9 @@ package com.mainPack.froggerGameObjects;
 
 import javafx.scene.image.Image;
 
+/**
+ * Creates the turtles in the game
+ */
 public class Turtle extends Moving {
 	Image turtle1;
 	Image turtle2;

@@ -1,5 +1,8 @@
 package gameLevel;
 
+/**
+ * Lays out the methods needed for the levels
+ */
 public interface LevelStructure {
 
     void instantiateBackground();
