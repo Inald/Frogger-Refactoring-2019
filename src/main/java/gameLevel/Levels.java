@@ -12,21 +12,73 @@ import javafx.stage.Stage;
 import java.io.*;
 import java.util.ArrayList;
 
+/**
+ * Abstract class which contains the implementation of levels.
+ * Classes which extend Levels can use this class or override
+ * methods to create new levels
+ */
 public abstract class Levels implements LevelStructure {
     private AnimationTimer timer;
     private MyStage background;
     private Animal animal;
+    /**
+     * Set to the stage passed into the Levels
+     * constructor
+     */
     private Stage primaryStage;
     protected String highScoreFile;
 
+    /**
+     * file path used to specify the resources needed to
+     * display to the user
+     */
     protected String filePath = "file:src/main/resources";
+
+    /**
+     * file path used to read and write to files for highScores at
+     * the end of either level
+     */
     protected String filePath2 = "src/main/resources/";
     protected Scene scene;
+
+    /**
+     * ArrayList used to stored the highScores to display to
+     * the user
+     */
     ArrayList<Integer> highScorePrint = new ArrayList<>();
+
+    /**
+     * Object of type FactoryMoving, uses getObject to add
+     * the images to the background
+     */
     FactoryMoving objFac = new FactoryMoving();
+
+    /**
+     * Constant used to set the right object type needed
+     * for the factory class to display the object specified
+     * by its name
+     */
     private static final String LOG = "LOG";
+
+    /**
+     * Constant used to set the right object type needed
+     * for the factory class to display the object specified
+     * by its name
+     */
     private static final String OBSTACLE = "OBSTACLE";
+
+    /**
+     * Constant used to set the right object type needed
+     * for the factory class to display the object specified
+     * by its name
+     */
     private static final String TURTLE = "TURTLE";
+
+    /**
+     * Constant used to set the right object type needed
+     * for the factory class to display the object specified
+     * by its name
+     */
     private static final String WETTURTLE = "WETTURTLE";
 
     /**
@@ -112,6 +164,9 @@ public abstract class Levels implements LevelStructure {
         getTimer().start();
     }
 
+    /**
+     * Stops the timer running
+     */
     public void stop() {
         getTimer().stop();
     }

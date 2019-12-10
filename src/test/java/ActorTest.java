@@ -44,9 +44,6 @@ class ActorTest {
             testOb.move(-5, 0);
             double xAfter = testOb.getX();
             xDifference = x - xAfter;
-            System.out.println(xDifference);
-            System.out.println(x);
-            System.out.println(xAfter);
             if(x == xDifference + xAfter){
                 state = true;
             }
@@ -64,9 +61,6 @@ class ActorTest {
             testOb.move(-5, 0);
             double xAfter = testOb.getX();
             xDifference = x - xAfter;
-            System.out.println(xDifference);
-            System.out.println(x);
-            System.out.println(xAfter);
             if(x == xDifference + xAfter){
                 state = true;
             }
@@ -84,9 +78,6 @@ class ActorTest {
             testOb.move(-5, 0);
             double xAfter = testOb.getX();
             xDifference = x - xAfter;
-            System.out.println(xDifference);
-            System.out.println(x);
-            System.out.println(xAfter);
             if(x == xDifference + xAfter){
                 state = true;
             }
@@ -104,9 +95,6 @@ class ActorTest {
             testOb.move(-5, 0);
             double xAfter = testOb.getX();
             xDifference = x - xAfter;
-            System.out.println(xDifference);
-            System.out.println(x);
-            System.out.println(xAfter);
             if(x == xDifference + xAfter){
                 state = true;
             }
@@ -118,9 +106,33 @@ class ActorTest {
 //    public void checkEndsWorks() throws AWTException {
 //        Robot rob = new Robot();
 //        rob.setAutoDelay(100);
+//        Platform.runLater(() -> {
+//            Actor testOb = new FactoryMoving().getObject("LOG",filePath + "/log3.png", 180, 260, 166, 0);
+//            Actor testOb2 = new FactoryMoving().getObject("LOG",filePath + "/log3.png", 180, 260, 210, 0);
+//            Actor testOb3 = new FactoryMoving().getObject("LOG",filePath + "/log3.png", 180, 260, 254, 0);
+//            Actor testOb4 = new FactoryMoving().getObject("LOG",filePath + "/log3.png", 180, 260, 298, 0);
+//            Actor testOb5 = new FactoryMoving().getObject("LOG",filePath + "/log3.png", 180, 260, 350, 0);
+//            Actor testOb6 = new FactoryMoving().getObject("LOG",filePath + "/log3.png", 180, 260, 390, 0);
 //
-//    }
+//            level.getBackground().add(testOb);
+//            level.getBackground().add(testOb2);
+//            level.getBackground().add(testOb3);
+//            level.getBackground().add(testOb4);
+//            level.getBackground().add(testOb5);
+//            level.getBackground().add(testOb6);
+//            rob.keyPress(65);
+//            rob.keyRelease(65);
+//            for(int i = 0; i < 11; i++){
+//                rob.keyPress(87);
+//                rob.keyRelease(87);
+//                rob.setAutoDelay(100);
+//            }
+//            rob.keyPress(13);
+//            rob.keyRelease(13);
+//            Assertions.assertThat(160).isEqualTo(160);
+//        });
+
+    }
 
 
 
-}

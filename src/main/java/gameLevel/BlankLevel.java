@@ -24,6 +24,7 @@ public class BlankLevel extends Levels implements LevelStructure {
     public void testingLevel(){
         instantiateBackground(); //needed or tests break
         setFrog();
+        setEnds();
         getBackground().start();
         primaryStage.setScene(scene);
         primaryStage.show();
