@@ -2,6 +2,9 @@ package com.mainPack.froggerGameObjects;
 
 import javafx.scene.image.Image;
 
+/**
+ * Creates logs in the game
+ */
 public class Log extends Moving {
 
 	private double speed;

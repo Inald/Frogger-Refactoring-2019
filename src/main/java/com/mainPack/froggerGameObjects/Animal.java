@@ -11,6 +11,11 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
+/**
+ * Creates and positions the frog and checks the state of the game
+ * as the frog moves throughout the game until the number of ends = 5
+ * or the frog lives have run out
+ */
 public class Animal extends Actor {
 	/**
 	 * Image initialised globally here so it can be accesed
