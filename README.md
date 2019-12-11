@@ -19,16 +19,17 @@ by pressing apply.
 ##Extensions
 ###Highscores
 Two type of Highscores were implemented one for the overall score of the level being played and also one for each round that is displayed to a user in a sorted fashion (Descending)
-
+![Frogger](src/main/resources/highScoreDisplay.png)
 ###Further Levels
 Further level implementation was allowed once the main class was refactored to put the level being played into an abstract class that could be overridden to alter the game
-
+![Frogger](src/main/resources/Furtherlevels.PNG)
 ###JUnit
 
-
-
+###Start Menu
+![Frogger](src/main/resources/startScreenReadMe.png)
 ##Refactoring
 ###Maven
+Maven build was added to allow for 
 ###Design Patterns
 #####Singletons:
 ~~~~
@@ -43,3 +44,10 @@ Further level implementation was allowed once the main class was refactored to p
 2) Factory added for objects moving in the game e.g. Logs, Turtles etc...
 ~~~~
 ###Bug Fixes
+Bug fixes include the following:
+~~~~
+1) Moving into the same end that has already been activated - frogger is
+   no longer allowed.
+2) allowing speed of logs or turtles to speed up and not have the frogger
+   slip of but stay on the log with the new speed
+3) 
