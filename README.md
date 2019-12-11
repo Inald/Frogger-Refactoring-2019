@@ -1,8 +1,8 @@
-#**_Frogger Software Maintenance_**
+# **_Frogger Software Maintenance_**
 
 This Program is based on an Arcade game called "Frogger", Although its similar to the orignal game they are not exactly the same as you will find different additions to this game.
 
-##Getting Started
+## Getting Started
 
 These instructions will ensure that the program can get up and running on your local machine for development and tests.
 
@@ -15,11 +15,11 @@ in the build. Enter "clean compile test" and it allows for automated testing
 by pressing apply.
 ~~~~
 
-![Frogger](src/main/resources/editConfigs.png)
+![Frogger](src/main/resources/editConfigs.PNG)
 ## Extensions
 ### Highscores
 Two type of Highscores were implemented one for the overall score of the level being played and also one for each round that is displayed to a user in a sorted fashion (Descending)
-![Frogger](src/main/resources/highScoreDisplay.png)
+![Frogger](src/main/resources/highScoreDisplay.PNG)
 ### Further Levels
 Further level implementation was allowed once the main class was refactored to put the level being played into an abstract class that could be overridden to alter the game
 ![Frogger](src/main/resources/Furtherlevels.PNG)
@@ -33,7 +33,7 @@ Twenty Eight JUnit Tests added, For example:
 
 ~~~~
 ### Start Menu
-![Frogger](src/main/resources/startScreenReadMe.png)
+![Frogger](src/main/resources/startScreenReadMe.PNG)
 ## Refactoring
 ### Maven
 Maven build was added to allow for 
