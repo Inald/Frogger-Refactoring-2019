@@ -27,7 +27,10 @@ Further level implementation was allowed once the main class was refactored to p
 Twenty Eight JUnit Tests added, For example:
 ~~~~
 1) Keypad pressed tested to see frogger moves properly
-2) 
+2) Checks whether objects in the game have been set properly and move
+3) Checks whether images have been set properly for the objects
+4) Tests whether points are set, added and removed appropriately
+
 ~~~~
 ###Start Menu
 ![Frogger](src/main/resources/startScreenReadMe.png)
