@@ -20,6 +20,7 @@ by pressing apply.
 
 ### Highscores
 Two type of Highscores were implemented one for the overall score of the level being played and also one for each round that is displayed to a user in a sorted fashion (Descending)
+
 ![Frogger](src/main/resources/highScoreDisplay.PNG)
 
 ### Further Levels
