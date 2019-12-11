@@ -25,9 +25,11 @@ Two type of Highscores were implemented one for the overall score of the level b
 
 ### Further Levels
 Further level implementation was allowed once the main class was refactored to put the level being played into an abstract class that could be overridden to alter the game.
+
+Image below shows the new rendition of a bird added and each turtle being a wetTurtle
 ![Frogger](src/main/resources/Furtherlevels.PNG)
 ### JUnit
-Twenty Eight JUnit Tests added, For example:
+JUnit Tests include:
 ~~~~
 1) Keypad pressed tested to see frogger moves properly
 2) Checks whether objects in the game have been set properly and move
@@ -38,7 +40,8 @@ Twenty Eight JUnit Tests added, For example:
 6) Bubblesort in ordering highscores tested
 7) Boundary tests written
 8) Checking instances have been made properly
-
+9) Checks touching water causes death
+   etc..
 ~~~~
 ### Start Menu
 ![Frogger](src/main/resources/StartScreenReadMe.PNG)
@@ -46,7 +49,9 @@ Twenty Eight JUnit Tests added, For example:
 ### Other Additions:
 ~~~~
 1) Frogger Lives added
-2) 
+2) Made WetTurtle extend Turtle instead of Actor
+3) Encapsulated fields especially those used for tests
+4) CSS added to alerts and buttons
 ~~~~
 ## Refactoring
 ### Maven
