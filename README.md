@@ -19,12 +19,12 @@ by pressing apply.
 ## Extensions
 
 ### Highscores
-Two type of Highscores were implemented one for the overall score of the level being played and also one for each round that is displayed to a user in a sorted fashion (Descending)
+Two type of Highscores were implemented one for the overall score of the level being played and also one for each round that is displayed to a user in a sorted fashion (Descending).
 
 ![Frogger](src/main/resources/highScoreDisplay.PNG)
 
 ### Further Levels
-Further level implementation was allowed once the main class was refactored to put the level being played into an abstract class that could be overridden to alter the game
+Further level implementation was allowed once the main class was refactored to put the level being played into an abstract class that could be overridden to alter the game.
 ![Frogger](src/main/resources/Furtherlevels.PNG)
 ### JUnit
 Twenty Eight JUnit Tests added, For example:
@@ -33,13 +33,24 @@ Twenty Eight JUnit Tests added, For example:
 2) Checks whether objects in the game have been set properly and move
 3) Checks whether images have been set properly for the objects
 4) Tests whether points are set, added and removed appropriately
+5) Read and write are each tested to see if they perform their actions 
+   properly
+6) Bubblesort in ordering highscores tested
+7) Boundary tests written
+8) Checking instances have been made properly
 
 ~~~~
 ### Start Menu
 ![Frogger](src/main/resources/StartScreenReadMe.PNG)
+
+### Other Additions:
+~~~~
+1) Frogger Lives added
+2) 
+~~~~
 ## Refactoring
 ### Maven
-Maven build was added to allow for 
+Maven build files allow for everything to be imported through maven and as such does not have any dependencies on source code outside its control. 
 ### Design Patterns
 ##### Singletons:
 ~~~~
@@ -60,4 +71,9 @@ Bug fixes include the following:
    no longer allowed.
 2) allowing speed of logs or turtles to speed up and not have the frogger
    not slip off but stay on the log with the new speed
-3) 
+~~~~
+
+### Other refactorings
+~~~~
+1) Added abstract moving class for direction movement of objects
+~~~~
