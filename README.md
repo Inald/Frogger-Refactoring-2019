@@ -24,7 +24,11 @@ Two type of Highscores were implemented one for the overall score of the level b
 Further level implementation was allowed once the main class was refactored to put the level being played into an abstract class that could be overridden to alter the game
 ![Frogger](src/main/resources/Furtherlevels.PNG)
 ###JUnit
-
+Twenty Eight JUnit Tests added, For example:
+~~~~
+1) Keypad pressed tested to see frogger moves properly
+2) 
+~~~~
 ###Start Menu
 ![Frogger](src/main/resources/startScreenReadMe.png)
 ##Refactoring
