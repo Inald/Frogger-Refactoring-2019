@@ -50,7 +50,7 @@ JUnit Tests include:
    etc..
 ~~~~
 ### Start Menu
-Start menu added to greet the user when they play the game. They can either choose a level or see how the game works by pressing game information
+Start menu added to greet the user when they play the game. They can either choose a level or see how the game works by pressing "Game Information"
 
 ![Frogger](src/main/resources/StartScreenReadMe.PNG)
 
@@ -80,7 +80,7 @@ Maven build files allow for everything to be imported through maven and as such 
 ### Bug Fixes
 Bug fixes include the following:
 ~~~~
-1) Moving into the end that has already been activated - frogger is
+1) Moving into the end that has already been activated - Frogger is
    no longer allowed.
 2) speed of logs or turtles to speed up and have the frogger
    not slip off the log with the new speed.
