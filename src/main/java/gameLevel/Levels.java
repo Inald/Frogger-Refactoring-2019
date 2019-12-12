@@ -109,6 +109,11 @@ public abstract class Levels implements LevelStructure {
 
     }
 
+    /**
+     * Sets the score in the top left and the frogger lives in the bottom left,
+     * once the getAnimal().getStop is true, the game is ended and the high scores
+     * are displayed to the user.
+     */
     public void createTimer() {
         //highScoreFile = filePath + "";
         //ArrayList<Integer> highScorePrint = new ArrayList<>();
@@ -207,14 +212,26 @@ public abstract class Levels implements LevelStructure {
         getBackground().add(new Digit(0, 30, 565, 25));
     }
 
+    /**
+     * Returns timer
+     * @return
+     */
     public AnimationTimer getTimer() {
         return timer;
     }
 
+    /**
+     * Sets timer
+     * @param timer
+     */
     public void setTimer(AnimationTimer timer) {
         this.timer = timer;
     }
 
+    /**
+     * Returns the background
+     * @return
+     */
     public MyStage getBackground() {
         return background;
     }
@@ -227,6 +244,10 @@ public abstract class Levels implements LevelStructure {
         return animal;
     }
 
+    /**
+     * Set the animal to the animal passed into the function parameters
+     * @param animal
+     */
     public void setAnimal(Animal animal) {
         this.animal = animal;
     }

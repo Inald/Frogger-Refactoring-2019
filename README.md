@@ -1,6 +1,6 @@
 # **_Frogger Software Maintenance_**
 
-This Program is based on an Arcade game called "Frogger", Although its similar to the orignal game they are not exactly the same as you will find different additions to this game.
+This Program is reintroduces an Arcade game called "Frogger". Although its similar to the orignal game they are not exactly the same as you will find additions in this version.
 
 ## Getting Started
 
@@ -13,6 +13,9 @@ This can be done by setting the Main class to com.mainPack.Main in
 the "Edit Configurations" next to the run button and add a maven goal
 in the build. Enter "clean compile test" and it allows for automated testing
 by pressing apply.
+
+Tested in labs
+Java 10 used along with Maven
 ~~~~
 
 ![Frogger](src/main/resources/editConfigs.PNG)
@@ -39,11 +42,12 @@ JUnit Tests include:
    properly
 6) Bubblesort in ordering highscores tested
 7) Boundary tests written
-8) Checking instances have been made properly
-9) Checks touching water causes death
+8) Checks touching water causes death
    etc..
 ~~~~
 ### Start Menu
+Start menu added to greet the user when they play the game. They can either choose a level or see how the game works by pressing game information
+
 ![Frogger](src/main/resources/StartScreenReadMe.PNG)
 
 ### Other Additions:
@@ -72,13 +76,13 @@ Maven build files allow for everything to be imported through maven and as such 
 ### Bug Fixes
 Bug fixes include the following:
 ~~~~
-1) Moving into the same end that has already been activated - frogger is
+1) Moving into the end that has already been activated - frogger is
    no longer allowed.
-2) allowing speed of logs or turtles to speed up and not have the frogger
-   not slip off but stay on the log with the new speed
+2) speed of logs or turtles to speed up and have the frogger
+   not slip off the log with the new speed
 ~~~~
 
 ### Other refactorings
 ~~~~
-1) Added abstract moving class for direction movement of objects
+1) Added abstract moving class for dircection movement of objects
 ~~~~

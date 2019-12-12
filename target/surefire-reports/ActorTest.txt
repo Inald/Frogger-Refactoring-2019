@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ActorTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.216 sec - in ActorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.557 sec - in ActorTest
