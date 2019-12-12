@@ -201,7 +201,10 @@ public abstract class Levels implements LevelStructure {
             int k = n - d * 10;
             n = d;
             getBackground().add(new Digit(k, 30, 565 - shift, 25));
-            shift+=30;
+            shift += 30;
+//            if (getAnimal().getPoints() > 100) {
+//                shift -= 30;
+//            }
         }
     }
 

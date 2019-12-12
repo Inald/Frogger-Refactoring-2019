@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ActorTest" time="4.568" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ActorTest" time="3.387" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="10.0.2+13"/>
@@ -64,8 +64,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="logMovementTest" classname="ActorTest" time="2.965"/>
-  <testcase name="wetTurtleMovementTest" classname="ActorTest" time="0.516"/>
-  <testcase name="turtleMovementTest" classname="ActorTest" time="0.465"/>
-  <testcase name="obstacleMovementTest" classname="ActorTest" time="0.45"/>
+  <testcase name="logMovementTest" classname="ActorTest" time="1.991"/>
+  <testcase name="wetTurtleMovementTest" classname="ActorTest" time="0.434"/>
+  <testcase name="turtleMovementTest" classname="ActorTest" time="0.411"/>
+  <testcase name="obstacleMovementTest" classname="ActorTest" time="0.379"/>
 </testsuite>

@@ -8,14 +8,18 @@ These instructions will ensure that the program can get up and running on your l
 
 #### Running the game
 ~~~~
-load the project into the IDE, and set the correct configurations.
+NOTE: not tested in command line as maven is integrated into IntelliJ
+
+load the project into the IntelliJ IDE, and set the correct configurations.
 This can be done by setting the Main class to com.mainPack.Main in
 the "Edit Configurations" next to the run button and add a maven goal
 in the build. Enter "clean compile test" and it allows for automated testing
 by pressing apply.
 
-Tested in labs
-Java 10 used along with Maven
+Versions used:
+    - Java 10 
+    - Maven
+    - IntelliJ IDEA 2019.2.4 x64
 ~~~~
 
 ![Frogger](src/main/resources/editConfigs.PNG)
@@ -62,14 +66,14 @@ Maven build files allow for everything to be imported through maven and as such 
 ### Design Patterns
 ##### Singletons:
 ~~~~
-1) Singleton added for the BackgroundImage class
-2) Singleton added for the HighScoreRW class to read and write highscores
+1) Singleton added for the BackgroundImage class.
+2) Singleton added for the HighScoreRW class to read and write highscores.
 3) Singleton added for the StartMenu class as only created once and called when
-   the game ends
+   the game ends.
 ~~~~
 ##### Factories:
 ~~~~
-1) Factory added for Levels in the game
+1) Factory added for Levels in the game.
 2) Factory added for objects moving in the game e.g. Logs, Turtles etc...
 ~~~~
 ### Bug Fixes
@@ -78,7 +82,7 @@ Bug fixes include the following:
 1) Moving into the end that has already been activated - frogger is
    no longer allowed.
 2) speed of logs or turtles to speed up and have the frogger
-   not slip off the log with the new speed
+   not slip off the log with the new speed.
 ~~~~
 
 ### Other refactorings
