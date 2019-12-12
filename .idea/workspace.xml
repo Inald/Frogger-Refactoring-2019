@@ -7,15 +7,73 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/com/mainPack/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/com/mainPack/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/com/mainPack/World/class-use/MyStage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/com/mainPack/World/class-use/MyStage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/com/mainPack/World/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/com/mainPack/World/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/com/mainPack/class-use/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/com/mainPack/class-use/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/com/mainPack/froggerGameObjects/class-use/Animal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/com/mainPack/froggerGameObjects/class-use/Animal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/com/mainPack/froggerGameObjects/class-use/FactoryMoving.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/com/mainPack/froggerGameObjects/class-use/FactoryMoving.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/com/mainPack/froggerGameObjects/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/com/mainPack/froggerGameObjects/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/com/mainPack/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/com/mainPack/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/element-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/BlankLevel.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/BlankLevel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/FirstLevel.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/FirstLevel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/GameFactory.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/GameFactory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/LevelStructure.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/LevelStructure.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/Levels.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/Levels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/SecondLevel.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/SecondLevel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/class-use/BlankLevel.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/class-use/BlankLevel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/class-use/FirstLevel.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/class-use/FirstLevel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/class-use/GameFactory.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/class-use/GameFactory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/class-use/LevelStructure.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/class-use/LevelStructure.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/class-use/Levels.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/class-use/Levels.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/class-use/SecondLevel.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/class-use/SecondLevel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/gameLevel/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/gameLevel/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-17.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-18.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javadocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/Javadocs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObjects/Obstacle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mainPack/froggerGameObjects/Obstacle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mainPack/gameStart/StartMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mainPack/gameStart/StartMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameLevel/BlankLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mainPack/gameLevel/BlankLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameLevel/FirstLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mainPack/gameLevel/FirstLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameLevel/GameFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mainPack/gameLevel/GameFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameLevel/LevelStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mainPack/gameLevel/LevelStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameLevel/Levels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mainPack/gameLevel/Levels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gameLevel/SecondLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mainPack/gameLevel/SecondLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/highScores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/highScores.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/highScores2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/highScores2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ActorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ActorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/ActorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ActorTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/AnimalTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AnimalTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ActorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ActorTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AnimalTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AnimalTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mainPack.BackgroundImageTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mainPack.BackgroundImageTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mainPack.HighScoreRWTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mainPack.HighScoreRWTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mainPack.froggerGameObjects.WetTurtleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mainPack.froggerGameObjects.WetTurtleTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.mainPack.BackgroundImageTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mainPack.BackgroundImageTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.mainPack.HighScoreRWTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mainPack.HighScoreRWTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.mainPack.froggerGameObjects.WetTurtleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mainPack.froggerGameObjects.WetTurtleTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFile.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -381,7 +439,7 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1574353968080" duration="1639000" />
-      <workItem from="1575997233603" duration="21052000" />
+      <workItem from="1575997233603" duration="22738000" />
     </task>
     <servers />
   </component>

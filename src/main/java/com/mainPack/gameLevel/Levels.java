@@ -1,4 +1,4 @@
-package gameLevel;
+package com.mainPack.gameLevel;
 
 
 import com.mainPack.*;

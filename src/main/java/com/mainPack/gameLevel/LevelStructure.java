@@ -1,4 +1,4 @@
-package gameLevel;
+package com.mainPack.gameLevel;
 
 /**
  * Lays out the methods needed for the levels

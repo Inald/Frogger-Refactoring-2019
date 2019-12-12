@@ -15,11 +15,6 @@ public class Obstacle extends Moving{
 	 */
 	@Override
 	public void act(long now) {
-//		move(speed , 0);
-//		if (getX() > 600 && speed>0)
-//			setX(-200);
-//		if (getX() < -50 && speed<0)
-//			setX(600);
 		super.movingObj(-200,-50,600, speed);
 	}
 

@@ -1,8 +1,6 @@
-package gameLevel;
+package com.mainPack.gameLevel;
 
 import javafx.stage.Stage;
-
-import java.util.ArrayList;
 
 /**
  * Second level in the game out of the two, overrides certain methods

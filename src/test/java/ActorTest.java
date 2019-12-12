@@ -1,7 +1,7 @@
 import com.mainPack.froggerGameObjects.Actor;
 import com.mainPack.froggerGameObjects.Animal;
 import com.mainPack.froggerGameObjects.FactoryMoving;
-import gameLevel.BlankLevel;
+import com.mainPack.gameLevel.BlankLevel;
 import javafx.application.Platform;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;

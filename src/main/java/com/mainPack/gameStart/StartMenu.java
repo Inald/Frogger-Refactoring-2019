@@ -1,6 +1,6 @@
 package com.mainPack.gameStart;
 
-import gameLevel.GameFactory;
+import com.mainPack.gameLevel.GameFactory;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
