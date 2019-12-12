@@ -35,9 +35,17 @@ class LogTest {
     @Test
     public void TestImageSet(){
         Image state;
-        Log test = new Log(filePath + "/log3.png"+"Right.png", 0, 649, 1, -2);
+        Log test = new Log(filePath + "/log3.png", 0, 649, 1, -2);
         state = test.getImage();
         Assertions.assertThat(state).isNotEqualTo(null);
+    }
+
+    @Test
+    public void testSpeed(){
+        double speed = 0;
+        Log test = new Log(filePath + "/log3.png", 0, 649, 4,10);
+        speed = test.getSpeed();
+        Assertions.assertThat(speed).isEqualTo(10);
     }
 
 

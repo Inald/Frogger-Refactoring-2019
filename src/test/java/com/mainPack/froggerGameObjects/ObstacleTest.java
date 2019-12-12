@@ -16,4 +16,12 @@ class ObstacleTest {
         Assertions.assertThat(state).isNotEqualTo(null);
     }
 
+    @Test
+    public void testSpeed(){
+        int speed = 0;
+        Obstacle test = new Obstacle(filePath + "truck1"+"Right.png", 0, 649, 4, 120, 120);
+        speed = test.getSpeed();
+        Assertions.assertThat(speed).isEqualTo(4);
+    }
+
 }

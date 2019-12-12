@@ -88,6 +88,6 @@ Bug fixes include the following:
 ### Other refactorings
 ~~~~
 1) Added abstract moving class for dircection movement of objects
-2) Made WetTurtle extend Turtle instead of Actor
+2) Made WetTurtle extend Turtle - as "IS-A" Actor
 3) Encapsulated fields especially those used for tests
 ~~~~

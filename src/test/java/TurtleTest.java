@@ -16,4 +16,12 @@ class TurtleTest {
         Assertions.assertThat(state).isNotEqualTo(null);
     }
 
+    @Test
+    public void testSpeed(){
+        int speed = 0;
+        Turtle test = new Turtle(0,649,1,120,120);
+        speed = test.getSpeed();
+        Assertions.assertThat(speed).isEqualTo(1);
+    }
+
 }

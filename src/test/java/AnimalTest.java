@@ -160,7 +160,7 @@ class AnimalTest {
 //        } catch (AWTException e) {
 //            e.printStackTrace();
 //        }
-//        for (int i = 0; i < 7; i++){
+//        for (int i = 0; i < 6; i++){
 //            rob.keyPress(68);//65 for A to go left
 //            rob.keyRelease(68);
 //        }
@@ -185,14 +185,7 @@ class AnimalTest {
         Assertions.assertThat(waterDeath).isEqualTo(true);
     }
 
-//    @Test
-//    public void obstacleTest(){
-//
-//        Platform.runLater(() -> {
-//            Obstacle testOb = new Obstacle(filePath + "/car1Left.png", 100, 597, -5, 50, 50);
-//            level.getBackground().add(testOb);
-//        });
-//    }
+
 
 
 

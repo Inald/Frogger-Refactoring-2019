@@ -23,6 +23,9 @@ public class Obstacle extends Moving{
 		super.movingObj(-200,-50,600, speed);
 	}
 
+	public int getSpeed() {
+		return speed;
+	}
 
 	/**
 	 * Constructor of Obstacle class, uses parameters to set a new image

@@ -17,6 +17,15 @@ class WetTurtleTest {
         Assertions.assertThat(state).isNotEqualTo(null);
     }
 
+    @Test
+    public void testSpeed(){
+        int speed = 0;
+        WetTurtle test = new WetTurtle(0,649,-5,120,120);
+        speed = test.getSpeed();
+        Assertions.assertThat(speed).isEqualTo(-5);
+    }
+
+
 
 
 }
