@@ -54,6 +54,7 @@ Start menu added to greet the user when they play the game. They can either choo
 
 ![Frogger](src/main/resources/StartScreenReadMe.PNG)
 
+![Frogger](src/main/resources/gameInfoImg.PNG)
 ### Other Additions:
 ~~~~
 1) Frogger Lives added
@@ -68,8 +69,8 @@ Maven build files allow for everything to be imported through maven and as such 
 ~~~~
 1) Singleton added for the BackgroundImage class.
 2) Singleton added for the HighScoreRW class to read and write highscores.
-3) Singleton added for the StartMenu class as only created once and called when
-   the game ends.
+3) Singleton added for the StartMenu class as only created once and called 
+   when the game ends.
 ~~~~
 ##### Factories:
 ~~~~
