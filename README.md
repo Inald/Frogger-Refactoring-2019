@@ -22,7 +22,7 @@ Java 10 used along with Maven
 ## Extensions
 
 ### Highscores
-Two type of Highscores were implemented one for the overall score of the level being played and also one for each round that is displayed to a user in a sorted fashion (Descending).
+Highscores were implemented for the overall score of the level being played and displayed to the user in a sorted fashion (Descending).
 
 ![Frogger](src/main/resources/highScoreDisplay.PNG)
 
@@ -53,9 +53,8 @@ Start menu added to greet the user when they play the game. They can either choo
 ### Other Additions:
 ~~~~
 1) Frogger Lives added
-2) Made WetTurtle extend Turtle instead of Actor
-3) Encapsulated fields especially those used for tests
-4) CSS added to alerts and buttons
+2) CSS added to alerts and buttons
+3) Highscore at the end of each round sorted (descending)
 ~~~~
 ## Refactoring
 ### Maven
@@ -85,4 +84,6 @@ Bug fixes include the following:
 ### Other refactorings
 ~~~~
 1) Added abstract moving class for dircection movement of objects
+2) Made WetTurtle extend Turtle instead of Actor
+3) Encapsulated fields especially those used for tests
 ~~~~
