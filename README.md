@@ -1,6 +1,6 @@
 # **_Frogger Software Maintenance_**
 
-This Program is reintroduces an Arcade game called "Frogger". Although its similar to the orignal game they are not exactly the same as you will find additions in this version.
+This Program reintroduces an Arcade game called "Frogger". Although its similar to the orignal game they are not exactly the same as you will find additions in this version.
 
 ## Getting Started
 
