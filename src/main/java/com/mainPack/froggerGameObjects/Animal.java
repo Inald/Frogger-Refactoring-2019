@@ -323,7 +323,6 @@ public class Animal extends Actor {
 		}
 		if (getIntersectingObjects(Obstacle.class).size() >= 1) {
 			carDeath = true;
-			//minusFroggerLife();
 		}
 		if (getX() == 240 && getY() == 82) {
 			stop = true;
@@ -337,7 +336,6 @@ public class Animal extends Actor {
 		else if (getIntersectingObjects(WetTurtle.class).size() >= 1) {
 			if (getIntersectingObjects(WetTurtle.class).get(0).isSunk()) {
 				waterDeath = true;
-				//minusFroggerLife();
 			} else {
 				move(getIntersectingObjects(WetTurtle.class).get(0).getSpeed(),0); //changes speed of frog on wet turtle
 			}
@@ -365,9 +363,6 @@ public class Animal extends Actor {
 		}
 		else if (getY()<413){
 			waterDeath = true;
-
-			//setX(300);
-			//setY(679.8+movement);
 		}
 	}
 

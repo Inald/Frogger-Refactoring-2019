@@ -152,26 +152,6 @@ class AnimalTest {
         Assertions.assertThat(inBounds).isEqualTo(true);
     }
 
-//    @Test
-//    public void testBoundaryRight(){
-//        Robot rob = null;
-//        try {
-//            rob = new Robot();
-//        } catch (AWTException e) {
-//            e.printStackTrace();
-//        }
-//        for (int i = 0; i < 6; i++){
-//            rob.keyPress(68);//65 for A to go left
-//            rob.keyRelease(68);
-//        }
-//        double x = aniInst.getX();
-//        rob.keyPress(68);
-//        rob.keyRelease(68);
-//        double xAfter = aniInst.getX();
-//        boolean inBounds = (x == xAfter);
-//        Assertions.assertThat(inBounds).isEqualTo(true);
-//    }
-
     @Test
     public void waterDeathTest() throws AWTException {
         boolean waterDeath = aniInst.isWaterDeath();

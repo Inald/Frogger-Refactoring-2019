@@ -79,6 +79,11 @@ public class SecondLevel extends Levels implements LevelStructure {
         getBackground().add(objFac.getObject(WETTURTLE, "",200, 217, -1, 130, 130));
     }
 
+    @Override
+    public void setTurtle(){
+
+    }
+
     /**
      * newLevel overridden to cater for changes made in the
      * second level of the game
@@ -87,6 +92,7 @@ public class SecondLevel extends Levels implements LevelStructure {
     public void newLevel() {
         instantiateBackground();
         setLogs();
+        setTurtle();
         setWetTurtle();
         setEnds();
         setFrog();
