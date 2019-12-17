@@ -4,9 +4,9 @@ This Program reintroduces an Arcade game called "Frogger". Although its similar 
 
 ## Getting Started
 
-These instructions will ensure that the program can get up and running on your local machine for development and tests.
+These instructions ensure that the program load and run on your local machine for development and tests.
 
-#### Running the game
+#### Running Frogger
 ~~~~
 NOTE: not tested in command line as maven is integrated into IntelliJ
 
@@ -26,22 +26,22 @@ Versions used:
 ## Extensions
 
 ### Highscores
-Highscores were implemented for the overall score of the level being played and displayed to the user in a sorted fashion (Descending).
+Highscores were implemented for the overall score of either level being played and displayed to the user in a sorted fashion (Descending). Made possible through the creation of a High Score read and write class.
 
 ![Frogger](src/main/resources/highScoreDisplay.PNG)
 
 ### Further Levels
-Further level implementation was allowed once the main class was refactored to put the level being played into an abstract class that could be overridden to alter the game.
+Further level additions allowed once the "main" was refactored to put the generic level implementation into an abstract class that could be overridden to alter the game.
 
-Image below shows the new rendition of a bird added and each turtle being a wetTurtle
+Image displays the new level, having a bird added and each turtle being a wetTurtle etc...
 ![Frogger](src/main/resources/Furtherlevels.PNG)
 ### JUnit
-JUnit Tests include:
+JUnit Tests were designed using testFX and include:
 ~~~~
 1) Keypad pressed tested to see frogger moves properly
-2) Checks whether objects in the game have been set properly and move
-3) Checks whether images have been set properly for the objects
-4) Tests whether points are set, added and removed appropriately
+2) Checks whether objects in the game are set properly and move
+3) Checks whether images are set properly for the objects
+4) Tests points are set, added and removed appropriately
 5) Read and write are each tested to see if they perform their actions 
    properly
 6) Bubblesort in ordering highscores tested
@@ -50,16 +50,16 @@ JUnit Tests include:
    etc..
 ~~~~
 ### Start Menu
-Start menu added to greet the user when they play the game. They can either choose a level or see how the game works by pressing "Game Information"
+"Start Menu" added to greet the user when they play the game. They can either choose a level or see the game rules by pressing "Game Information"
 
 ![Frogger](src/main/resources/StartScreenReadMe.PNG)
 
 ![Frogger](src/main/resources/gameInfoImg.PNG)
 ### Other Additions:
 ~~~~
-1) Frogger Lives added
+1) Lives added
 2) CSS added to alerts and buttons
-3) Highscore at the end of each round sorted (descending)
+3) Highscore at the end of each round sorted (Descending)
 ~~~~
 ## Refactoring
 ### Maven
@@ -70,7 +70,7 @@ Maven build files allow for everything to be imported through maven and as such 
 1) Singleton added for the BackgroundImage class.
 2) Singleton added for the HighScoreRW class to read and write highscores.
 3) Singleton added for the StartMenu class as only created once and called 
-   when the game ends.
+   when the game starts and ends.
 ~~~~
 ##### Factories:
 ~~~~
@@ -78,17 +78,18 @@ Maven build files allow for everything to be imported through maven and as such 
 2) Factory added for objects moving in the game e.g. Logs, Turtles etc...
 ~~~~
 ### Bug Fixes
-Bug fixes include the following:
+Bug fixes include:
 ~~~~
-1) Moving into the end that has already been activated - Frogger is
+1) Moving into an end that has already been activated - Frogger is
    no longer allowed.
 2) speed of logs or turtles to speed up and have the frogger
-   not slip off the log with the new speed.
+   not slip off the log or Turtle/WetTurtle with the new speed.
 ~~~~
 
 ### Other refactorings
 ~~~~
-1) Added abstract moving class for dircection movement of objects
+1) Added abstract moving class for direction movement of objects
 2) Made WetTurtle extend Turtle - as "IS-A" Actor
 3) Encapsulated fields especially those used for tests
+4) Hardcoded numbers made into constants
 ~~~~
