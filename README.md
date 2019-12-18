@@ -1,6 +1,6 @@
 # **_Frogger Software Maintenance_**
 
-This Program reintroduces an Arcade game called "Frogger". Although its similar to the orignal game they are not exactly the same as you will find additions in this version.
+This Program reintroduces an Arcade game called "Frogger". Although this version is similar to the orignal game they do differ as you will find additions in this version.
 
 ## Getting Started
 
@@ -15,6 +15,8 @@ This can be done by setting the Main class to com.mainPack.Main in
 the "Edit Configurations" next to the run button and add a maven goal
 in the build. Enter "clean compile test" and it allows for automated testing
 by pressing apply.
+
+Tested in labs
 
 Versions used:
     - Java 10 
@@ -38,15 +40,15 @@ Image displays the new level, having a bird added and each turtle being a wetTur
 ### JUnit
 JUnit Tests were designed using testFX and include:
 ~~~~
-1) Keypad pressed tested to see frogger moves properly
-2) Checks whether objects in the game are set properly and move
-3) Checks whether images are set properly for the objects
+1) Keypad press tested to see frogger moves properly
+2) Checks objects in the game are set properly and move
+3) Checks images are set properly for the objects
 4) Tests points are set, added and removed appropriately
-5) Read and write are each tested to see if they perform their actions 
+5) Read/Write are tested to see if they perform their actions 
    properly
 6) Bubblesort in ordering highscores tested
-7) Boundary tests written
-8) Checks touching water causes death
+7) Boundary tests
+8) Checks water functionality - waterDeath
    etc..
 ~~~~
 ### Start Menu
@@ -59,7 +61,7 @@ JUnit Tests were designed using testFX and include:
 ~~~~
 1) Lives added
 2) CSS added to alerts and buttons
-3) Highscore at the end of each round sorted (Descending)
+3) Highscore at the end of each round displayed and sorted
 ~~~~
 ## Refactoring
 ### Maven
@@ -68,9 +70,9 @@ Maven build files allow for everything to be imported through maven and as such 
 ##### Singletons:
 ~~~~
 1) Singleton added for the BackgroundImage class.
-2) Singleton added for the HighScoreRW class to read and write highscores.
+2) Singleton added for the HighScoreRW class to read/write highscores.
 3) Singleton added for the StartMenu class as only created once and called 
-   when the game starts and ends.
+   at the start and end.
 ~~~~
 ##### Factories:
 ~~~~
@@ -82,7 +84,7 @@ Bug fixes include:
 ~~~~
 1) Moving into an end that has already been activated - Frogger is
    no longer allowed.
-2) speed of logs or turtles to speed up and have the frogger
+2) speed of objects to speed up and have the frogger
    not slip off the log or Turtle/WetTurtle with the new speed.
 ~~~~
 
@@ -91,5 +93,4 @@ Bug fixes include:
 1) Added abstract moving class for direction movement of objects
 2) Made WetTurtle extend Turtle - as "IS-A" Actor
 3) Encapsulated fields especially those used for tests
-4) Hardcoded numbers made into constants
 ~~~~
