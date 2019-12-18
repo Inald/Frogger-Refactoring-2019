@@ -13,10 +13,12 @@ NOTE: not tested in command line as maven is integrated into IntelliJ
 load the project into the IntelliJ IDE, and set the correct configurations.
 This can be done by setting the Main class to com.mainPack.Main in
 the "Edit Configurations" next to the run button and add a maven goal
-in the build. Enter "clean compile test" and it allows for automated testing
-by pressing apply.
+in the build. Enter "clean compile test" to allow for automated testing
+when running "Frogger".
 
-Tested in labs
+Testing Environments:
+    - Primarily on HP Envy
+    - Labs
 
 Versions used:
     - Java 10 
@@ -28,17 +30,17 @@ Versions used:
 ## Extensions
 
 ### Highscores
-Highscores were implemented for the overall score of either level being played and displayed to the user in a sorted fashion (Descending). Made possible through the creation of a High Score read and write class.
+Highscores were implemented for the overall score of either level being played and displayed to the user in a sorted fashion (Descending). Made possible through the creation of a Highscore read/write class.
 
 ![Frogger](src/main/resources/highScoreDisplay.PNG)
 
 ### Further Levels
 Further level additions allowed once the "main" was refactored to put the generic level implementation into an abstract class that could be overridden to alter the game.
 
-Image displays the new level, having a bird added and each turtle being a wetTurtle etc...
+Image displays the new level, having a bird added and each Turtle becoming a wetTurtle etc....
 ![Frogger](src/main/resources/Furtherlevels.PNG)
 ### JUnit
-JUnit Tests were designed using testFX and include:
+JUnit Tests created using testFX and include:
 ~~~~
 1) Keypad press tested to see frogger moves properly
 2) Checks objects in the game are set properly and move
@@ -90,7 +92,7 @@ Bug fixes include:
 
 ### Other refactorings
 ~~~~
-1) Added abstract moving class for direction movement of objects
+1) Abstract moving class added, for direction movement of objects
 2) Made WetTurtle extend Turtle - as "IS-A" Actor
-3) Encapsulated fields especially those used for tests
+3) Encapsulated fields - crucial for testing
 ~~~~
