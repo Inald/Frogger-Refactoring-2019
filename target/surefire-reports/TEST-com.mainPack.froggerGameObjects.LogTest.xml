@@ -67,5 +67,5 @@
   <testcase name="testGetLeftFalse" classname="com.mainPack.froggerGameObjects.LogTest" time="0"/>
   <testcase name="testSpeed" classname="com.mainPack.froggerGameObjects.LogTest" time="0"/>
   <testcase name="testGetLeftTrue" classname="com.mainPack.froggerGameObjects.LogTest" time="0"/>
-  <testcase name="TestImageSet" classname="com.mainPack.froggerGameObjects.LogTest" time="0"/>
+  <testcase name="TestImageSet" classname="com.mainPack.froggerGameObjects.LogTest" time="0.001"/>
 </testsuite>
