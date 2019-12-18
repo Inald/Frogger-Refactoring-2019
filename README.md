@@ -35,7 +35,7 @@ Highscores were implemented for the overall score of either level being played a
 ![Frogger](src/main/resources/highScoreDisplay.PNG)
 
 ### Further Levels
-Further level additions allowed once the "main" was refactored to put the generic level implementation into an abstract class that could be overridden to alter the game.
+Further level additions allowed once the "Main" was refactored to put the generic level implementation into an abstract class that could be overridden to alter the game.
 
 Image displays the new level, having a bird added and each Turtle becoming a wetTurtle etc....
 ![Frogger](src/main/resources/Furtherlevels.PNG)
@@ -65,6 +65,8 @@ JUnit Tests created using testFX and include:
 2) CSS added to alerts and buttons
 3) Highscore at the end of each round displayed and sorted
 ~~~~
+![Frogger](src/main/resources/highscoreForRound.PNG)
+
 ## Refactoring
 ### Maven
 Maven build files allow for everything to be imported through maven and as such does not have any dependencies on source code outside its control. 
@@ -86,13 +88,14 @@ Bug fixes include:
 ~~~~
 1) Moving into an end that has already been activated - Frogger is
    no longer allowed.
-2) speed of objects to speed up and have the frogger
-   not slip off the log or Turtle/WetTurtle with the new speed.
+2) speeding up of objects causes the frogger to not slip off the 
+   log or Turtle/WetTurtle with the new speed.
 ~~~~
 
 ### Other refactorings
 ~~~~
 1) Abstract moving class added, for direction movement of objects
 2) Made WetTurtle extend Turtle - as "IS-A" Actor
-3) Encapsulated fields - crucial for testing
+3) Encapsulated fields
+4) Made constants for hardcode values
 ~~~~
